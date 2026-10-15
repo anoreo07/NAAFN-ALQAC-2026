@@ -13,10 +13,10 @@ This document synthesizes the empirical results obtained across all experimental
 
 The experimental workflow traces the progression of the **NAAFN** system from isolated single-model baselines to an integrated multi-agent judicial ensemble:
 1. **Primary Model (Qwen3.5-9B BF16)** achieves **40.00%** outcome accuracy ($20/50$ cases, 95% Wilson CI $[27.6\%, 53.8\%]$) with a Macro-F1 of **27.94%**. While exhibiting strong evidence extraction capabilities, it is constrained by party-claim bias and collapses entirely on minority verdict classes.
-2. **Independent Auditor Model (Aya Expanse 8B / Qwen2.5-7B BF16)** achieves **26.00% – 38.00%** accuracy independently, functioning as a contrarian critique mechanism to verify claims and assess evidential burden.
+2. **Independent Auditor Model (Aya Expanse 8B / Qwen2.5-7B BF16)** achieves **26.00%** accuracy ($13/50$ cases) in genuine standalone execution; the earlier $38.00\%$ figure observed in initial runs was an artifact of output parsing failures falling back to the majority class (`PARTIAL_A_WIN`). Standalone, it functions as a contrarian critique mechanism to verify claims and assess evidential burden.
 3. **Multi-Perspective Collegiate Judges (3 Passes)** simulate diverse judicial deliberation perspectives (*Adversarial*, *Elements & Burden of Proof*, *Remedy & Outcome*). Individual passes attain **46.00% – 52.00%** accuracy. A consensus majority vote among the three judges yields **54.00%** ($27/50$, CI $[40.4\%, 67.0\%]$), significantly outperforming any individual judge or single LLM.
-4. **End-to-End Weighted 7-Signal Ensemble (Pure LOO)** achieves **50.00% – 52.00%** out-of-fold generalization accuracy across all 25,920 weight permutations under strict zero-leakage LOO-CV. The full-evidence direct submission (`submission_all_evidence_v2.json`) reaches **56.00%** outcome accuracy ($28/50$, CI $[42.3\%, 68.8\%]$) and an official competition score of **49.71%**.
-5. **Overfitting Diagnostics**: The gap between in-sample optimization ($54.00\% – 56.00\%$) and out-of-sample LOO validation ($50.00\% – 52.00\%$) is strictly bounded at $+2.00\% \text{ to } +4.00\%$. Permutation testing with 500 label shuffles confirms statistical significance ($p = 0.0020^{**}$ for nested LOO null distribution).
+4. **End-to-End Weighted 7-Signal Ensemble (Pure LOO)** achieves **50.00%** out-of-fold generalization accuracy for the Top-5 reference configuration (and up to **52.00%** for the All-Tied-Top selection) across all 25,920 weight permutations under strict zero-leakage LOO-CV. The full-evidence direct submission (`submission_all_evidence_v2.json`) reaches **56.00%** outcome accuracy ($28/50$, CI $[42.3\%, 68.8\%]$) and an official competition score of **49.71%**.
+5. **Overfitting Diagnostics**: On the canonical nested-LOO pair reported in the released artifacts, the gap between in-sample optimization (54.00%) and out-of-sample LOO validation (50.00%) is **+4.00%**. Permutation testing with 500 label shuffles confirms statistical significance at the $1\%$ level ($p = 0.0080^{**}$ for the nested LOO null distribution; $p = 0.0396^{*}$ for the in-sample max-accuracy null distribution).
 6. **Minority Class Rectification via RF Calibration**: The public test distribution exhibits extreme class imbalance (`PARTIAL_B_WIN` represents only $10\%$ / 5 cases). Standard LLMs and uncalibrated ensembles suffer a **0.0% recall pathology** on this class. A calibrated Random Forest stacker elevates `PARTIAL_B_WIN` recall to **40.0%** ($2/5$ cases detected), establishing balanced judicial assessment across all four verdict categories.
 
 ---
@@ -24,34 +24,33 @@ The experimental workflow traces the progression of the **NAAFN** system from is
 ## 2. Experimental Lineage & Model Progression
 
 The system underwent systematic iterative development across four primary Colab runs (`nb_1` through `nb_4`), culminating in the comprehensive `colab_v4` benchmark suite:
-
 ```
 [Iteration nb_1] Primary (Qwen3.5-9B) + Auditor (Aya Expanse 8B)
-                Outcome Accuracy: Primary=40.0%, Auditor=38.0%, Consensus=44.0%
-                Competition Score: 39.21%
-       │
-       ▼
+Outcome Accuracy: Primary=40.0%, Auditor=38.0%, Consensus=44.0%
+Competition Score: 39.21%
+│
+▼
 [Iteration nb_2] Fix Auditor Prompting & Schema Formatting
-                Outcome Accuracy: Auditor=26.0%, Primary+Auditor Ensemble=40.0%
-                Identified need for multi-perspective legal reasoning.
-       │
-       ▼
+Outcome Accuracy: Auditor=26.0%, Primary+Auditor Ensemble=40.0%
+Identified need for multi-perspective legal reasoning.
+│
+▼
 [Iteration nb_3] Introduction of 3x Collegiate Judge Passes (Full Evidence v2)
-                Pass 1 (Adversarial): 52.0%
-                Pass 2 (Elements & Burden): 52.0%
-                Pass 3 (Remedy & Outcome): 46.0%
-                Submission v2 (All Evidence): 56.00% (28/50), Competition Score: 49.71%
-       │
-       ▼
+Pass 1 (Adversarial): 52.0%
+Pass 2 (Elements & Burden): 52.0%
+Pass 3 (Remedy & Outcome): 46.0%
+Submission v2 (All Evidence): 56.00% (28/50), Competition Score: 49.71%
+│
+▼
 [Iteration nb_4] Confidence-Weighted Judicial Simulation
-                Incorporated explicit confidence mapping (HIGH=1.5, MED=1.0, LOW=0.6)
-                and Judge Agreement Boosting (>= 2 agreeing judges -> 1.5x weight).
-       │
-       ▼
-[Benchmark v4]  Comprehensive Paper Benchmark Suite (ensemble_submission_public_colab_v4.ipynb)
-                Strict No-Leakage LOO-CV (25,920 grid search), 18 ablation variants,
-                Nested LOO Random Forest Calibration, Transductive Pseudo-labeling,
-                500-iteration Permutation Significance Testing.
+Incorporated explicit confidence mapping (HIGH=1.5, MED=1.0, LOW=0.6)
+and Judge Agreement Boosting (>= 2 agreeing judges -> 1.5x weight).
+│
+▼
+[Benchmark v4] Comprehensive Paper Benchmark Suite (ensemble_submission_public_colab_v4.ipynb)
+Strict No-Leakage LOO-CV (25,920 grid search), 17 ablation variants,
+Nested LOO Random Forest Calibration, Transductive Pseudo-labeling,
+500-iteration Permutation Significance Testing.
 ```
 
 ---
@@ -90,7 +89,7 @@ All models evaluated on the gold public test set ($50$ cases). Confidence interv
 
 Under the official ALQAC evaluation protocol, scores combine outcome classification accuracy and legal provision retrieval quality:
 $$\text{Final Score} = 0.875 \times \text{Accuracy}_{\text{outcome}} + 0.125 \times \text{F1}_{\text{law\_micro}}$$
-*(Normalized from competition weights $0.70$ outcome, $0.10$ law F1, and $0.20$ case recall, since public test ground truth omits gold case chunks).*
+*(Normalized from competition weights $0.70$ outcome, $0.20$ case recall, and $0.10$ law F1, since public test ground truth omits gold case chunks.)*
 
 | Submission Artifact / Origin | Outcome Correct | Outcome Acc | Law Precision (Micro) | Law Recall (Micro) | Law F1 (Micro) | Final Competition Score |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -104,7 +103,6 @@ $$\text{Final Score} = 0.875 \times \text{Accuracy}_{\text{outcome}} + 0.125 \ti
 | `nb_3/submission_judge_adversarial.json` | 26 / 50 | 52.00% | 3.44% | 16.43% | 5.69% | 46.21% |
 | `nb_3/submission_judge_elements_burden.json` | 26 / 50 | 52.00% | 3.44% | 16.43% | 5.69% | 46.21% |
 | **`nb_3/submission_all_evidence_v2.json`** | **28 / 50** | **56.00%** | **3.44%** | **16.43%** | **5.69%** | **49.71%** |
-| `nb_4/submission_all_evidence_v2.json` | 28 / 50 | 56.00% | 3.44% | 16.43% | 5.69% | 49.71% |
 
 ---
 
@@ -140,48 +138,45 @@ The ground truth on the 50 public test cases is non-uniformly distributed:
 ### Confusion Matrices
 
 #### 1. Best Single Judge
-```
-True \ Pred      | A_WIN | PARTIAL_A_WIN | PARTIAL_B_WIN | B_WIN | Total
------------------|-------|---------------|---------------|-------|------
-A_WIN            |   9   |       6       |       0       |   1   |  16
-PARTIAL_A_WIN    |   6   |      12       |       0       |   1   |  19
-PARTIAL_B_WIN    |   0   |       5       |       0       |   0   |   5
-B_WIN            |   0   |       5       |       0       |   5   |  10
------------------|-------|---------------|---------------|-------|------
-Total Predicted  |  15   |      28       |       0       |   7   |  50
+```text
+True \ Pred	A_WIN	PARTIAL_A_WIN	PARTIAL_B_WIN	B_WIN	Total
+A_WIN	9	6	0	1	16
+PARTIAL_A_WIN	6	12	0	1	19
+PARTIAL_B_WIN	0	5	0	0	5
+B_WIN	0	5	0	5	10
+-----------------	-------	---------------	---------------	-------	------
+Total Predicted	15	28	0	7	50
 ```
 
 #### 2. Pure Weighted Ensemble (LOO)
-```
-True \ Pred      | A_WIN | PARTIAL_A_WIN | PARTIAL_B_WIN | B_WIN | Total
------------------|-------|---------------|---------------|-------|------
-A_WIN            |   7   |       8       |       0       |   1   |  16
-PARTIAL_A_WIN    |   4   |      14       |       0       |   1   |  19
-PARTIAL_B_WIN    |   0   |       5       |       0       |   0   |   5
-B_WIN            |   0   |       6       |       0       |   4   |  10
------------------|-------|---------------|---------------|-------|------
-Total Predicted  |  11   |      33       |       0       |   6   |  50
+```text
+True \ Pred	A_WIN	PARTIAL_A_WIN	PARTIAL_B_WIN	B_WIN	Total
+A_WIN	7	8	0	1	16
+PARTIAL_A_WIN	4	14	0	1	19
+PARTIAL_B_WIN	0	5	0	0	5
+B_WIN	0	6	0	4	10
+-----------------	-------	---------------	---------------	-------	------
+Total Predicted	11	33	0	6	50
 ```
 
 #### 3. Random Forest Stacker (LOO Calibrated)
-```
-True \ Pred      | A_WIN | PARTIAL_A_WIN | PARTIAL_B_WIN | B_WIN | Total
------------------|-------|---------------|---------------|-------|------
-A_WIN            |   7   |       8       |       0       |   1   |  16
-PARTIAL_A_WIN    |   4   |       9       |       5       |   1   |  19
-PARTIAL_B_WIN    |   0   |       3       |       2       |   0   |   5
-B_WIN            |   0   |       5       |       1       |   4   |  10
------------------|-------|---------------|---------------|-------|------
-Total Predicted  |  11   |      25       |       8       |   6   |  50
+```text
+True \ Pred	A_WIN	PARTIAL_A_WIN	PARTIAL_B_WIN	B_WIN	Total
+A_WIN	7	8	0	1	16
+PARTIAL_A_WIN	4	9	5	1	19
+PARTIAL_B_WIN	0	3	2	0	5
+B_WIN	0	5	1	4	10
+-----------------	-------	---------------	---------------	-------	------
+Total Predicted	11	25	8	6	50
 ```
 
 ---
 
 ## 6. Comprehensive Ablation Study (Nested LOO-CV)
 
-To isolate the individual contribution of each pipeline component, 18 ablation variants were tested under rigorous nested LOO cross-validation (evaluating on the held-out fold with weights learned strictly from the remaining 49 cases).
+To isolate the individual contribution of each pipeline component, **17 ablation variants** (plus 1 reference configuration) were tested under rigorous nested LOO cross-validation (evaluating on the held-out fold with weights learned strictly from the remaining 49 cases).
 
-| Ablation Variant | Correct / 50 | Accuracy (%) | Wilson 95% CI | Macro-F1 (%) | $\Delta$ vs Reference | Bootstrap 95% CI of $\Delta$ | $p$-value (Bootstrap) |
+| Ablation Variant | Correct / 50 | Accuracy (%) | Wilson 95% CI | Macro-F1 (%) | $\Delta$ vs Reference | Bootstrap 95% CI of $\Delta$ | $p$-value (McNemar) |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Reference: Pure Top-5 (LOO)** | **25 / 50** | **50.00%** | **[36.6%, 63.4%]** | **38.92%** | **+0.0%** | **[+0.0%, +0.0%]** | **Reference** |
 | Remove Primary Model | 27 / 50 | 54.00% | [40.4%, 67.0%] | 42.58% | +4.0% | [+0.0%, +10.0%] | 0.5000 |
@@ -189,7 +184,7 @@ To isolate the individual contribution of each pipeline component, 18 ablation v
 | Remove Public CBR | 25 / 50 | 50.00% | [36.6%, 63.4%] | 38.92% | +0.0% | [+0.0%, +0.0%] | 1.0000 |
 | Remove Private CBR | 27 / 50 | 54.00% | [40.4%, 67.0%] | 42.58% | +4.0% | [+0.0%, +10.0%] | 0.5000 |
 | Remove Judge: Adversarial | 24 / 50 | 48.00% | [34.8%, 61.5%] | 37.96% | -2.0% | [-10.0%, +4.0%] | 1.0000 |
-| **Remove Judge: Elements & Burden** | **21 / 50** | **42.00%** | **[29.4%, 55.8%]** | **32.75%** | **-8.0%** | **[-18.0%, +0.0%]** | **0.2188 ($p_{\text{McNemar}}=0.070$)** |
+| **Remove Judge: Elements & Burden** | **21 / 50** | **42.00%** | **[29.4%, 55.8%]** | **32.75%** | **-8.0%** | **[-18.0%, +0.0%]** | **0.2188** |
 | Remove Judge: Remedy Outcome | 28 / 50 | 56.00% | [42.3%, 68.8%] | 45.14% | +6.0% | [+0.0%, +12.0%] | 0.2500 |
 | Remove Entire CBR Group | 25 / 50 | 50.00% | [36.6%, 63.4%] | 39.29% | +0.0% | [-6.0%, +6.0%] | 1.0000 |
 | **Remove Entire Judge Group** | **21 / 50** | **42.00%** | **[29.4%, 55.8%]** | **28.79%** | **-8.0%** | **[-22.0%, +6.0%]** | **0.3877** |
@@ -203,7 +198,7 @@ To isolate the individual contribution of each pipeline component, 18 ablation v
 | CBR Top-K $K = 7$ | 25 / 50 | 50.00% | [36.6%, 63.4%] | 38.92% | +0.0% | [+0.0%, +0.0%] | 1.0000 |
 
 ### Critical Ablation Takeaways
-1. **Collegiate Judges are Indispensable**: Dropping the collegiate judges degrades performance to **42.00%** (Macro-F1 drops from $38.92\%$ to $28.79\%$). In particular, the *Elements & Burden of Proof* pass is the most influential legal signal in the entire system (causing an $8.0\% – 12.0\%$ accuracy collapse if omitted).
+1. **Collegiate Judges are Indispensable**: Dropping the collegiate judges degrades performance to **42.00%** (Macro-F1 drops from $38.92\%$ to $28.79\%$). In particular, the *Elements & Burden of Proof* pass is the most influential legal signal in the entire system (causing an $8.0\%$ accuracy collapse if omitted).
 2. **Dense Semantic Fusion Prevents Lexical Collapse**: Restricting CBR to BM25 lexical matching alone causes a statistically significant collapse to **30.00%** ($p = 0.0213^*$). Hybrid BM25 + BGE-M3 fusion protects the model from statutory term mismatches in Vietnamese civil judgments.
 3. **Primary-Auditor Redundancy**: When 3 multi-perspective judge passes are active, Primary and Auditor outputs carry substantial mutual correlation. Removing either slightly shifts majority ties towards the collegiate judges without sacrificing stability.
 
@@ -212,25 +207,24 @@ To isolate the individual contribution of each pipeline component, 18 ablation v
 ## 7. Overfitting Diagnostics & Permutation Tests
 
 To confirm that the ensemble weights did not overfit the 50 public test cases, two rigorous validation checks were conducted:
-
-```
-In-Sample Optimized Grid Max Accuracy : 54.00% – 56.00% (27 – 28 / 50)
-Strict Nested LOO-CV Accuracy         : 50.00% – 52.00% (25 – 26 / 50)
+```text
+In-Sample Optimized Grid Max Accuracy : 54.00% (27 / 50)
+Strict Nested LOO-CV Accuracy : 50.00% (25 / 50)
 ────────────────────────────────────────────────────────────────────────
-Overfitting Generalization Gap        : +2.00% to +4.00%
+Overfitting Generalization Gap : +4.00%
 ```
 
 ### Statistical Permutation Testing
 
 1. **Permutation Test 1 (In-sample Optimization over Shuffled Labels, 100 iterations)**:
    - Evaluates whether searching the 25,920 weight grid could fit arbitrary random noise.
-   - Null Distribution: $\mu = 40.90\%$, 95th Percentile = $48.00\%$, Max = $58.00\%$.
-   - **Empirical $p$-value**: $p = 0.0198^*$ ($p < 0.05$).
+   - Null Distribution: $\mu = 41.06\%$, 95th Percentile = $48.00\%$, Max = $58.00\%$.
+   - **Empirical $p$-value**: $p = 0.0396^*$ ($p < 0.05$).
 2. **Permutation Test 2 (Strict Nested LOO over Shuffled Labels, 500 iterations)**:
    - For each shuffle, weights are selected on 49 cases and tested on the 50th held-out case.
-   - Null Distribution: $\mu = 34.60\% – 34.91\%$, 95th Percentile = $44.00\%$, Max = $52.00\%$.
-   - **Empirical $p$-value**: $p = 0.0020^{**} \text{ to } 0.0080^{**}$ ($p < 0.01$).
-   - **Conclusion**: The observed LOO accuracy ($50.00\% – 52.00\%$) is statistically significant against the null distribution of randomized legal judgments.
+   - Null Distribution: $\mu = 34.60\%$, 95th Percentile = $44.00\%$, Max = $54.00\%$.
+   - **Empirical $p$-value**: $p = 0.0080^{**}$ ($p < 0.01$).
+   - **Conclusion**: The observed LOO accuracy (50.00%) is statistically significant against the null distribution of randomized legal judgments.
 
 ---
 
@@ -265,8 +259,8 @@ To evaluate semi-supervised pool expansion for the Phase-3 private evaluation st
 - Before pool expansion: $\mu = 50.40\% \pm 6.25\%$
 - After expansion with pseudo-labels: $\mu = 49.00\% \pm 5.78\%$
 - Oracle upper bound (expanding with gold labels): $\mu = 50.20\% \pm 5.72\%$
-- Mean paired difference ($\text{withPL} - \text{noPL}$): $-1.40\% \pm 3.17\%$ (Bootstrap 95% CI $[-2.80\%, +0.00\%]$).
-- **Insight**: Conservative gating (Primary HIGH & $\ge 4$) achieves the highest pseudo-label precision ($48.0\%$), shielding the test phase from severe confirmation bias.
+- Mean paired difference ($\text{withPL} - \text{noPL}$): $-1.40\% \pm 3.17\%$ (Bootstrap 95% CI $[-2.80\%, -0.00\%]$).
+- **Insight**: Conservative gating (Primary HIGH & $\ge 4$) achieves the highest pseudo-label precision ($48.0\%$), shielding the test phase from severe confirmation bias. However, the pseudo-labeling expansion does not yield a consistent positive gain in this small-data regime.
 
 ---
 
@@ -275,9 +269,10 @@ To evaluate semi-supervised pool expansion for the Phase-3 private evaluation st
 | Hyperparameter / Parameter | Canonical Setting | Description / Rationale |
 |:---|:---|:---|
 | **Random Seed** | `42` | Global determinism across NumPy, Scipy, Scikit-learn, PyTorch |
-| **Primary Base Model** | `Qwen/Qwen3.5-9B` (BF16) | Direct claim graph extraction & verdict estimation |
+| **Primary Base Model (verdict)** | `Qwen/Qwen3.5-9B` (BF16) | Direct claim graph extraction & verdict estimation |
 | **Auditor Base Model** | `CohereLabs/aya-expanse-8b` | Independent claim critique (Fallback: `Qwen2.5-7B-Instruct`) |
 | **Collegiate Judge Models** | 3x Qwen Passes (BF16) | Adversarial, Elements/Burden, Remedy/Outcome |
+| **Retrieval Helper Model** | `Qwen3.5-4B` (BF16) | Role extraction, query generation, chunk analysis (see paper Sec. III.F) |
 | **Dense Embedding Model** | `BAAI/bge-m3` | 1024-dimensional multilingual embeddings for CBR |
 | **BM25 Preprocessing** | `(case_query + ' ' + case_fact).lower().split()` | Normalized against global corpus maximum |
 | **CBR Fusion Weights** | $w_{\text{BM25}} = 0.5$, $w_{\text{BGE}} = 0.5$ | Balanced lexical and semantic retrieval fusion |
