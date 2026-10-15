@@ -1,0 +1,26 @@
+{
+  "case_id": "case_8758",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_8758_seg_d9c40217a6eea9ee",
+        "case_8758_seg_18216aa1edda4cdd",
+        "case_8758_seg_1b9e013505a99e5b",
+        "case_8758_seg_4460e457dd9f13f1",
+        "case_8758_seg_62dc6428236411c9"
+      ],
+      "law_aids": [
+        53024
+      ],
+      "short_reason": "Bị đơn chứng minh được việc xin cấp lối đi năm 1995 có xác nhận của chính quyền, sử dụng ổn định lâu dài. Nguyên đơn không chứng minh được quyền sở hữu đối với phần đất này, chỉ là đất hoang hóa của tập thể đã được giao cho bị đơn."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Việc xác định nguồn gốc đất tranh chấp là đất hoang hóa của tập thể đã được UBND xã xác nhận giao cho bị đơn làm lối đi năm 1995, hay là đất của nguyên đơn bị lấn chiếm.",
+  "confidence": "HIGH"
+}

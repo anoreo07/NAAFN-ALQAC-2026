@@ -1,0 +1,34 @@
+{
+  "case_id": "case_4588",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4588_seg_fb3e44edde2a95a8",
+        "case_4588_seg_64e7852476896f31",
+        "case_4588_seg_8221768949e1db68",
+        "case_4588_seg_ec07106ae4569776",
+        "case_4588_seg_8dafd69e49719c84",
+        "case_4588_seg_b7d203b1d94a7503",
+        "case_4588_seg_d46742f7fe13d230",
+        "case_4588_seg_f4da23da068d6c3b",
+        "case_4588_seg_8b1e7b630157dd2e",
+        "case_4588_seg_f05c1c3eed6e496a",
+        "case_4588_seg_3c186feb59a8c1cb"
+      ],
+      "law_aids": [
+        53429,
+        53421,
+        53420
+      ],
+      "short_reason": "Di chúc hợp pháp nhưng chỉ định ông H hưởng toàn bộ phần di sản của mẹ. Nguyên đơn từ bỏ yêu cầu vô hiệu di chúc, chấp nhận chia theo di chúc cho phần này, nhưng yêu cầu chia đều phần tài sản chung cha mẹ để lại cho 10 người con."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc áp dụng di chúc hợp pháp cho phần di sản của mẹ và chia đều phần tài sản chung cha mẹ để lại cho 10 người con.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,53 @@
+{
+  "case_id": "case_6384",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.7,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_6384_seg_db726ce6076039a3",
+        "case_6384_seg_c0e0b38127e91441",
+        "case_6384_seg_7ed15a5e1325a941",
+        "case_6384_seg_7725cddcf45505b6",
+        "case_6384_seg_d07e607d38100dd3",
+        "case_6384_seg_f0f78996f2aa9344",
+        "case_6384_seg_fc925866e00f3647",
+        "case_6384_seg_4f9459db9543ef38",
+        "case_6384_seg_a109c1b8dda91d0a",
+        "case_6384_seg_980803e28357af2c",
+        "case_6384_seg_ffa7485e4a5d331c",
+        "case_6384_seg_500d1e224f510b34",
+        "case_6384_seg_b4600be1445ecf9d",
+        "case_6384_seg_052de10d090d642f",
+        "case_6384_seg_5b7d8ca8ff4b5e92",
+        "case_6384_seg_b003e7f80889d6f1",
+        "case_6384_seg_f8daa1163644762e",
+        "case_6384_seg_3d26b2a3aabfdfcd",
+        "case_6384_seg_12ecd0523d1c0304",
+        "case_6384_seg_a1b136b9fdff65b1",
+        "case_6384_seg_9160228d636e381f",
+        "case_6384_seg_8609de2706ac5492",
+        "case_6384_seg_2b4825600a6a9833",
+        "case_6384_seg_481bef258c1a8b71",
+        "case_6384_seg_b8aa683a69c7bdb6",
+        "case_6384_seg_3ceca19be4425a0a",
+        "case_6384_seg_462ba3a41d86704d",
+        "case_6384_seg_3419dc6e2e5de262",
+        "case_6384_seg_e9f82530199d98be"
+      ],
+      "law_aids": [
+        55952,
+        55951,
+        56054,
+        55954
+      ],
+      "short_reason": "A thắng quyền sử dụng đất và cây tự nhiên. Yêu cầu hủy GCNQSDĐ bị bác do thủ tục hợp lệ. Yêu cầu di dời cây lớn bị giảm do không khả thi, chỉ buộc thanh toán giá trị cây."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Quyền sử dụng đất được công nhận nhưng yêu cầu hủy GCNQSDĐ bị bác; yêu cầu di dời cây lớn bị điều chỉnh thành bồi thường giá trị.",
+  "confidence": "HIGH"
+}

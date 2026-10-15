@@ -1,0 +1,25 @@
+{
+  "case_id": "case_3241",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_3241_seg_81b72b72576ab585",
+        "case_3241_seg_7886f05b497a16ab"
+      ],
+      "law_aids": [
+        364,
+        53236,
+        53050
+      ],
+      "short_reason": "Ngân hàng chứng minh được chủ thể hợp đồng và quyền khởi kiện. Bị đơn không có bằng chứng phản bác hoặc bảo đảm. Theo BLDS và Luật TCTD, bên vay phải trả nợ và ngân hàng có quyền xử lý tài sản bảo đảm khi đến hạn không được trả."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Khả năng thực thi nghĩa vụ trả nợ và quyền xử lý tài sản bảo đảm của ngân hàng khi bị đơn không có biện pháp bảo vệ hợp lệ.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "case_5226",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_5226_seg_a01614c56389d146",
+        "case_5226_seg_4ca146bc8a3f2e0d",
+        "case_5226_seg_6123cbc12fb2d72e",
+        "case_5226_seg_076cb87b2e8f14ca",
+        "case_5226_seg_c81f014516ff13e9",
+        "case_5226_seg_294d7565eb70bff2",
+        "case_5226_seg_f875dece3ad381dc",
+        "case_5226_seg_7555e09cf81f7a80",
+        "case_5226_seg_8314df5344c9fabe",
+        "case_5226_seg_da38ece9b8e841b7",
+        "case_5226_seg_b3aa1ca7ca0e6bf6",
+        "case_5226_seg_35f8b24373f5c46a",
+        "case_5226_seg_4d98528500c5c005",
+        "case_5226_seg_f777dc4d7b29d8f0"
+      ],
+      "law_aids": [
+        53050,
+        431,
+        364,
+        53236
+      ],
+      "short_reason": "Bị đơn thừa nhận khoản vay và lãi suất. Hợp đồng thế chấp đã công chứng, có giá trị pháp lý. Viện kiểm sát đề nghị chấp nhận yêu cầu nguyên đơn. Các tranh chấp về quyền sở hữu đất không làm vô hiệu hợp đồng tín dụng đã thực hiện."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc thực hiện nghĩa vụ trả nợ và xử lý tài sản thế chấp khi bị đơn không thanh toán đầy đủ.",
+  "confidence": "HIGH"
+}

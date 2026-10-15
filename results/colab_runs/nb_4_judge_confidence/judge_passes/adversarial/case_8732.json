@@ -1,0 +1,24 @@
+{
+  "case_id": "case_8732",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_8732_seg_733b6decd4ba8478",
+        "case_8732_seg_db78f578610dd962"
+      ],
+      "law_aids": [
+        53236,
+        53233
+      ],
+      "short_reason": "Nguyên đơn không cung cấp bằng chứng trực tiếp (giấy biên nhận, thỏa thuận) chứng minh sự tồn tại hợp đồng vay. Chỉ có thông tin nhân sự bị đơn và người liên quan. Không đủ yếu tố chứng minh để buộc trả nợ."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Thiếu bằng chứng vật chất chứng minh sự tồn tại của hợp đồng vay tài sản giữa các bên.",
+  "confidence": "HIGH"
+}

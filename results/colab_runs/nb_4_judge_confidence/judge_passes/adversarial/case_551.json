@@ -1,0 +1,33 @@
+{
+  "case_id": "case_551",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_551_seg_ae8b1dad1a181b6e",
+        "case_551_seg_143e7c7d1f291927",
+        "case_551_seg_0d5f6ae161ac2739",
+        "case_551_seg_227738726ee2869f",
+        "case_551_seg_94664c0dd79cf1fa",
+        "case_551_seg_5651a01148e6b2e3",
+        "case_551_seg_39aff58aedf08d3f",
+        "case_551_seg_15e59abc91856d31",
+        "case_551_seg_203d7a1f71442d36"
+      ],
+      "law_aids": [
+        55953,
+        50691,
+        56116,
+        52947
+      ],
+      "short_reason": "Nguyên đơn chứng minh được nguồn gốc di sản và sự quản lý đất, nhưng thiếu giấy tờ pháp lý hoàn chỉnh. Tòa án có thể buộc trả lại đất nhưng hủy quyết định hành chính chỉ một phần do vi phạm thủ tục."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Chứng minh quyền sử dụng đất hợp pháp khi thiếu giấy tờ pháp lý và sự tồn tại của các quyết định hành chính trái pháp luật.",
+  "confidence": "HIGH"
+}

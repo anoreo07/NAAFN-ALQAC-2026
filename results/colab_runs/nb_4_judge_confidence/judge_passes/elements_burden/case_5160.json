@@ -1,0 +1,25 @@
+{
+  "case_id": "case_5160",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_5160_seg_e271d1610a10786b",
+        "case_5160_seg_71a78c8ad78fabfd"
+      ],
+      "law_aids": [
+        53420,
+        53421,
+        53429
+      ],
+      "short_reason": "Nguyên đơn chứng minh được quan hệ thừa kế và di sản. Không có di chúc, áp dụng thừa kế theo pháp luật. Các bên thừa kế cùng hàng được chia đều. Yêu cầu chia đều di sản còn lại là hợp lý."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác định danh sách người thừa kế và nguyên tắc chia đều di sản theo pháp luật khi không có di chúc.",
+  "confidence": "HIGH"
+}

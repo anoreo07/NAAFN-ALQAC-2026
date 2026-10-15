@@ -1,0 +1,27 @@
+{
+  "case_id": "case_6284",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_6284_seg_744727f620057635",
+        "case_6284_seg_087c387c7e84c2fd",
+        "case_6284_seg_5bfc08204085c6b1",
+        "case_6284_seg_9dd0ef1c9f6f9b68"
+      ],
+      "law_aids": [
+        56117,
+        53272,
+        858
+      ],
+      "short_reason": "Hợp đồng công chứng số 728A có hiệu lực, các bên đã giao tiền và thực hiện nghĩa vụ. Việc bị đơn cho rằng chỉ thế chấp không có căn cứ chứng minh, chỉ làm giảm nhẹ nghĩa vụ giao đất."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Tính pháp lý của hợp đồng chuyển nhượng quyền sử dụng đất đã công chứng và việc thực hiện nghĩa vụ thanh toán tiền.",
+  "confidence": "HIGH"
+}

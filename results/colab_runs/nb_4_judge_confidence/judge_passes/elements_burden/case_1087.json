@@ -1,0 +1,23 @@
+{
+  "case_id": "case_1087",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [],
+      "law_aids": [
+        52940,
+        53354,
+        53359,
+        53375
+      ],
+      "short_reason": "Nguyên đơn không chứng minh được quyền sở hữu hợp pháp (chỉ có giấy tay) và hành vi xâm phạm cụ thể của bị đơn. Thiếu chứng cứ vật chất và lời khai, không đáp ứng burden of proof."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Thiếu chứng cứ xác nhận quyền sở hữu hợp pháp và hành vi xâm phạm tài sản.",
+  "confidence": "HIGH"
+}

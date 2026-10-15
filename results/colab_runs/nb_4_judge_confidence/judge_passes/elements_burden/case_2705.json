@@ -1,0 +1,25 @@
+{
+  "case_id": "case_2705",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_2705_seg_eb652e253dc2769a",
+        "case_2705_seg_2c3747d25b4abfbf",
+        "case_2705_seg_6c1e1ab37ac052ed",
+        "case_2705_seg_1376afb1d4ef65e6"
+      ],
+      "law_aids": [
+        52901
+      ],
+      "short_reason": "B chứng minh được việc ký giao dịch do bị lừa dối (C nói Đ làm việc ổn định nhưng sau đó nghỉ, không thực hiện cam kết). Giao dịch vô hiệu theo BLDS 2015, B có quyền yêu cầu hoàn trả toàn bộ số tiền 100.000.000 đồng."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc nguyên đơn bị lừa dối khi ký giao dịch giới thiệu việc làm và quyền yêu cầu hoàn trả toàn bộ số tiền khi giao dịch bị tuyên bố vô hiệu.",
+  "confidence": "HIGH"
+}

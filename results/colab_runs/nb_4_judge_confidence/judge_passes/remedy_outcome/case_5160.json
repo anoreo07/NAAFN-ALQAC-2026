@@ -1,0 +1,24 @@
+{
+  "case_id": "case_5160",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_5160_seg_e271d1610a10786b",
+        "case_5160_seg_71a78c8ad78fabfd"
+      ],
+      "law_aids": [
+        53420,
+        53421
+      ],
+      "short_reason": "Nguyên đơn yêu cầu chia di sản theo pháp luật. Các bên đều có quyền thừa kế hàng thứ nhất. Di sản là đất, việc chia đều cho các thừa kế cùng hàng là đúng theo BLDS 2015. Không có bằng chứng bác bỏ quyền thừa kế hay di chúc hợp lệ."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc phân chia di sản thừa kế (đất) giữa các thành viên trong gia đình theo pháp luật khi không có di chúc.",
+  "confidence": "HIGH"
+}

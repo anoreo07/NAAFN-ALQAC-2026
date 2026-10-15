@@ -1,0 +1,37 @@
+{
+  "case_id": "case_8303",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_8303_seg_affdb58fb0e0b023",
+        "case_8303_seg_1126c0980ca45d3e",
+        "case_8303_seg_5d5086198c8e9ad3",
+        "case_8303_seg_9c24768276b947cd",
+        "case_8303_seg_3970e8a8ebbd789e",
+        "case_8303_seg_3efb388cd4df6b69",
+        "case_8303_seg_94309e8da01a1f68",
+        "case_8303_seg_c4ee0101aa52e7c1",
+        "case_8303_seg_25fa317298723a14",
+        "case_8303_seg_fa228f29b247db35",
+        "case_8303_seg_b5c03d510a3cead1",
+        "case_8303_seg_ade2326b6ef46e3b",
+        "case_8303_seg_4b1cf0052b585e22"
+      ],
+      "law_aids": [
+        364,
+        53236,
+        53050,
+        53233
+      ],
+      "short_reason": "Bị đơn thừa nhận toàn bộ nợ gốc, lãi trong hạn và lãi quá hạn. Hợp đồng tín dụng và khế ước nhận nợ hợp lệ, tài sản thế chấp đã đăng ký. Nguyên đơn có đủ căn cứ yêu cầu thanh toán và xử lý tài sản bảo đảm theo Điều 466, 463 BLDS và Điều 95 Luật TCTD."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác nhận số nợ quá hạn và quyền xử lý tài sản thế chấp khi bị đơn không có ý kiến phản đối.",
+  "confidence": "HIGH"
+}

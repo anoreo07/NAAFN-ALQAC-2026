@@ -1,0 +1,26 @@
+{
+  "case_id": "case_1959",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_1959_seg_7bcb0b4d127ed240",
+        "case_1959_seg_af742c03da13bd21"
+      ],
+      "law_aids": [
+        53359,
+        52940,
+        53354,
+        52955
+      ],
+      "short_reason": "Bị đơn có lỗi đào sát ranh giới gây sạt lở (E124, E125), nhưng nguyên đơn cũng có lỗi xây không kiên cố (E120, E121). Tòa án thường chia sẻ trách nhiệm, chỉ chấp nhận một phần chi phí bồi thường."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định tỷ lệ lỗi giữa việc xây dựng hàng rào không đảm bảo kết cấu của nguyên đơn và việc đào mương sát ranh giới gây sạt lở của bị đơn.",
+  "confidence": "HIGH"
+}

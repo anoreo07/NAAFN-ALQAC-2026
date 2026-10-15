@@ -1,0 +1,26 @@
+{
+  "case_id": "case_1959",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_1959_seg_7bcb0b4d127ed240",
+        "case_1959_seg_af742c03da13bd21"
+      ],
+      "law_aids": [
+        53359,
+        52940,
+        53354,
+        52955
+      ],
+      "short_reason": "Bị đơn đào sát ranh giới gây sạt lở (có lỗi), nhưng nguyên đơn xây không đảm bảo kết cấu (cũng có lỗi). Tòa án thường chia sẻ trách nhiệm, không bồi thường toàn bộ."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định tỷ lệ lỗi giữa hành vi đào mương của bị đơn và việc thi công không đảm bảo của nguyên đơn khi hàng rào bị sập.",
+  "confidence": "HIGH"
+}

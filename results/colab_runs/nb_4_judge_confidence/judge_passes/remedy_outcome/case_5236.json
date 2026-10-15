@@ -1,0 +1,40 @@
+{
+  "case_id": "case_5236",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5236_seg_9c5da154fd24d366",
+        "case_5236_seg_1a93d72db346929b",
+        "case_5236_seg_2595e185abc05bd5",
+        "case_5236_seg_b258922011410bed",
+        "case_5236_seg_90861b75f275ec61",
+        "case_5236_seg_2ee9a0a08d89bf22",
+        "case_5236_seg_daca6b3b917bfe09",
+        "case_5236_seg_54b3d9eeb0abec76",
+        "case_5236_seg_29ae146f1ba5515d",
+        "case_5236_seg_1d8ce53f42f74ef5",
+        "case_5236_seg_f704b866c76ea2bf",
+        "case_5236_seg_3303c40143443f99",
+        "case_5236_seg_df14aa48b3be46c1",
+        "case_5236_seg_074476f379906d83",
+        "case_5236_seg_2272c01c62ad606d",
+        "case_5236_seg_620c53a7f3476976",
+        "case_5236_seg_43eb674b1bc76a55"
+      ],
+      "law_aids": [
+        53241,
+        53050,
+        53236
+      ],
+      "short_reason": "Tòa chấp nhận khoản nợ dây phường 2015 (76.8tr) do có biên nhận và chứng cứ đóng thay. Tuy nhiên, khoản nợ dây 2016 (9.6tr) bị bác vì bị đơn chứng minh đã đóng tiền trực tiếp nhưng không có giấy tờ, gây nghi ngờ về tính xác thực của khoản nợ còn lại."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính xác thực của khoản nợ còn lại khi không có giấy tờ chứng minh việc đóng tiền thay thế.",
+  "confidence": "HIGH"
+}

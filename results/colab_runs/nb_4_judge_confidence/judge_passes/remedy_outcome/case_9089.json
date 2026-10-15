@@ -1,0 +1,46 @@
+{
+  "case_id": "case_9089",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_9089_seg_2164396a3121116b",
+        "case_9089_seg_fc83189891277639",
+        "case_9089_seg_acfdfb901c058fc7",
+        "case_9089_seg_5f7c020243729e05",
+        "case_9089_seg_7a41af060946411a",
+        "case_9089_seg_4e60fc05cfed870c",
+        "case_9089_seg_8a0365ba3b193ba7",
+        "case_9089_seg_e25632e422d06f32",
+        "case_9089_seg_f1660cd33e2c310c",
+        "case_9089_seg_9611ed283d708b7a",
+        "case_9089_seg_d4a1c6d0afa6d743",
+        "case_9089_seg_ae42265b55b3e11b",
+        "case_9089_seg_c8eeb5e8bfca046a",
+        "case_9089_seg_a9c49cdd8175fa02",
+        "case_9089_seg_8c78da51edca3399",
+        "case_9089_seg_836815c0ff6b3d70",
+        "case_9089_seg_e18c3d575731d478",
+        "case_9089_seg_11ff1361d9512318",
+        "case_9089_seg_45662d1109ecab03",
+        "case_9089_seg_b17d817cc29b24f9",
+        "case_9089_seg_92afced21eb644ed",
+        "case_9089_seg_ee8ddbfad1c48ddc"
+      ],
+      "law_aids": [
+        56153,
+        56047,
+        50691,
+        56048
+      ],
+      "short_reason": "Nguyên đơn có GCNQSD đất hợp pháp, bị đơn không chứng minh được quyền sở hữu phần đất tranh chấp. Tuy nhiên, do sai sót trong đo đạc lịch sử và ranh giới, Tòa có thể chỉ giao trả một phần diện tích hoặc yêu cầu bồi thường thay vì giao trả toàn bộ 1.437,9m2."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định quyền sử dụng đất khi có sự chênh lệch diện tích giữa giấy tờ và thực tế do sai sót đo đạc lịch sử.",
+  "confidence": "HIGH"
+}

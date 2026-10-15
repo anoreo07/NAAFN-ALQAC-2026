@@ -1,0 +1,31 @@
+{
+  "case_id": "case_551",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_551_seg_ae8b1dad1a181b6e",
+        "case_551_seg_143e7c7d1f291927",
+        "case_551_seg_0d5f6ae161ac2739",
+        "case_551_seg_227738726ee2869f",
+        "case_551_seg_94664c0dd79cf1fa",
+        "case_551_seg_292ab767674c0010",
+        "case_551_seg_244fe02c188b807f"
+      ],
+      "law_aids": [
+        55953,
+        50691,
+        56116,
+        52947
+      ],
+      "short_reason": "Tòa chấp nhận yêu cầu buộc thu hoạch cây cối và trả lại đất do bị đơn không có giấy tờ pháp lý chứng minh quyền sử dụng, trái với Điều 166 Luật Đất đai. Tuy nhiên, yêu cầu hủy các quyết định hành chính bị bác một phần do vi phạm tố tụng nhưng không đủ căn cứ hủy toàn bộ. Nguyên đơn thắng phần lớn về quyền sử dụng đất thực tế."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác định quyền sử dụng đất khi không có giấy chứng nhận và tính hợp pháp của các quyết định hành chính giải quyết khiếu nại.",
+  "confidence": "HIGH"
+}

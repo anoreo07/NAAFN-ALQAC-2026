@@ -1,0 +1,28 @@
+{
+  "case_id": "case_4834",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4834_seg_408e74f5d59681d0",
+        "case_4834_seg_89479fd799363e6b",
+        "case_4834_seg_0c6eb6aae42fc3d3",
+        "case_4834_seg_72d7c60b4b061ba4",
+        "case_4834_seg_22dde7a590e40676"
+      ],
+      "law_aids": [
+        53236,
+        53050,
+        53233
+      ],
+      "short_reason": "Nguyên đơn chứng minh được quan hệ vay mượn và số tiền chưa trả. Tuy nhiên, bị đơn thừa nhận đã trả một phần (292 triệu) và có bằng chứng về việc đã thanh toán toàn bộ với một số hộ khác. Tòa án sẽ buộc trả số còn thiếu nhưng có thể điều chỉnh lãi suất hoặc thời điểm tính lãi do tranh chấp về thời hạn và số liệu cụ thể."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định chính xác số tiền gốc và lãi còn lại chưa được thanh toán giữa các bên trong quan hệ vay vốn hộ nông dân.",
+  "confidence": "MEDIUM"
+}

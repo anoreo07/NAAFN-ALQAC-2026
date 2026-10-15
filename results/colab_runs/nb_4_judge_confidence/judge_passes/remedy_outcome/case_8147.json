@@ -1,0 +1,28 @@
+{
+  "case_id": "case_8147",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_8147_seg_87de247a78095b62",
+        "case_8147_seg_f6ad6d2ec39eb3c0",
+        "case_8147_seg_41cf8bef304e5578",
+        "case_8147_seg_75649799c3b5a57e",
+        "case_8147_seg_b3d9aae38a0e5c09",
+        "case_8147_seg_77a4665bf2087296"
+      ],
+      "law_aids": [
+        53420,
+        53419
+      ],
+      "short_reason": "Nguyên đơn thắng về việc thừa kế theo pháp luật nhưng bị giảm diện tích do bị đơn chứng minh được phần đất do ông H tạo lập và đã mua lại, không thuộc di sản cha mẹ để lại."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định phạm vi di sản thực tế: Phân biệt giữa đất do cha mẹ để lại và đất do con (ông H) tạo lập/mua lại để chia thừa kế đúng.",
+  "confidence": "HIGH"
+}

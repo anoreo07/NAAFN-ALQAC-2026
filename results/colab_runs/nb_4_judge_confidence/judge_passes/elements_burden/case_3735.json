@@ -1,0 +1,27 @@
+{
+  "case_id": "case_3735",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_3735_seg_2ff566d7570b048f",
+        "case_3735_seg_1061d29a1d64b97b",
+        "case_3735_seg_8f36870d0b7b5e00",
+        "case_3735_seg_dbf76f08c7c35f1b",
+        "case_3735_seg_8f3bf6da8ca17e7e"
+      ],
+      "law_aids": [
+        53276,
+        53280
+      ],
+      "short_reason": "Nguyên đơn chứng minh được việc góp tiền nhưng thiếu văn bản thỏa thuận chia lời lỗ cụ thể. Bị đơn thừa nhận nhận tiền nhưng yêu cầu chia đều tài sản chung và lỗ lã có căn cứ. Tòa có thể chấp nhận một phần yêu cầu hoàn trả tiền góp nhưng không chấp nhận toàn bộ do thiếu chứng cứ về tỷ lệ chia và sự đồng thuận."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác định tỷ lệ chia sẻ tài sản chung và lỗ lã trong hợp đồng hợp tác không có văn bản thỏa thuận cụ thể.",
+  "confidence": "MEDIUM"
+}

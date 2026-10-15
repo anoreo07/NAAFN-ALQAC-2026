@@ -1,0 +1,27 @@
+{
+  "case_id": "case_2705",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_2705_seg_eb652e253dc2769a",
+        "case_2705_seg_2c3747d25b4abfbf",
+        "case_2705_seg_6c1e1ab37ac052ed",
+        "case_2705_seg_57b8de224027171d",
+        "case_2705_seg_d0abdb68b6a6bb7e",
+        "case_2705_seg_1376afb1d4ef65e6"
+      ],
+      "law_aids": [
+        52901
+      ],
+      "short_reason": "Nguyên đơn chứng minh được việc giao dịch vô hiệu do mục đích không đạt được (thử việc không thành, nhân viên nghỉ việc). Bị đơn không chứng minh được việc hoàn trả đã thực hiện đầy đủ. Áp dụng Điều 131 BLDS 2015 về khôi phục tình trạng ban đầu."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc hoàn trả số tiền 100.000.000 đồng khi giao dịch vô hiệu do mục đích tuyển dụng không đạt được.",
+  "confidence": "HIGH"
+}

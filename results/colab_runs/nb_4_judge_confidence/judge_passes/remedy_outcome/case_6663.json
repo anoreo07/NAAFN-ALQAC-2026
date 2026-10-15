@@ -1,0 +1,24 @@
+{
+  "case_id": "case_6663",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_6663_seg_071148d78d72351e",
+        "case_6663_seg_2b8d789b874a1e69"
+      ],
+      "law_aids": [
+        364,
+        53050
+      ],
+      "short_reason": "Ngân hàng có quyền xử lý tài sản bảo đảm và thu hồi nợ theo Điều 95 Luật Các tổ chức tín dụng 2010 khi bị đơn không trả nợ. Hợp đồng tín dụng và thế chấp xe đầu kéo, sơ mi rơ mooc hợp lệ."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Quyền xử lý tài sản bảo đảm và thu hồi nợ gốc, lãi của tổ chức tín dụng khi bị đơn vi phạm hợp đồng.",
+  "confidence": "HIGH"
+}

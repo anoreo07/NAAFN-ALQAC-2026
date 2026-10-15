@@ -1,0 +1,27 @@
+{
+  "case_id": "case_3735",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_3735_seg_2ff566d7570b048f",
+        "case_3735_seg_1061d29a1d64b97b",
+        "case_3735_seg_8f36870d0b7b5e00",
+        "case_3735_seg_dbf76f08c7c35f1b",
+        "case_3735_seg_8fde85d064a4cb44"
+      ],
+      "law_aids": [
+        53276,
+        53280
+      ],
+      "short_reason": "Nguyên đơn chứng minh được việc góp 30 triệu nhưng bị đơn thừa nhận trong biên bản hòa giải. Tuy nhiên, bị đơn chứng minh được việc mua sắm tài sản phục vụ kinh doanh và yêu cầu chia sẻ lỗ, nên chỉ được chấp nhận một phần yêu cầu hoàn trả."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định nguồn gốc 30 triệu đồng hùn vốn và nghĩa vụ chia sẻ tài sản/lỗ trong hợp đồng hợp tác không thành văn bản.",
+  "confidence": "HIGH"
+}

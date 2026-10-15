@@ -1,0 +1,29 @@
+{
+  "case_id": "case_5057",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5057_seg_e6f041a0babec999",
+        "case_5057_seg_420afd3dbb26e332",
+        "case_5057_seg_a9732fafe1d7a359",
+        "case_5057_seg_7da5615ad37dec42",
+        "case_5057_seg_9d99605978514986",
+        "case_5057_seg_4c9b5704432ac185",
+        "case_5057_seg_f37b35ce9fa70f44"
+      ],
+      "law_aids": [
+        53269,
+        860
+      ],
+      "short_reason": "Nguyên đơn chứng minh được hợp đồng ở nhờ 5 năm đã hết hạn. Bị đơn thừa nhận ký cam kết nhưng không chứng minh được quyền sở hữu đất hoặc thỏa thuận gia hạn hợp pháp. Nguyên đơn có quyền đòi lại đất và yêu cầu tháo dỡ nhà theo BLDS 2015."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc hết hạn hợp đồng ở nhờ 5 năm và quyền đòi lại đất cùng yêu cầu tháo dỡ nhà của bên cho mượn.",
+  "confidence": "HIGH"
+}

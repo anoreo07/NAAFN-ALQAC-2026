@@ -1,0 +1,25 @@
+{
+  "case_id": "case_149",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_149_seg_8d929dddccf5d96d",
+        "case_149_seg_0b5f1a6c4276b6d1",
+        "case_149_seg_f5c379bf1ecad231"
+      ],
+      "law_aids": [
+        53197,
+        53188
+      ],
+      "short_reason": "Hợp đồng bị tuyên vô hiệu do giả tạo, thiếu căn cứ chuyển nhượng đất (thiếu thông tin thửa đất, không đăng ký). Nguyên đơn được hoàn trả tiền gốc 120 triệu nhưng không được bồi thường phạt vi phạm vì không có lỗi vi phạm hợp đồng thực tế."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính hợp pháp của hợp đồng chuyển nhượng quyền sử dụng đất và trách nhiệm hoàn trả khi hợp đồng bị tuyên vô hiệu do giả tạo.",
+  "confidence": "HIGH"
+}

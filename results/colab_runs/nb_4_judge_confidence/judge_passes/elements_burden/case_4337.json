@@ -1,0 +1,54 @@
+{
+  "case_id": "case_4337",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_4337_seg_ab3f200c69318abb",
+        "case_4337_seg_da1aa8779dce926f",
+        "case_4337_seg_7920fcbbf630b125",
+        "case_4337_seg_c30efa14c732fbed",
+        "case_4337_seg_b618df293ec97c28",
+        "case_4337_seg_c5f54df2f9114d9b",
+        "case_4337_seg_dadfd995451b6d73",
+        "case_4337_seg_3de52ae91cf57d99",
+        "case_4337_seg_505c3c71a765928d",
+        "case_4337_seg_76508d110a31300d",
+        "case_4337_seg_9f0513ae85a50a3d",
+        "case_4337_seg_8bdea586e7de3fb6",
+        "case_4337_seg_35d78b5366a2cd16",
+        "case_4337_seg_9490042eb5420ad7",
+        "case_4337_seg_8099c98edd2cf309",
+        "case_4337_seg_931c049e50cf1e16",
+        "case_4337_seg_7abd7d417386b044",
+        "case_4337_seg_e4bedb5a9cf3b271",
+        "case_4337_seg_610e8dbd8ce734cc",
+        "case_4337_seg_60e93a5077d56500",
+        "case_4337_seg_55e1b17f2e120689",
+        "case_4337_seg_f02ae247050e366a",
+        "case_4337_seg_476fa2a003c2c819",
+        "case_4337_seg_ed27d48b248cdf84",
+        "case_4337_seg_fc8e59e9093761d3",
+        "case_4337_seg_be6d202c891c9f33",
+        "case_4337_seg_54fdc73df43c4cf2",
+        "case_4337_seg_9817870e6f7aebcd",
+        "case_4337_seg_efe8f041d1be4dce",
+        "case_4337_seg_500e4ce8ceba3a3c"
+      ],
+      "law_aids": [
+        56056,
+        56049,
+        52934,
+        53349
+      ],
+      "short_reason": "Bị đơn không chứng minh được nguồn gốc hợp pháp của GCNQSDĐ do hồ sơ sai sót (thừa thửa, thiếu chữ ký). Nguyên đơn chứng minh được việc xây dựng nhà từ lâu đời và sự đồng thuận của gia đình. Yêu cầu hủy GCNQSDĐ và trả lại nhà đất được chấp nhận."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Tính hợp pháp của Giấy chứng nhận quyền sử dụng đất đứng tên bị đơn khi hồ sơ cấp GCNQSDĐ có sai sót và bị đơn không chứng minh được quyền sở hữu thực tế.",
+  "confidence": "HIGH"
+}

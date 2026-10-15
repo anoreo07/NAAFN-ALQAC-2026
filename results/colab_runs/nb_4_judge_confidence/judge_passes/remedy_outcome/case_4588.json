@@ -1,0 +1,27 @@
+{
+  "case_id": "case_4588",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4588_seg_fb3e44edde2a95a8",
+        "case_4588_seg_8221768949e1db68",
+        "case_4588_seg_ec07106ae4569776",
+        "case_4588_seg_8b1e7b630157dd2e"
+      ],
+      "law_aids": [
+        53429,
+        53421,
+        53420
+      ],
+      "short_reason": "Tòa chấp nhận chia di sản cho 10 người con theo giá trị (Điều 651, 659 BLDS) nhưng bác yêu cầu chia đều tuyệt đối do di chúc hợp pháp quy định ông H hưởng phần lớn hơn (Điều 650, 659 BLDS)."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Mâu thuẫn giữa di chúc hợp pháp quy định ông H hưởng phần lớn và yêu cầu của nguyên đơn chia đều cho 10 người con.",
+  "confidence": "HIGH"
+}

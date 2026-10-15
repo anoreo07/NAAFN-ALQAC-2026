@@ -1,0 +1,32 @@
+{
+  "case_id": "case_9125",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_9125_seg_751e4b26ee944fa8",
+        "case_9125_seg_4d47e6d60934d4fa",
+        "case_9125_seg_eaca43b481885ac6",
+        "case_9125_seg_b8cd610e60ae7974",
+        "case_9125_seg_91987eed143b60fa",
+        "case_9125_seg_eef258cd8db8760b",
+        "case_9125_seg_9df0fa688e1697df",
+        "case_9125_seg_e159ede648d02fcb"
+      ],
+      "law_aids": [
+        56049,
+        56056,
+        55953,
+        56047
+      ],
+      "short_reason": "Nguyên đơn thắng phần yêu cầu công nhận quyền sử dụng đất và buộc trả lại đất do có sự thỏa thuận và sử dụng ổn định. Tuy nhiên, bị đơn thắng phần yêu cầu hủy các văn bản hành chính do đã rút yêu cầu và có cơ sở pháp lý cho việc cấp giấy chứng nhận ban đầu."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tranh chấp nguồn gốc đất: Nguyên đơn chứng minh được quyền sử dụng thực tế và sự thỏa thuận hoàn trả, nhưng bị đơn có giấy chứng nhận hợp lệ và nguyên đơn đã rút yêu cầu hủy văn bản hành chính.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,24 @@
+{
+  "case_id": "case_4644",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4644_seg_5cd4d6395b66f310",
+        "case_4644_seg_a251945eec598a48"
+      ],
+      "law_aids": [
+        53360,
+        53354
+      ],
+      "short_reason": "Tòa chấp nhận trách nhiệm bồi thường thiệt hại sức khỏe (Điều 584, 590 BLDS) do có giám định thương tích 10%. Tuy nhiên, khoản tiền mất thu nhập của vợ chăm sóc và chi phí điện thoại có thể bị giảm hoặc bác nếu không chứng minh được tính hợp lý và mức độ thiệt hại thực tế."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Mức độ bồi thường cho các khoản chi phí điều trị, thu nhập mất và tài sản có được chứng minh đầy đủ hay không.",
+  "confidence": "MEDIUM"
+}

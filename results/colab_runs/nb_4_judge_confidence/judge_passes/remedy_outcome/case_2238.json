@@ -1,0 +1,26 @@
+{
+  "case_id": "case_2238",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_2238_seg_24cbb7cee32cb8bf",
+        "case_2238_seg_884dbff8d605a9af"
+      ],
+      "law_aids": [
+        858,
+        856,
+        857,
+        56118
+      ],
+      "short_reason": "Hợp đồng chuyển nhượng thứ cấp hợp lệ, nguyên đơn có quyền nhận đất. Tuy nhiên, hợp đồng chuyển nhượng gốc bị tuyên vô hiệu do người bán định đoạt tài sản chung mà không có sự đồng ý của vợ và người thừa kế, khiến bị đơn không thể giao đất. Nguyên đơn được hoàn trả tiền."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính hợp lệ của hợp đồng chuyển nhượng gốc và khả năng thực hiện nghĩa vụ giao đất của bị đơn khi hợp đồng gốc bị tuyên vô hiệu.",
+  "confidence": "HIGH"
+}

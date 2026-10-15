@@ -1,0 +1,28 @@
+{
+  "case_id": "case_8219",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_8219_seg_6462648b8bf124e4",
+        "case_8219_seg_1b2f798c272bccc3",
+        "case_8219_seg_e64359a1bcf035fa",
+        "case_8219_seg_0d5dfcce72ee4cb3",
+        "case_8219_seg_71eaf8cf0b0a4e6e",
+        "case_8219_seg_308c4061ac4a1794",
+        "case_8219_seg_313af58854e6ff3c"
+      ],
+      "law_aids": [
+        53236
+      ],
+      "short_reason": "Bị đơn thừa nhận vay 81 triệu và 5 phân vàng, đồng ý chi phí sửa nhà 60 triệu qua giấy vay tiền. Việc rút yêu cầu lãi và 16 triệu không ảnh hưởng đến khoản gốc đã được chứng minh."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc bị đơn thừa nhận khoản vay gốc và chi phí sửa chữa trong giấy vay tiền, mặc dù có tranh cãi về thời điểm và lãi suất.",
+  "confidence": "HIGH"
+}

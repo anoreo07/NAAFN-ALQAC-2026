@@ -1,0 +1,35 @@
+{
+  "case_id": "case_2035",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_2035_seg_dc53a89fec11de6b",
+        "case_2035_seg_8e67354d232b9c11",
+        "case_2035_seg_df328f6d3b6351f3",
+        "case_2035_seg_1b2b76b927f5d548",
+        "case_2035_seg_18e674a6653e8ee1",
+        "case_2035_seg_91499ef5ca791362",
+        "case_2035_seg_08e028c5770c168c",
+        "case_2035_seg_1bfbcb87fedfdc76",
+        "case_2035_seg_4eac277a36b61a20",
+        "case_2035_seg_3b6da8c5f2cf6218",
+        "case_2035_seg_9cea384383789b53"
+      ],
+      "law_aids": [
+        52934,
+        52930,
+        52939,
+        52955
+      ],
+      "short_reason": "Tòa công nhận quyền sở hữu bức tường và đất dưới tường (phần hợp lệ) dựa trên chứng cứ lịch sử và thẩm định. Tuy nhiên, yêu cầu tháo dỡ ban công bị bác vì đất chưa có chủ quyền (thuộc nhà nước), và bít cửa sổ không cần thiết do đã bị bít. Nguyên đơn thắng một phần."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác lập quyền sở hữu bức tường và đất dưới tường so với yêu cầu tháo dỡ công trình trên đất chưa có chủ quyền.",
+  "confidence": "HIGH"
+}

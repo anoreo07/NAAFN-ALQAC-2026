@@ -1,0 +1,45 @@
+{
+  "case_id": "case_3079",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_3079_seg_5255b460db339ffa",
+        "case_3079_seg_61d97831220b77ef",
+        "case_3079_seg_9c41a5a9ec56c5b5",
+        "case_3079_seg_f18eb5de599d1780",
+        "case_3079_seg_9ef28dce99ae4ec5",
+        "case_3079_seg_5d99330f355c08a1",
+        "case_3079_seg_a355178e3c70ca73",
+        "case_3079_seg_75fb144d20a581cc",
+        "case_3079_seg_64d022d7f76f03de",
+        "case_3079_seg_2bddcf66f95a0d76",
+        "case_3079_seg_87cdc1b200972d00",
+        "case_3079_seg_066f7b89de872627",
+        "case_3079_seg_0596cca751f2a0b3",
+        "case_3079_seg_5bbee27a5bf46312",
+        "case_3079_seg_4c650a49c512e1b5",
+        "case_3079_seg_37191ecd8972c56d",
+        "case_3079_seg_b214f7ed6c7f448c",
+        "case_3079_seg_21fc6f865934b818",
+        "case_3079_seg_3121fc8994e4fdba",
+        "case_3079_seg_fcdbef2c199f33e5",
+        "case_3079_seg_d9fb0097a4f66650"
+      ],
+      "law_aids": [
+        53360,
+        53354,
+        53131,
+        53361
+      ],
+      "short_reason": "T xâm phạm sức khỏe V gây thương tích 17%. V chứng minh được chi phí điều trị, mất thu nhập và tổn thất tinh thần. Tuy nhiên, thiệt hại tài sản (cây chết) thiếu chứng cứ xác định mức độ thiệt hại thực tế và nguyên nhân trực tiếp, nên chỉ được chấp nhận một phần các khoản bồi thường vật chất."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác định mức độ thiệt hại vật chất thực tế (đặc biệt là cây chết) và tính hợp lý của các khoản chi phí so với tổng yêu cầu.",
+  "confidence": "HIGH"
+}

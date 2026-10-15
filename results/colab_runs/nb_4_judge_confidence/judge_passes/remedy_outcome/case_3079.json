@@ -1,0 +1,46 @@
+{
+  "case_id": "case_3079",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.65,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_3079_seg_5255b460db339ffa",
+        "case_3079_seg_61d97831220b77ef",
+        "case_3079_seg_9c41a5a9ec56c5b5",
+        "case_3079_seg_f18eb5de599d1780",
+        "case_3079_seg_5d99330f355c08a1",
+        "case_3079_seg_a355178e3c70ca73",
+        "case_3079_seg_75fb144d20a581cc",
+        "case_3079_seg_80caceee694e2a86",
+        "case_3079_seg_64d022d7f76f03de",
+        "case_3079_seg_2bddcf66f95a0d76",
+        "case_3079_seg_87cdc1b200972d00",
+        "case_3079_seg_066f7b89de872627",
+        "case_3079_seg_0596cca751f2a0b3",
+        "case_3079_seg_5bbee27a5bf46312",
+        "case_3079_seg_37191ecd8972c56d",
+        "case_3079_seg_21fc6f865934b818",
+        "case_3079_seg_3121fc8994e4fdba",
+        "case_3079_seg_9f332b92fc868e0a",
+        "case_3079_seg_b214f7ed6c7f448c",
+        "case_3079_seg_df0a33a5b187d6f8",
+        "case_3079_seg_b34e9b39d8200a49",
+        "case_3079_seg_1b93b1212268445c"
+      ],
+      "law_aids": [
+        53360,
+        53354,
+        53131,
+        53361
+      ],
+      "short_reason": "T thừa nhận hành vi gây thương tích 17% và không bồi thường. Tòa chấp nhận chi phí điều trị, mất thu nhập, chăm sóc và một phần tổn thất tinh thần. Tuy nhiên, khoản bồi thường cho cây chết (30 triệu) có thể bị giảm do nguyên nhân gián tiếp hoặc chứng cứ chưa đủ chặt chẽ so với thiệt hại trực tiếp."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác định mức độ thiệt hại vật chất thực tế (đặc biệt là cây chết) và tính hợp lý của khoản bồi thường tổn thất tinh thần so với yêu cầu.",
+  "confidence": "HIGH"
+}

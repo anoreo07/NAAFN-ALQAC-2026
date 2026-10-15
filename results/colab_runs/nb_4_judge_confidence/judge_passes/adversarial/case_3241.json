@@ -1,0 +1,26 @@
+{
+  "case_id": "case_3241",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_3241_seg_81b72b72576ab585",
+        "case_3241_seg_7886f05b497a16ab",
+        "case_3241_seg_af5cfb142b0813df"
+      ],
+      "law_aids": [
+        364,
+        53236,
+        53050
+      ],
+      "short_reason": "Nguyên đơn là tổ chức tín dụng có đủ thẩm quyền khởi kiện. Bị đơn là chủ nợ và người bảo đảm. Theo BLDS và Luật TCTD, bên vay có nghĩa vụ trả nợ đầy đủ. Không có bằng chứng nào chứng minh hợp đồng vô hiệu hoặc bị đơn đã hoàn thành nghĩa vụ."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc thực hiện nghĩa vụ trả nợ gốc và lãi theo hợp đồng tín dụng giữa ngân hàng và các cá nhân vay vốn.",
+  "confidence": "HIGH"
+}

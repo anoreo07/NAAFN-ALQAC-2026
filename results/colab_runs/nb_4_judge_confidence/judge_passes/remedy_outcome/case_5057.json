@@ -1,0 +1,29 @@
+{
+  "case_id": "case_5057",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5057_seg_e6f041a0babec999",
+        "case_5057_seg_420afd3dbb26e332",
+        "case_5057_seg_a9732fafe1d7a359",
+        "case_5057_seg_7da5615ad37dec42",
+        "case_5057_seg_9d99605978514986",
+        "case_5057_seg_4c9b5704432ac185",
+        "case_5057_seg_f37b35ce9fa70f44"
+      ],
+      "law_aids": [
+        53269,
+        860
+      ],
+      "short_reason": "Nguyên đơn chứng minh được cam kết mượn đất 5 năm và thỏa thuận dỡ nhà. Tuy nhiên, bị đơn đã sử dụng đất quá hạn (11 năm) và có thể đã chuyển đổi mục đích hoặc tạo tài sản gắn liền (nhà ở), khiến việc đòi lại toàn bộ đất gặp khó khăn về bồi thường và di dời, dẫn đến chỉ được một phần yêu cầu."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc đòi lại tài sản khi bên mượn đã sử dụng quá thời hạn thỏa thuận và đã xây dựng nhà ở trên đất.",
+  "confidence": "MEDIUM"
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "case_4861",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4861_seg_365b14dfafb1328b"
+      ],
+      "law_aids": [
+        53429,
+        50691
+      ],
+      "short_reason": "Nguyên đơn có quyền thừa kế nhưng di sản (đất) đã được cấp GCNQSDT cho bị đơn trước đó. Tòa có thể chia di sản theo tỷ lệ pháp lý nhưng khó hủy GCNQSDT đã có hiệu lực nếu không chứng minh sai sót cấp giấy. Nguyên đơn thắng phần chia di sản, bị đơn giữ phần đất đã cấp."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc chia di sản thừa kế giữa các bên khi Giấy chứng nhận quyền sử dụng đất đã được cấp cho một số người trước đó.",
+  "confidence": "MEDIUM"
+}

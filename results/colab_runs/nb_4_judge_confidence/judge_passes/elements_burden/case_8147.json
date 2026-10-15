@@ -1,0 +1,39 @@
+{
+  "case_id": "case_8147",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_8147_seg_87de247a78095b62",
+        "case_8147_seg_f6ad6d2ec39eb3c0",
+        "case_8147_seg_41cf8bef304e5578",
+        "case_8147_seg_bb8d9274ab82a553",
+        "case_8147_seg_2aa8684cec215458",
+        "case_8147_seg_78a508db92d7db99",
+        "case_8147_seg_6070ae40e327536a",
+        "case_8147_seg_75649799c3b5a57e",
+        "case_8147_seg_b3d9aae38a0e5c09",
+        "case_8147_seg_b841fd8295c755ff",
+        "case_8147_seg_77a4665bf2087296",
+        "case_8147_seg_78d6a920b5247483",
+        "case_8147_seg_b40ee53cc8c57a58",
+        "case_8147_seg_6a9a82b44b0f53f4",
+        "case_8147_seg_2a9eb9fc1ba374fd"
+      ],
+      "law_aids": [
+        53420,
+        53419,
+        53429,
+        53430
+      ],
+      "short_reason": "Nguyên đơn chứng minh được cha mẹ chết không di chúc, đủ điều kiện thừa kế theo pháp luật (BLDS 650). Tuy nhiên, bị đơn chứng minh được diện tích đất 788,7m2 là tài sản riêng của ông H tạo lập, không thuộc di sản. Tòa sẽ chia 2.184m2 còn lại cho 4 người con, nhưng bị đơn được trừ phần đất riêng, làm giảm diện tích chia thực tế so với yêu cầu ban …"
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định phạm vi di sản thừa kế: Phân biệt giữa tài sản chung hộ gia đình và tài sản riêng do ông H tạo lập để loại trừ khỏi diện tích chia thừa kế.",
+  "confidence": "HIGH"
+}

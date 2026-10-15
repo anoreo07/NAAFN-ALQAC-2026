@@ -1,0 +1,54 @@
+{
+  "case_id": "case_6616",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_6616_seg_c3f2eddf3f61ddd6",
+        "case_6616_seg_88e1e725d3f70726",
+        "case_6616_seg_0f6981c3e9b1cde4",
+        "case_6616_seg_5d827dc15bca2a2f",
+        "case_6616_seg_0ccb051a97cc7f31",
+        "case_6616_seg_1a1b8d5a267e4ba2",
+        "case_6616_seg_d5d77409d9de8c19",
+        "case_6616_seg_c0cd3b708d27e63c",
+        "case_6616_seg_d9ab331b3b205004",
+        "case_6616_seg_5daa4563aa744cf3",
+        "case_6616_seg_4b742233002732e0",
+        "case_6616_seg_4356ec9bd696a8e7",
+        "case_6616_seg_8bdb70e78c2744a1",
+        "case_6616_seg_9b44292b0cad8da4",
+        "case_6616_seg_5ad1065f302e4e48",
+        "case_6616_seg_3358ba7708c4b7da",
+        "case_6616_seg_668c741cc17ca634",
+        "case_6616_seg_230a31b0be38ac7e",
+        "case_6616_seg_bead5ec6842d5895",
+        "case_6616_seg_4cea3f65c2e2ffbe",
+        "case_6616_seg_b3e48724d83317b0",
+        "case_6616_seg_58e2bae3a921099f",
+        "case_6616_seg_96a54103ee46e68e",
+        "case_6616_seg_5b04b6aac080ac4c",
+        "case_6616_seg_ee8c17a97e5c79bc",
+        "case_6616_seg_3239a6126a1a6de2",
+        "case_6616_seg_57e2c27041c00217",
+        "case_6616_seg_eded21d38ca4a732",
+        "case_6616_seg_5ac51cc2780d4ce3",
+        "case_6616_seg_84f54d94c123e81f"
+      ],
+      "law_aids": [
+        53420,
+        53429,
+        53430,
+        53427
+      ],
+      "short_reason": "Cụ Hồng chết không để lại di chúc hợp lệ. Di sản gồm đất và tiền bồi thường là tài sản chung vợ chồng, chia cho hàng thừa kế thứ nhất theo BLDS 2015. Một số bên đồng ý chia, chỉ có tranh chấp về nhà thờ (tài sản riêng của dòng họ) không thuộc di sản cần chia."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác định di sản thừa kế hợp pháp khi không có di chúc và phân biệt tài sản chung với tài sản riêng của dòng họ (nhà thờ).",
+  "confidence": "HIGH"
+}

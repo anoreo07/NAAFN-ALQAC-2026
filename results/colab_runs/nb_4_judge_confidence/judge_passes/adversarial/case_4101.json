@@ -1,0 +1,34 @@
+{
+  "case_id": "case_4101",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4101_seg_f2407ea150d5e0e7",
+        "case_4101_seg_951c7b6dd935bcba",
+        "case_4101_seg_352ce98b2aebc701",
+        "case_4101_seg_449df7cd0644b797",
+        "case_4101_seg_cefa9030646efb3c",
+        "case_4101_seg_ef28efc8826bde5f",
+        "case_4101_seg_671491491e981841",
+        "case_4101_seg_cb0903036bdd700f",
+        "case_4101_seg_a2c7ed77b4bf0b85",
+        "case_4101_seg_903c80cecbc277f9",
+        "case_4101_seg_df2ea1c406dd290a",
+        "case_4101_seg_43787c585b551ec1"
+      ],
+      "law_aids": [
+        53373,
+        53355
+      ],
+      "short_reason": "Nguyên đơn chứng minh được chó nhà bị đơn đuổi cắn gây tai nạn, buộc bị đơn bồi thường. Tuy nhiên, nguyên đơn tự có lỗi khi chuyển vị trí ngồi cho con gây mất kiểm soát xe, nên chỉ được bồi thường một phần thiệt hại."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Mức độ lỗi của nguyên đơn khi chuyển vị trí ngồi cho con gây mất kiểm soát xe dẫn đến giảm mức bồi thường.",
+  "confidence": "HIGH"
+}

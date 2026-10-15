@@ -1,0 +1,41 @@
+{
+  "case_id": "case_5236",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5236_seg_9c5da154fd24d366",
+        "case_5236_seg_1a93d72db346929b",
+        "case_5236_seg_2595e185abc05bd5",
+        "case_5236_seg_b258922011410bed",
+        "case_5236_seg_90861b75f275ec61",
+        "case_5236_seg_2ee9a0a08d89bf22",
+        "case_5236_seg_daca6b3b917bfe09",
+        "case_5236_seg_54b3d9eeb0abec76",
+        "case_5236_seg_29ae146f1ba5515d",
+        "case_5236_seg_1d8ce53f42f74ef5",
+        "case_5236_seg_f704b866c76ea2bf",
+        "case_5236_seg_3303c40143443f99",
+        "case_5236_seg_df14aa48b3be46c1",
+        "case_5236_seg_074476f379906d83",
+        "case_5236_seg_2272c01c62ad606d",
+        "case_5236_seg_620c53a7f3476976",
+        "case_5236_seg_43eb674b1bc76a55"
+      ],
+      "law_aids": [
+        53241,
+        53050,
+        53236,
+        52887
+      ],
+      "short_reason": "Nguyên đơn chứng minh được quan hệ hụi và số tiền đóng thay. Bị đơn thừa nhận đã nhận tiền nhưng phủ nhận còn nợ, dẫn đến việc chỉ một phần yêu cầu được chấp nhận dựa trên chứng cứ đã có."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Chứng minh số tiền còn nợ thực tế sau khi bị đơn đã đóng thay và việc thiếu giấy tờ xác nhận khoản đóng tiền của bị đơn.",
+  "confidence": "MEDIUM"
+}

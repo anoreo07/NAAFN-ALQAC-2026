@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALQAC 2026 - Scoring Tool</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f7fa; color: #1a1a2e; padding: 40px 20px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .container { max-width: 900px; width: 100%; }
+  h1 { font-size: 24px; text-align: center; margin-bottom: 8px; color: #16213e; }
+  .subtitle { text-align: center; color: #666; margin-bottom: 32px; font-size: 14px; }
+
+  .upload-section {
+    background: white; border-radius: 12px; padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 24px;
+  }
+  .upload-section h2 { font-size: 16px; margin-bottom: 16px; color: #16213e; }
+
+  .upload-box {
+    border: 2px dashed #ccc; border-radius: 8px; padding: 20px;
+    text-align: center; cursor: pointer; transition: all 0.2s;
+    max-width: 400px; margin: 0 auto 16px auto;
+  }
+  .upload-box:hover { border-color: #4a6cf7; background: #f8f9ff; }
+  .upload-box.has-file { border-color: #22c55e; background: #f0fdf4; }
+  .upload-box .label { font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+  .upload-box .filename { font-size: 12px; color: #666; margin-top: 8px; word-break: break-all; }
+  .upload-box input { display: none; }
+  .upload-icon { font-size: 28px; margin-bottom: 8px; display: block; }
+  .loaded-badge {
+    display: inline-block; padding: 4px 12px; border-radius: 20px;
+    font-size: 12px; font-weight: 600; margin-top: 8px;
+  }
+  .loaded-badge.ok { background: #dcfce7; color: #166534; }
+
+  .btn { 
+    display: block; width: 100%; max-width: 400px; margin: 16px auto 0;
+    padding: 14px; font-size: 16px; font-weight: 600;
+    border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s;
+  }
+  .btn-primary { background: #4a6cf7; color: white; }
+  .btn-primary:hover { background: #3b5de7; }
+  .btn-primary:disabled { background: #a0b4f7; cursor: not-allowed; }
+  .btn-secondary { background: #1a1a2e; color: white; max-width: 250px; }
+  .btn-secondary:hover { background: #2a2a4e; }
+
+  .score-section {
+    background: white; border-radius: 12px; padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 24px;
+    display: none;
+  }
+  .score-section.visible { display: block; }
+
+  .final-score {
+    text-align: center; padding: 32px; margin-bottom: 24px;
+    background: linear-gradient(135deg, #16213e, #0f3460);
+    border-radius: 12px; color: white;
+  }
+  .final-score .score-value { font-size: 56px; font-weight: 700; }
+  .final-score .score-label { font-size: 14px; opacity: 0.8; margin-top: 4px; }
+
+  .components { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+  @media (max-width: 600px) { .components { grid-template-columns: 1fr; } }
+  .component-card {
+    background: #f8f9ff; border-radius: 10px; padding: 20px; text-align: center;
+    border: 1px solid #e8eaff;
+  }
+  .component-card .value { font-size: 28px; font-weight: 700; color: #16213e; }
+  .component-card .name { font-size: 12px; color: #666; margin-top: 4px; }
+  .component-card .weight { font-size: 11px; color: #999; margin-top: 2px; }
+  .component-card .detail { font-size: 12px; color: #888; margin-top: 8px; }
+
+  .detail-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .detail-table th {
+    background: #f0f2f5; padding: 10px 12px; text-align: left;
+    font-weight: 600; font-size: 12px; color: #445;
+    border-bottom: 2px solid #ddd;
+  }
+  .detail-table td { padding: 8px 12px; border-bottom: 1px solid #eee; }
+  .detail-table tr:hover { background: #f8f9ff; }
+  .correct { color: #22c55e; font-weight: 600; }
+  .wrong { color: #ef4444; font-weight: 600; }
+
+  .accordion { margin-top: 16px; }
+  .accordion-header {
+    background: #f0f2f5; padding: 12px 16px; border-radius: 8px;
+    cursor: pointer; font-weight: 600; font-size: 14px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .accordion-header:hover { background: #e5e7eb; }
+  .accordion-body { display: none; padding: 12px 0; }
+  .accordion-body.open { display: block; }
+
+  .status-badge {
+    display: inline-block; padding: 2px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 600;
+  }
+  .status-badge.ok { background: #dcfce7; color: #166534; }
+  .status-badge.err { background: #fee2e2; color: #991b1b; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>ALQAC 2026 — Scoring Tool</h1>
+  <p class="subtitle">Tự động nạp <code>ground_truth.json</code> sẵn — chỉ cần upload <code>submission.json</code></p>
+
+  <div class="upload-section">
+    <h2>Upload Submission</h2>
+    <div class="upload-box" id="subBox" onclick="document.getElementById('subInput').click()">
+      <input type="file" accept=".json" id="subInput">
+      <span class="upload-icon">📄</span>
+      <div class="label">Chọn file submission.json</div>
+      <div class="filename" id="subFilename">Chưa chọn file</div>
+    </div>
+    <div style="text-align:center;margin-top:8px">
+      <span class="loaded-badge ok">✓ ground_truth.json (50 cases) đã được nạp sẵn</span>
+    </div>
+    <button class="btn btn-primary" id="calcBtn" disabled onclick="calculate()">Tính điểm</button>
+  </div>
+
+  <div class="score-section" id="resultSection">
+    <div class="final-score">
+      <div class="score-value" id="finalScore">—</div>
+      <div class="score-label">Final Score = 0.875×Accuracy + 0.125×F1<sup>law</sup> (trọng số gốc 0.70/0.10 được chuẩn hóa lại, bỏ qua case recall)</div>
+    </div>
+
+    <div class="components" style="grid-template-columns: 1fr 1fr;">
+      <div class="component-card">
+        <div class="value" id="outcomeAcc">—</div>
+        <div class="name">Outcome Accuracy</div>
+        <div class="weight">Trọng số chuẩn hóa 0.875</div>
+        <div class="detail" id="outcomeDetail"></div>
+      </div>
+      <div class="component-card">
+        <div class="value" id="lawF1">—</div>
+        <div class="name">Law Evidence F1 (micro)</div>
+        <div class="weight">Trọng số chuẩn hóa 0.125</div>
+        <div class="detail" id="lawDetail"></div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:#999;text-align:center;margin-top:8px">
+      Penalized Case Recall (trọng số 0.20) bỏ qua do ground truth không có case_evidence.
+      Trọng số 0.70 và 0.10 được chuẩn hóa lại thành 0.875 và 0.125.
+    </p>
+
+    <div class="accordion">
+      <div class="accordion-header" onclick="toggleDetail()">
+        <span>Chi tiết từng case</span>
+        <span id="toggleIcon">▼</span>
+      </div>
+      <div class="accordion-body" id="detailBody">
+        <table class="detail-table">
+          <thead><tr>
+            <th>case_id</th>
+            <th>Ground Truth</th>
+            <th>Prediction</th>
+            <th>Outcome</th>
+            <th>Law Prec</th>
+            <th>Law Rec</th>
+            <th>Law F1</th>
+          </tr></thead>
+          <tbody id="detailRows"></tbody>
+        </table>
+      </div>
+    </div>
+    <button class="btn btn-secondary" id="exportBtn" onclick="exportMD()" style="display:none">Xuất chi tiết (.md)</button>
+  </div>
+</div>
+
+<script>
+var GROUND_TRUTH = [{"case_id":"case_1087","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53127},{"law_id":"91/2015/QH13","aid":53238},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50829}]},{"case_id":"case_127","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50931},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"92/2015/QH13","aid":50945},{"law_id":"91/2015/QH13","aid":52925},{"law_id":"91/2015/QH13","aid":53458}]},{"case_id":"case_149","prediction":"PARTIAL_B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"45/2013/QH13","aid":56117},{"law_id":"52/2014/QH13","aid":53917},{"law_id":"326/2016/UBTVQH14","aid":13611},{"law_id":"326/2016/UBTVQH14","aid":13625}]},{"case_id":"case_1959","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50666}]},{"case_id":"case_2035","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50900},{"law_id":"91/2015/QH13","aid":53036},{"law_id":"91/2015/QH13","aid":53041},{"law_id":"45/2013/QH13","aid":55976},{"law_id":"45/2013/QH13","aid":56116},{"law_id":"45/2013/QH13","aid":56120}]},{"case_id":"case_2238","prediction":"PARTIAL_B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50699},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50666},{"law_id":"91/2015/QH13","aid":52772}]},{"case_id":"case_2705","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50812},{"law_id":"91/2015/QH13","aid":52893},{"law_id":"326/2016/UBTVQH14","aid":13647}]},{"case_id":"case_2978","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50868},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893}]},{"case_id":"case_3079","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50757},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"326/2016/UBTVQH14","aid":13611},{"law_id":"326/2016/UBTVQH14","aid":13625}]},{"case_id":"case_3241","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50695},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50931},{"law_id":"91/2015/QH13","aid":52810},{"law_id":"91/2015/QH13","aid":53065},{"law_id":"91/2015/QH13","aid":53068},{"law_id":"91/2015/QH13","aid":53069},{"law_id":"91/2015/QH13","aid":53071},{"law_id":"91/2015/QH13","aid":53072},{"law_id":"91/2015/QH13","aid":53087},{"law_id":"91/2015/QH13","aid":53089},{"law_id":"91/2015/QH13","aid":53090},{"law_id":"91/2015/QH13","aid":53233},{"law_id":"91/2015/QH13","aid":53236},{"law_id":"91/2015/QH13","aid":53238}]},{"case_id":"case_3263","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50893},{"law_id":"91/2015/QH13","aid":53127},{"law_id":"52/2014/QH13","aid":53909},{"law_id":"326/2016/UBTVQH14","aid":13626}]},{"case_id":"case_3735","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50756},{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50894},{"law_id":"91/2015/QH13","aid":53238},{"law_id":"91/2015/QH13","aid":53274},{"law_id":"91/2015/QH13","aid":53279},{"law_id":"91/2015/QH13","aid":53280},{"law_id":"326/2016/UBTVQH14","aid":13625}]},{"case_id":"case_3995","prediction":"A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":52962},{"law_id":"45/2013/QH13","aid":56085}]},{"case_id":"case_4101","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53354},{"law_id":"91/2015/QH13","aid":53328},{"law_id":"91/2015/QH13","aid":53360},{"law_id":"91/2015/QH13","aid":53373},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50823}]},{"case_id":"case_4337","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50973}]},{"case_id":"case_4557","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50705},{"law_id":"92/2015/QH13","aid":50756},{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50909},{"law_id":"91/2015/QH13","aid":53155},{"law_id":"91/2015/QH13","aid":53189},{"law_id":"50/2014/QH13","aid":57100},{"law_id":"50/2014/QH13","aid":57101},{"law_id":"50/2014/QH13","aid":57102},{"law_id":"50/2014/QH13","aid":57108},{"law_id":"37/2015/NĐ-CP","aid":4056},{"law_id":"37/2015/NĐ-CP","aid":4057}]},{"case_id":"case_4579","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50828},{"law_id":"92/2015/QH13","aid":50834}]},{"case_id":"case_4588","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50670},{"law_id":"92/2015/QH13","aid":50668},{"law_id":"92/2015/QH13","aid":50666},{"law_id":"92/2015/QH13","aid":50850},{"law_id":"91/2015/QH13","aid":52772},{"law_id":"91/2015/QH13","aid":52776},{"law_id":"91/2015/QH13","aid":52777},{"law_id":"91/2015/QH13","aid":52779},{"law_id":"91/2015/QH13","aid":52800}]},{"case_id":"case_4616","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50695}]},{"case_id":"case_4644","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53127},{"law_id":"91/2015/QH13","aid":53354},{"law_id":"91/2015/QH13","aid":53355},{"law_id":"91/2015/QH13","aid":53356},{"law_id":"91/2015/QH13","aid":53357},{"law_id":"91/2015/QH13","aid":53360},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50931},{"law_id":"92/2015/QH13","aid":50936},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"326/2016/UBTVQH14","aid":13601}]},{"case_id":"case_4704","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50702},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50893}]},{"case_id":"case_4834","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53127},{"law_id":"91/2015/QH13","aid":53354},{"law_id":"91/2015/QH13","aid":53355},{"law_id":"91/2015/QH13","aid":53356},{"law_id":"91/2015/QH13","aid":53357},{"law_id":"91/2015/QH13","aid":53360},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50931},{"law_id":"92/2015/QH13","aid":50936},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"326/2016/UBTVQH14","aid":13601}]},{"case_id":"case_4861","prediction":"PARTIAL_B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50702},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"91/2015/QH13","aid":53419},{"law_id":"91/2015/QH13","aid":53420},{"law_id":"91/2015/QH13","aid":53421},{"law_id":"91/2015/QH13","aid":53428},{"law_id":"91/2015/QH13","aid":53430},{"law_id":"52/2014/QH13","aid":53905},{"law_id":"52/2014/QH13","aid":53931},{"law_id":"45/2013/QH13","aid":55955},{"law_id":"45/2013/QH13","aid":56050},{"law_id":"326/2016/UBTVQH14","aid":13611},{"law_id":"326/2016/UBTVQH14","aid":13626}]},{"case_id":"case_4920","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50909},{"law_id":"92/2015/QH13","aid":50931},{"law_id":"92/2015/QH13","aid":50894}]},{"case_id":"case_5045","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50699},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"91/2015/QH13","aid":53015},{"law_id":"91/2015/QH13","aid":53024},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50823},{"law_id":"92/2015/QH13","aid":50829},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50831},{"law_id":"92/2015/QH13","aid":50812}]},{"case_id":"case_5057","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50751},{"law_id":"92/2015/QH13","aid":50756},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50936},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"91/2015/QH13","aid":53044},{"law_id":"91/2015/QH13","aid":53121},{"law_id":"91/2015/QH13","aid":53123},{"law_id":"45/2013/QH13","aid":56116},{"law_id":"326/2016/UBTVQH14","aid":13647}]},{"case_id":"case_5160","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50931},{"law_id":"91/2015/QH13","aid":52991},{"law_id":"91/2015/QH13","aid":52993},{"law_id":"91/2015/QH13","aid":53270},{"law_id":"91/2015/QH13","aid":53273},{"law_id":"91/2015/QH13","aid":53382},{"law_id":"91/2015/QH13","aid":53385},{"law_id":"91/2015/QH13","aid":53393},{"law_id":"91/2015/QH13","aid":53419},{"law_id":"91/2015/QH13","aid":53420},{"law_id":"91/2015/QH13","aid":53421},{"law_id":"91/2015/QH13","aid":53428},{"law_id":"45/2013/QH13","aid":56045}]},{"case_id":"case_5226","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"91/2015/QH13","aid":52886}]},{"case_id":"case_5236","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53058},{"law_id":"91/2015/QH13","aid":53127},{"law_id":"52/2014/QH13","aid":53899},{"law_id":"52/2014/QH13","aid":53909},{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50936},{"law_id":"92/2015/QH13","aid":50938}]},{"case_id":"case_551","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":52886},{"law_id":"45/2013/QH13","aid":56116},{"law_id":"02/2011/QH13","aid":13288},{"law_id":"92/2015/QH13","aid":50812}]},{"case_id":"case_5658","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50695},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50936},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"91/2015/QH13","aid":53062},{"law_id":"91/2015/QH13","aid":53112},{"law_id":"91/2015/QH13","aid":53233},{"law_id":"91/2015/QH13","aid":53236},{"law_id":"91/2015/QH13","aid":53238},{"law_id":"47/2010/QH12","aid":360},{"law_id":"47/2010/QH12","aid":364}]},{"case_id":"case_5860","prediction":"PARTIAL_B_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":52936},{"law_id":"91/2015/QH13","aid":53140},{"law_id":"91/2015/QH13","aid":53127},{"law_id":"91/2015/QH13","aid":53238},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"326/2016/UBTVQH14","aid":13625}]},{"case_id":"case_614","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50670},{"law_id":"92/2015/QH13","aid":50666},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50849},{"law_id":"91/2015/QH13","aid":52771},{"law_id":"326/2016/UBTVQH14","aid":13606}]},{"case_id":"case_6284","prediction":"A_WIN","law_evidence":[{"law_id":"45/2013/QH13","aid":56116},{"law_id":"91/2015/QH13","aid":52887},{"law_id":"92/2015/QH13","aid":50691},{"law_id":"326/2016/UBTVQH14","aid":13626}]},{"case_id":"case_6384","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"91/2015/QH13","aid":52781},{"law_id":"45/2013/QH13","aid":56050},{"law_id":"326/2016/UBTVQH14","aid":13611}]},{"case_id":"case_6425","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50666}]},{"case_id":"case_6616","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"91/2015/QH13","aid":52779},{"law_id":"52/2014/QH13","aid":53905},{"law_id":"60/2014/QH13","aid":3468},{"law_id":"45/2013/QH13","aid":56050},{"law_id":"326/2016/UBTVQH14","aid":13611}]},{"case_id":"case_6663","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50684},{"law_id":"92/2015/QH13","aid":50695},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"91/2015/QH13","aid":53062},{"law_id":"91/2015/QH13","aid":53069},{"law_id":"91/2015/QH13","aid":53087},{"law_id":"91/2015/QH13","aid":53090},{"law_id":"91/2015/QH13","aid":53093},{"law_id":"91/2015/QH13","aid":53233},{"law_id":"91/2015/QH13","aid":53236},{"law_id":"91/2015/QH13","aid":53238},{"law_id":"91/2015/QH13","aid":53458},{"law_id":"47/2010/QH12","aid":360},{"law_id":"47/2010/QH12","aid":364},{"law_id":"326/2016/UBTVQH14","aid":13625}]},{"case_id":"case_669","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50812},{"law_id":"91/2015/QH13","aid":53458},{"law_id":"326/2016/UBTVQH14","aid":13647}]},{"case_id":"case_7467","prediction":"PARTIAL_B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"91/2015/QH13","aid":53393},{"law_id":"91/2015/QH13","aid":53400},{"law_id":"91/2015/QH13","aid":53413},{"law_id":"91/2015/QH13","aid":53420},{"law_id":"91/2015/QH13","aid":53421},{"law_id":"91/2015/QH13","aid":53422},{"law_id":"326/2016/UBTVQH14","aid":13611},{"law_id":"326/2016/UBTVQH14","aid":13625},{"law_id":"326/2016/UBTVQH14","aid":13626}]},{"case_id":"case_8147","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"92/2015/QH13","aid":50945},{"law_id":"91/2015/QH13","aid":52872},{"law_id":"91/2015/QH13","aid":52982},{"law_id":"91/2015/QH13","aid":53419},{"law_id":"91/2015/QH13","aid":53420},{"law_id":"91/2015/QH13","aid":53421},{"law_id":"91/2015/QH13","aid":53430},{"law_id":"45/2013/QH13","aid":56117},{"law_id":"45/2013/QH13","aid":56129}]},{"case_id":"case_8219","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"91/2015/QH13","aid":53127},{"law_id":"326/2016/UBTVQH14","aid":13611}]},{"case_id":"case_8303","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"47/2010/QH12","aid":360},{"law_id":"47/2010/QH12","aid":364},{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50760},{"law_id":"92/2015/QH13","aid":50811},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50936},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"326/2016/UBTVQH14","aid":13625}]},{"case_id":"case_8732","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53127},{"law_id":"91/2015/QH13","aid":53238}]},{"case_id":"case_8758","prediction":"B_WIN","law_evidence":[{"law_id":"45/2013/QH13","aid":56045},{"law_id":"45/2013/QH13","aid":56116},{"law_id":"45/2013/QH13","aid":56120},{"law_id":"45/2013/QH13","aid":56121},{"law_id":"45/2013/QH13","aid":56152},{"law_id":"45/2013/QH13","aid":56153},{"law_id":"91/2015/QH13","aid":53024},{"law_id":"91/2015/QH13","aid":53027},{"law_id":"91/2015/QH13","aid":53035},{"law_id":"91/2015/QH13","aid":53036},{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50820},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50823},{"law_id":"92/2015/QH13","aid":50828},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50831},{"law_id":"92/2015/QH13","aid":50882},{"law_id":"92/2015/QH13","aid":50938}]},{"case_id":"case_8812","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"91/2015/QH13","aid":53127},{"law_id":"91/2015/QH13","aid":53354},{"law_id":"91/2015/QH13","aid":53355},{"law_id":"91/2015/QH13","aid":53356},{"law_id":"91/2015/QH13","aid":53357},{"law_id":"91/2015/QH13","aid":53360},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50909}]},{"case_id":"case_9052","prediction":"PARTIAL_A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50702},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"45/2013/QH13","aid":56116},{"law_id":"45/2013/QH13","aid":56117}]},{"case_id":"case_9089","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50669},{"law_id":"92/2015/QH13","aid":50691},{"law_id":"92/2015/QH13","aid":50700},{"law_id":"92/2015/QH13","aid":50704},{"law_id":"92/2015/QH13","aid":50756},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50893},{"law_id":"92/2015/QH13","aid":50938},{"law_id":"45/2013/QH13","aid":56116},{"law_id":"45/2013/QH13","aid":56120},{"law_id":"45/2013/QH13","aid":56153}]},{"case_id":"case_9125","prediction":"A_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50691},{"law_id":"91/2015/QH13","aid":52885},{"law_id":"45/2013/QH13","aid":55976},{"law_id":"326/2016/UBTVQH14","aid":13611}]},{"case_id":"case_950","prediction":"B_WIN","law_evidence":[{"law_id":"92/2015/QH13","aid":50809},{"law_id":"92/2015/QH13","aid":50812},{"law_id":"92/2015/QH13","aid":50822},{"law_id":"92/2015/QH13","aid":50830},{"law_id":"92/2015/QH13","aid":50892},{"law_id":"92/2015/QH13","aid":50893}]}];
+
+let subData = null;
+
+document.getElementById('subInput').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  document.getElementById('subFilename').textContent = file.name;
+  document.getElementById('subBox').classList.add('has-file');
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    try { subData = JSON.parse(ev.target.result); } catch(ex) { alert('Lỗi parse submission.json'); }
+    document.getElementById('calcBtn').disabled = !subData;
+  };
+  reader.readAsText(file);
+});
+
+function toggleDetail() {
+  const body = document.getElementById('detailBody');
+  const icon = document.getElementById('toggleIcon');
+  body.classList.toggle('open');
+  icon.textContent = body.classList.contains('open') ? '▲' : '▼';
+}
+
+let caseResults = [];
+
+function calculate() {
+  const resultSection = document.getElementById('resultSection');
+  resultSection.classList.add('visible');
+  resultSection.scrollIntoView({ behavior: 'smooth' });
+
+  const gtData = GROUND_TRUTH;
+  const gtMap = {};
+  for (const g of gtData) gtMap[g.case_id] = g;
+
+  const subMap = {};
+  for (const s of subData) subMap[s.case_id] = s;
+
+  const allCaseIds = Object.keys(gtMap);
+  const N = allCaseIds.length;
+
+  let correctOutcome = 0;
+  let tp = 0, fp = 0, fn = 0;
+  caseResults = [];
+
+  const detailRows = document.getElementById('detailRows');
+  detailRows.innerHTML = '';
+
+  for (const cid of allCaseIds) {
+    const gt = gtMap[cid];
+    const sub = subMap[cid];
+    let outcomeOk = false, outcomeText = '—', outcomeClass = '';
+    let lawPrec = '—', lawRecall = '—', lawF1 = '—', p = 0, r = 0;
+    let subPred = '—', subLawItems = [];
+
+    if (sub) {
+      subPred = sub.prediction;
+      subLawItems = sub.law_evidence || [];
+      outcomeOk = sub.prediction === gt.prediction;
+      if (outcomeOk) { correctOutcome++; outcomeText = '✓'; outcomeClass = 'correct'; }
+      else { outcomeText = '✗'; outcomeClass = 'wrong'; }
+
+      const gtLawSet = new Set((gt.law_evidence || []).map(x => x.law_id + '|' + x.aid));
+      const subLawSet = new Set((sub.law_evidence || []).map(x => x.law_id + '|' + x.aid));
+      const inter = new Set([...gtLawSet].filter(x => subLawSet.has(x)));
+      tp += inter.size;
+      fp += subLawSet.size - inter.size;
+      fn += gtLawSet.size - inter.size;
+
+      p = subLawSet.size > 0 ? inter.size / subLawSet.size : 0;
+      r = gtLawSet.size > 0 ? inter.size / gtLawSet.size : 0;
+      if (subLawSet.size > 0) lawPrec = (p * 100).toFixed(1) + '%';
+      if (gtLawSet.size > 0) lawRecall = (r * 100).toFixed(1) + '%';
+      if (p + r > 0) lawF1 = (2 * p * r / (p + r) * 100).toFixed(1) + '%';
+    }
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="font-weight:500">${cid}</td>
+      <td><span class="status-badge ${gt.prediction.includes('A') ? 'ok' : 'err'}">${gt.prediction}</span></td>
+      <td>${sub ? `<span class="status-badge ${sub.prediction.includes('A') ? 'ok' : 'err'}">${sub.prediction}</span>` : '<span style="color:#ef4444">missing</span>'}</td>
+      <td class="${outcomeClass}">${outcomeText}</td>
+      <td>${lawPrec}</td>
+      <td>${lawRecall}</td>
+      <td>${lawF1}</td>
+    `;
+    detailRows.appendChild(tr);
+
+    caseResults.push({
+      case_id: cid,
+      gt_prediction: gt.prediction,
+      sub_prediction: subPred,
+      outcome_correct: outcomeOk,
+      law_precision: p,
+      law_recall: r,
+      law_f1: p + r > 0 ? 2 * p * r / (p + r) : 0,
+      gt_law: gt.law_evidence || [],
+      sub_law: subLawItems
+    });
+  }
+
+  const outcomeAcc = correctOutcome / N;
+  const lawPrecision = tp + fp > 0 ? tp / (tp + fp) : 0;
+  const lawRecall = tp + fn > 0 ? tp / (tp + fn) : 0;
+  const lawF1Score = lawPrecision + lawRecall > 0 ? 2 * lawPrecision * lawRecall / (lawPrecision + lawRecall) : 0;
+  const finalScore = 0.875 * outcomeAcc + 0.125 * lawF1Score;
+
+  document.getElementById('finalScore').textContent = (finalScore * 100).toFixed(2) + '%';
+  document.getElementById('outcomeAcc').textContent = (outcomeAcc * 100).toFixed(2) + '%';
+  document.getElementById('outcomeDetail').textContent = correctOutcome + '/' + N + ' đúng';
+  document.getElementById('lawF1').textContent = (lawF1Score * 100).toFixed(2) + '%';
+  document.getElementById('lawDetail').textContent = 'P=' + (lawPrecision*100).toFixed(1) + '% R=' + (lawRecall*100).toFixed(1) + '%';
+  document.getElementById('exportBtn').style.display = 'block';
+}
+
+function exportMD() {
+  const N = caseResults.length;
+  const correct = caseResults.filter(r => r.outcome_correct).length;
+  let lines = [];
+
+  lines.push('# ALQAC 2026 — Evaluation Report');
+  lines.push('');
+  lines.push('## Overall Scores');
+  lines.push('');
+  lines.push('| Component | Score | Weight |');
+  lines.push('|-----------|-------|--------|');
+  lines.push(`| Outcome Accuracy | ${(correct / N * 100).toFixed(2)}% (${correct}/${N}) | 0.875 |`);
+  const lawF1Avg = caseResults.reduce((s, r) => s + r.law_f1, 0) / N;
+  lines.push(`| Law Evidence F1 (micro) | ${(lawF1Avg * 100).toFixed(2)}% | 0.125 |`);
+  const finalScore = 0.875 * (correct / N) + 0.125 * lawF1Avg;
+  lines.push(`| **Final Score** | **${(finalScore * 100).toFixed(2)}%** | **1.000** |`);
+  lines.push('');
+  lines.push('## Per-Case Details');
+  lines.push('');
+  lines.push('| Case ID | Ground Truth | Prediction | Outcome | Law P | Law R | Law F1 |');
+  lines.push('|---------|-------------|------------|---------|-------|-------|--------|');
+
+  for (const r of caseResults) {
+    const outcome = r.outcome_correct ? '✓' : '✗';
+    const lawP = r.sub_law.length > 0 ? (r.law_precision * 100).toFixed(1) + '%' : '—';
+    const lawR = r.gt_law.length > 0 ? (r.law_recall * 100).toFixed(1) + '%' : '—';
+    const lawF = r.law_f1 > 0 ? (r.law_f1 * 100).toFixed(1) + '%' : '—';
+    lines.push(`| ${r.case_id} | ${r.gt_prediction} | ${r.sub_prediction} | ${outcome} | ${lawP} | ${lawR} | ${lawF} |`);
+  }
+
+  lines.push('');
+  lines.push('## Detailed Law Evidence per Case');
+  lines.push('');
+
+  for (const r of caseResults) {
+    lines.push(`### ${r.case_id}`);
+    lines.push('');
+    lines.push(`- Ground Truth: \`${r.gt_prediction}\``);
+    lines.push(`- Prediction: \`${r.sub_prediction}\``);
+    lines.push(`- Outcome Correct: ${r.outcome_correct ? '✓' : '✗'}`);
+    lines.push(`- Law Precision: ${(r.law_precision * 100).toFixed(1)}%`);
+    lines.push(`- Law Recall: ${(r.law_recall * 100).toFixed(1)}%`);
+    lines.push(`- Law F1: ${(r.law_f1 * 100).toFixed(1)}%`);
+    lines.push('');
+
+    const gtSet = new Map(r.gt_law.map(x => [x.law_id + '|' + x.aid, x]));
+    const subSet = new Map(r.sub_law.map(x => [x.law_id + '|' + x.aid, x]));
+    const allKeys = new Set([...gtSet.keys(), ...subSet.keys()]);
+
+    if (allKeys.size > 0) {
+      lines.push('| Law ID | Aid | Ground Truth | Prediction |');
+      lines.push('|--------|-----|:-----------:|:----------:|');
+      for (const key of [...allKeys].sort()) {
+        const [law_id, aid] = key.split('|');
+        const inGT = gtSet.has(key) ? '✓' : '';
+        const inSub = subSet.has(key) ? '✓' : '';
+        lines.push(`| ${law_id} | ${aid} | ${inGT} | ${inSub} |`);
+      }
+    }
+    lines.push('');
+  }
+
+  const blob = new Blob([lines.join('\n')], { type: 'text/markdown' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'evaluation_report.md';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+</body>
+</html>

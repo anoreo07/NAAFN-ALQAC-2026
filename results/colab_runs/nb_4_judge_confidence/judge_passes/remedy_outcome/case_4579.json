@@ -1,0 +1,38 @@
+{
+  "case_id": "case_4579",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4579_seg_3cb72192d303ee14",
+        "case_4579_seg_0807eafca891989a",
+        "case_4579_seg_a1039208d6ca99a8",
+        "case_4579_seg_48d51460387baa57",
+        "case_4579_seg_d602f74621ce85a5",
+        "case_4579_seg_50912a4c71805428",
+        "case_4579_seg_5c3fbcef4b969f6d",
+        "case_4579_seg_7df0b6eb12727238",
+        "case_4579_seg_f257a908eafda638",
+        "case_4579_seg_3cdec329b5863f99",
+        "case_4579_seg_f347f3c385efd79b",
+        "case_4579_seg_2e4e9bea2fd71663",
+        "case_4579_seg_878c82f8b6db7806",
+        "case_4579_seg_7c9b7460f6215f76"
+      ],
+      "law_aids": [
+        50691,
+        52934,
+        52955,
+        52781
+      ],
+      "short_reason": "Tòa chấp nhận yêu cầu dựa trên bản đồ địa chính 1994 thể hiện đường đi và GCN cấp cho hộ ông T năm 2003 bao gồm diện tích tranh chấp, bác bỏ lập luận 'cho đi nhờ' của bị đơn. Tuy nhiên, diện tích có thể bị điều chỉnh nếu không khớp hoàn toàn với ranh giới thực tế hoặc thỏa thuận đổi đường trước đó."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính pháp lý của diện tích 102m2 tranh chấp: Là đường đi công cộng được thể hiện trên bản đồ địa chính và GCN, hay chỉ là lối đi nhờ tư nhân?",
+  "confidence": "HIGH"
+}

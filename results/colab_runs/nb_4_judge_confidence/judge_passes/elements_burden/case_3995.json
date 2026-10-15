@@ -1,0 +1,38 @@
+{
+  "case_id": "case_3995",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_3995_seg_94f3c65a801d5caa",
+        "case_3995_seg_9f28996eddf54b1d",
+        "case_3995_seg_fa46f8176d15345c",
+        "case_3995_seg_d098cfb25ffd6237",
+        "case_3995_seg_667e4a3653d15b13",
+        "case_3995_seg_9a288b0a90a81659",
+        "case_3995_seg_68bb67cb55115684",
+        "case_3995_seg_b2ea3e30815c089c",
+        "case_3995_seg_e5304d7baac1539a",
+        "case_3995_seg_161c36a1d2351893",
+        "case_3995_seg_a760cc0cedd1618b",
+        "case_3995_seg_e02a4eed246ed266",
+        "case_3995_seg_25d8396166dbad6c",
+        "case_3995_seg_a4c3b342538bbeae"
+      ],
+      "law_aids": [
+        52954,
+        56052,
+        55955,
+        56152
+      ],
+      "short_reason": "Bị đơn không có mặt, không chứng minh được quyền sử dụng đất thực tế. Nguyên đơn có giấy tờ và biên bản đo đạc xác nhận ranh giới. Theo BLDS 184, người tranh chấp phải chứng minh người chiếm hữu không có quyền."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Bị đơn vắng mặt và không chứng minh được quyền sử dụng đất thực tế để bác bỏ yêu cầu của nguyên đơn.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "case_6663",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_6663_seg_071148d78d72351e"
+      ],
+      "law_aids": [
+        364,
+        53050
+      ],
+      "short_reason": "Nguyên đơn là tổ chức tín dụng có quyền thu hồi nợ và xử lý tài sản bảo đảm theo Điều 95 Luật Các tổ chức tín dụng 2010 khi bị đơn không trả nợ. Bị đơn vắng mặt, không có bằng chứng chống lại, nguyên đơn thắng kiện."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc thực hiện quyền thu hồi nợ và xử lý tài sản bảo đảm của tổ chức tín dụng khi bị đơn không thanh toán.",
+  "confidence": "HIGH"
+}

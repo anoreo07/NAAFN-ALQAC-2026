@@ -1,0 +1,43 @@
+{
+  "case_id": "case_950",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.4,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_950_seg_47aaa9bb4abefe51",
+        "case_950_seg_6c15df9a1c7e17f9",
+        "case_950_seg_4339dce6cb357427",
+        "case_950_seg_7c7161a9b21b608d",
+        "case_950_seg_eea916c3d68b7a08",
+        "case_950_seg_559c74a4043db9d2",
+        "case_950_seg_29ecdc2f874dead5",
+        "case_950_seg_539c9cc89ac6b971",
+        "case_950_seg_6578c09889363c1f",
+        "case_950_seg_95e44644fb6278fd",
+        "case_950_seg_3bb175fb271e3ca1",
+        "case_950_seg_74d4afc35de447a9",
+        "case_950_seg_5e1e9ab8a8958f3c",
+        "case_950_seg_09b2c6388e2a1a2a",
+        "case_950_seg_c89539d7b8f775e4",
+        "case_950_seg_cf20149f1829fb5f",
+        "case_950_seg_a7aa7361bc81cac5",
+        "case_950_seg_d8d194f8ba29b8a9",
+        "case_950_seg_e7fb87a79a3640a8"
+      ],
+      "law_aids": [
+        56156,
+        53374,
+        55970,
+        52947
+      ],
+      "short_reason": "Nguyên đơn chứng minh được nguồn gốc đất nhưng bị đơn có GCNQSDN hợp lệ và chứng minh được việc mua bán, chia tách rõ ràng. Tòa có thể buộc bồi thường cây chuối (chứng cứ chặt phá) nhưng khó buộc trả lại đất do quyền sở hữu đã được pháp luật công nhận."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định quyền sử dụng đất khi bị đơn có GCNQSDN hợp lệ và nguyên đơn chỉ có giấy chuyển nhượng không công chứng, kèm yêu cầu bồi thường thiệt hại thực tế.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "case_4920",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4920_seg_cad661993c2435a7",
+        "case_4920_seg_3e97dfb82ac5ce55",
+        "case_4920_seg_10b1d3de4f3dff89",
+        "case_4920_seg_9e901c1fc51b0bb4",
+        "case_4920_seg_202d8a1a9647f55e",
+        "case_4920_seg_aa6238b9c4c73321",
+        "case_4920_seg_4c5a10a4236fed39",
+        "case_4920_seg_cf9654b902d7aa59",
+        "case_4920_seg_038b1335e7092a16",
+        "case_4920_seg_80bd8c17306e751e",
+        "case_4920_seg_3648dc3df8ba1baa",
+        "case_4920_seg_fd8c151eb3592c9d",
+        "case_4920_seg_0e8efe11a771032b"
+      ],
+      "law_aids": [
+        856,
+        53210,
+        53050,
+        859
+      ],
+      "short_reason": "Nguyên đơn thắng yêu cầu tiếp tục thực hiện hợp đồng do đã nhận GCN. Tuy nhiên, yêu cầu lãi suất 17%/năm bị giảm vì các bên đã ký lại hợp đồng năm 2017 không có điều khoản phạt và đã thỏa thuận hỗ trợ tiền mặt."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc áp dụng lãi suất phạt vi phạm hợp đồng trong trường hợp các bên đã ký lại hợp đồng mới loại bỏ điều khoản phạt và nguyên đơn từ chối thỏa thuận giao đất.",
+  "confidence": "HIGH"
+}

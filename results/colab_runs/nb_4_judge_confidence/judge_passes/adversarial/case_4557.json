@@ -1,0 +1,26 @@
+{
+  "case_id": "case_4557",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_4557_seg_e37cb7327ba5c6be",
+        "case_4557_seg_52ddca4f8806fd5c",
+        "case_4557_seg_9c17b91c08cc9565",
+        "case_4557_seg_98115fe407ae8982"
+      ],
+      "law_aids": [
+        53189,
+        53198
+      ],
+      "short_reason": "Nguyên đơn không cung cấp được chứng cứ chứng minh thiệt hại thực tế (E2, E12). Yêu cầu bồi thường 12% dựa trên giả định phạt vi phạm nhưng không có thỏa thuận cụ thể trong hợp đồng và không chứng minh được lỗi vi phạm nghiêm trọng của bị đơn dẫn đến chấm dứt hợp đồng. Các chứng cứ về khối lượng và thời gian thi công của nguyên đơn không xác thực (E9, …"
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Việc nguyên đơn không chứng minh được thiệt hại thực tế và lỗi vi phạm của bị đơn để áp dụng mức bồi thường 12% giá trị hợp đồng.",
+  "confidence": "HIGH"
+}

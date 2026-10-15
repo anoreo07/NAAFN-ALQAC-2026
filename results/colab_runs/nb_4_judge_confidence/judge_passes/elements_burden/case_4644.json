@@ -1,0 +1,24 @@
+{
+  "case_id": "case_4644",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4644_seg_5cd4d6395b66f310",
+        "case_4644_seg_a251945eec598a48"
+      ],
+      "law_aids": [
+        53360,
+        53354
+      ],
+      "short_reason": "Nguyên đơn chứng minh được hành vi xâm phạm sức khỏe và thương tích 10% (Điều 584, 590 BLDS). Tuy nhiên, thiếu bằng chứng cụ thể về chi phí điều trị thực tế, thu nhập mất và thiệt hại điện thoại, dẫn đến chỉ được bồi thường phần thiệt hại sức khỏe xác định."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Thiếu bằng chứng định lượng cụ thể cho các khoản chi phí điều trị, thu nhập mất và thiệt hại tài sản ngoài thương tích đã được giám định.",
+  "confidence": "MEDIUM"
+}

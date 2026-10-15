@@ -1,0 +1,39 @@
+{
+  "case_id": "case_8147",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_8147_seg_87de247a78095b62",
+        "case_8147_seg_f6ad6d2ec39eb3c0",
+        "case_8147_seg_41cf8bef304e5578",
+        "case_8147_seg_bb8d9274ab82a553",
+        "case_8147_seg_2aa8684cec215458",
+        "case_8147_seg_78a508db92d7db99",
+        "case_8147_seg_6070ae40e327536a",
+        "case_8147_seg_75649799c3b5a57e",
+        "case_8147_seg_b3d9aae38a0e5c09",
+        "case_8147_seg_b841fd8295c755ff",
+        "case_8147_seg_77a4665bf2087296",
+        "case_8147_seg_78d6a920b5247483",
+        "case_8147_seg_b40ee53cc8c57a58",
+        "case_8147_seg_6a9a82b44b0f53f4",
+        "case_8147_seg_2a9eb9fc1ba374fd"
+      ],
+      "law_aids": [
+        53420,
+        53419,
+        53429,
+        53430
+      ],
+      "short_reason": "Cha mẹ chết không di chúc, có 4 con chung. Nguyên đơn chứng minh được quan hệ và yêu cầu chia 4 phần hợp pháp theo BLDS 2015. Tranh chấp về diện tích đất do vợ chồng bị đơn tạo lập không ảnh hưởng đến quyền thừa kế của con."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác định di sản thừa kế khi cha mẹ chết không di chúc và tranh chấp về nguồn gốc tài sản trên đất.",
+  "confidence": "HIGH"
+}

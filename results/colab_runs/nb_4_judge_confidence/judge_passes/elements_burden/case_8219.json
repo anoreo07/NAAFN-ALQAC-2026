@@ -1,0 +1,29 @@
+{
+  "case_id": "case_8219",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_8219_seg_6462648b8bf124e4",
+        "case_8219_seg_1b2f798c272bccc3",
+        "case_8219_seg_e64359a1bcf035fa",
+        "case_8219_seg_0d5dfcce72ee4cb3",
+        "case_8219_seg_71eaf8cf0b0a4e6e",
+        "case_8219_seg_308c4061ac4a1794",
+        "case_8219_seg_313af58854e6ff3c"
+      ],
+      "law_aids": [
+        53236,
+        53239
+      ],
+      "short_reason": "Bị đơn thừa nhận vay 81tr + 60tr sửa nhà qua giấy tờ và lời khai. Việc từ chối trả một lần do khó khăn không loại trừ nghĩa vụ trả nợ. Yêu cầu lãi và tiền thuê nhà bị rút hoặc không có căn cứ."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc bị đơn thừa nhận khoản vay và chi phí sửa nhà nhưng từ chối trả một lần do hoàn cảnh khó khăn.",
+  "confidence": "HIGH"
+}

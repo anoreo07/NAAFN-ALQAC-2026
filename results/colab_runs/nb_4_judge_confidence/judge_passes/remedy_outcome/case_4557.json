@@ -1,0 +1,26 @@
+{
+  "case_id": "case_4557",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.3,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4557_seg_e37cb7327ba5c6be",
+        "case_4557_seg_52ddca4f8806fd5c",
+        "case_4557_seg_98115fe407ae8982",
+        "case_4557_seg_90f0c242720488bb"
+      ],
+      "law_aids": [
+        57108,
+        53189
+      ],
+      "short_reason": "Nguyên đơn có quyền yêu cầu bồi thường thiệt hại do vi phạm hợp đồng (Điều 419 BLDS). Tuy nhiên, nguyên đơn không cung cấp được chứng cứ chứng minh thiệt hại thực tế và cách tính 12% không có căn cứ thỏa thuận rõ ràng trong hợp đồng, dẫn đến chỉ được chấp nhận một phần (số tiền còn lại đã xác nhận)."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác định mức bồi thường thiệt hại khi không có thỏa thuận cụ thể về phạt vi phạm và nguyên đơn không chứng minh được thiệt hại thực tế.",
+  "confidence": "MEDIUM"
+}

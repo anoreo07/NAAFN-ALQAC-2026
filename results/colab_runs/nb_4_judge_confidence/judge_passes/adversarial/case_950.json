@@ -1,0 +1,25 @@
+{
+  "case_id": "case_950",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_950_seg_47aaa9bb4abefe51",
+        "case_950_seg_6c15df9a1c7e17f9",
+        "case_950_seg_5556740c8c601fee"
+      ],
+      "law_aids": [
+        56156,
+        53374
+      ],
+      "short_reason": "Bị đơn chứng minh được nguồn gốc đất qua hợp đồng chuyển nhượng 2009 và GCNQSDĐ 2015. Nguyên đơn không chứng minh được quyền sở hữu đối với phần đất bị lấn chiếm. Yêu cầu bồi thường cây chuối bị bác vì không chứng minh được cây do nguyên đơn trồng."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Nguyên đơn không chứng minh được quyền sử dụng đất đối với phần bị tranh chấp trong khi bị đơn có GCNQSDĐ hợp lệ và chứng từ chuyển nhượng rõ ràng.",
+  "confidence": "HIGH"
+}

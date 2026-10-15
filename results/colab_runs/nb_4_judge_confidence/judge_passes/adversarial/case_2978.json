@@ -1,0 +1,31 @@
+{
+  "case_id": "case_2978",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_2978_seg_ce8404953cde4d7d",
+        "case_2978_seg_42c062549e8abbfd",
+        "case_2978_seg_65f733d0123f6180",
+        "case_2978_seg_d7ab08fe3e886c52",
+        "case_2978_seg_b6bd7e6a06db8206",
+        "case_2978_seg_a1d54616a48310ba",
+        "case_2978_seg_00445840b5b79198",
+        "case_2978_seg_a42df66197fe0328",
+        "case_2978_seg_91d62f94d4040c20"
+      ],
+      "law_aids": [
+        50691,
+        53353
+      ],
+      "short_reason": "Nguyên đơn không chứng minh được quyền sở hữu tài sản. Bị đơn thừa nhận tài sản thuộc công ty, nguyên đơn không có hóa đơn, chứng từ. Yêu cầu đòi tài sản không có căn cứ."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Nguyên đơn không chứng minh được quyền sở hữu đối với các tài sản (nhà xưởng, máy móc, củi) bị kiện đòi; bị đơn xác nhận tài sản thuộc công ty và nguyên đơn không cung cấp chứng cứ hợp lệ.",
+  "confidence": "HIGH"
+}

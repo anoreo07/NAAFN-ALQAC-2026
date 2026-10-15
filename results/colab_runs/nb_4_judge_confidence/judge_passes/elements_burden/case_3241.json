@@ -1,0 +1,27 @@
+{
+  "case_id": "case_3241",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A1",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_3241_seg_81b72b72576ab585",
+        "case_3241_seg_7886f05b497a16ab",
+        "case_3241_seg_af5cfb142b0813df"
+      ],
+      "law_aids": [
+        364,
+        53236,
+        53050,
+        53171
+      ],
+      "short_reason": "Nguyên đơn chứng minh được chủ thể hợp pháp và yêu cầu dựa trên nghĩa vụ trả nợ theo BLDS và Luật TCTD. Bị đơn không có bằng chứng phản bác hoặc bảo đảm để làm vô hiệu hợp đồng."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác lập nghĩa vụ trả nợ gốc, lãi và quyền xử lý tài sản bảo đảm của tổ chức tín dụng khi bị đơn không thực hiện đúng cam kết.",
+  "confidence": "HIGH"
+}

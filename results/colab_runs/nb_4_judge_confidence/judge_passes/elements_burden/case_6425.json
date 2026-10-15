@@ -1,0 +1,32 @@
+{
+  "case_id": "case_6425",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_6425_seg_893ea4954f634eb2",
+        "case_6425_seg_9d67243fefe0f802",
+        "case_6425_seg_ce92a06b63031d4d",
+        "case_6425_seg_a11034ac6356734f",
+        "case_6425_seg_7ad2dddea7de30f7",
+        "case_6425_seg_19fba6d731265a58",
+        "case_6425_seg_c684d6b4cdd676ab",
+        "case_6425_seg_003d460c5986da17"
+      ],
+      "law_aids": [
+        53455,
+        53350,
+        53349,
+        52955
+      ],
+      "short_reason": "Nguyên đơn chứng minh được việc lấn chiếm và chồng lấn đất. Tuy nhiên, một phần đất đã được hợp thức hóa hoặc có nguồn gốc chuyển nhượng hợp pháp, khiến yêu cầu hoàn trả toàn bộ bị giảm. Tòa án có thể chấp nhận yêu cầu bồi thường cho phần lấn chiếm thực tế nhưng không hủy các giấy chứng nhận đã có hiệu lực nếu không vi phạm pháp luật."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định diện tích đất thực sự bị lấn chiếm trái phép so với diện tích đã được cấp giấy chứng nhận hợp pháp hoặc chuyển nhượng có căn cứ.",
+  "confidence": "MEDIUM"
+}

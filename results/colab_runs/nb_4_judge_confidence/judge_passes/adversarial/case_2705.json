@@ -1,0 +1,25 @@
+{
+  "case_id": "case_2705",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_2705_seg_eb652e253dc2769a",
+        "case_2705_seg_2c3747d25b4abfbf",
+        "case_2705_seg_6c1e1ab37ac052ed",
+        "case_2705_seg_1376afb1d4ef65e6"
+      ],
+      "law_aids": [
+        52901
+      ],
+      "short_reason": "B chứng minh đã hoàn trả 18 triệu, còn lại do T chết không lấy lại được. Giao dịch hợp pháp, không vô hiệu. B đã thực hiện nghĩa vụ trả tiền theo thỏa thuận."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Việc B yêu cầu hủy giao dịch và hoàn trả toàn bộ 100 triệu khi B đã nhận lại một phần và phần còn lại do người thứ ba chết không thể thực hiện nghĩa vụ.",
+  "confidence": "HIGH"
+}

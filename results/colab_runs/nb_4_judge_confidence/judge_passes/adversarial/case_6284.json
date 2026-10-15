@@ -1,0 +1,26 @@
+{
+  "case_id": "case_6284",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_6284_seg_744727f620057635",
+        "case_6284_seg_087c387c7e84c2fd",
+        "case_6284_seg_5bfc08204085c6b1"
+      ],
+      "law_aids": [
+        56117,
+        53272,
+        858
+      ],
+      "short_reason": "Hợp đồng công chứng số 728A ngày 08/12/2011 có hiệu lực. Nguyên đơn đã thanh toán tiền và có biên bản bàn giao. Các lập luận về 'cầm cố' của bị đơn mâu thuẫn với thực tế công chứng và không làm vô hiệu hợp đồng."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Tính pháp lý của hợp đồng chuyển nhượng quyền sử dụng đất đã công chứng và sự mâu thuẫn giữa lời khai của bị đơn (chỉ thế chấp) với hành vi thực tế (giao đất, nhận tiền, công chứng).",
+  "confidence": "HIGH"
+}

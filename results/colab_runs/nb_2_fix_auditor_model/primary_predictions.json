@@ -1,0 +1,2628 @@
+{
+  "case_6663": {
+    "case_id": "case_6663",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.95,
+      "PARTIAL_A_WIN": 0.04,
+      "PARTIAL_B_WIN": 0.01,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn thanh toán toàn bộ nợ gốc, lãi và xử lý tài sản bảo đảm (xe đầu kéo, sơ mi rơ mooc) để thu hồi nợ.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_6663_seg_071148d78d72351e",
+          "case_6663_seg_2b8d789b874a1e69"
+        ],
+        "law_aids": [
+          53050,
+          364
+        ],
+        "short_reason": "Bị đơn có nghĩa vụ trả tiền đầy đủ đúng hạn theo thỏa thuận (Điều 280 BLDS). Khi không trả nợ, tổ chức tín dụng có quyền xử lý tài sản bảo đảm theo hợp đồng (Điều 95 Luật TCTD). Không có bằng chứng nào cho thấy hợp đồng vô hiệu hoặc nợ đã được thanh toán."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn TPBank có quyền khởi kiện hợp pháp để đòi nợ và xử lý tài sản bảo đảm. Bị đơn H có nghĩa vụ thanh toán đầy đủ theo hợp đồng tín dụng và các thỏa thuận thế chấp. Dựa trên các quy định về nghĩa vụ trả tiền (Điều 280 BLDS) và quyền xử lý tài sản bảo đảm khi khách hàng không trả nợ (Điều 95 Luật TCTD), tòa án sẽ chấp nhận yêu cầu của nguyên đơn. Không có yếu tố nào trong dữ liệu cho thấy bị đơn thắng kiện hoặc yêu cầu bị giảm đáng kể.",
+    "pass_name": "primary_qwen"
+  },
+  "case_6616": {
+    "case_id": "case_6616",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thừa kế (đất và tiền bồi thường) theo pháp luật cho các đồng thừa kế.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_6616_seg_668c741cc17ca634",
+          "case_6616_seg_4b742233002732e0",
+          "case_6616_seg_5ad1065f302e4e48"
+        ],
+        "law_aids": [
+          53420
+        ],
+        "short_reason": "Tòa xác lập quan hệ thừa kế và di sản. Tuy nhiên, một phần đất (thửa 107) được giao cho cụ Điểu quản lý làm nơi thờ cúng theo thỏa thuận của các bên, không chia theo yêu cầu ban đầu của A."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bác bỏ việc chia thửa đất 107; đề nghị giao cho cụ Điểu quản lý làm nơi thờ cúng chung.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_6616_seg_1a1b8d5a267e4ba2",
+          "case_6616_seg_230a31b0be38ac7e",
+          "case_6616_seg_5ad1065f302e4e48"
+        ],
+        "law_aids": [
+          53415
+        ],
+        "short_reason": "Các bên thống nhất thửa 107 dùng làm nhà thờ, không chia. Tòa chấp nhận thỏa thuận này theo Điều 645 BLDS 2015 về di sản thờ cúng."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Tranh cãi về việc cụ Hồng có để lại di chúc hay không.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_6616_seg_4b742233002732e0",
+          "case_6616_seg_5ad1065f302e4e48"
+        ],
+        "law_aids": [
+          53412
+        ],
+        "short_reason": "Bà Đàm không có chứng cứ chứng minh di chúc. Theo Điều 642 BLDS 2015, coi như không có di chúc, áp dụng thừa kế theo pháp luật."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng phần lớn yêu cầu về việc xác lập quyền thừa kế và chia phần di sản tiền bồi thường cũng như thửa đất 20. Tuy nhiên, A không thắng toàn bộ vì Tòa chấp nhận thỏa thuận của các bên (bao gồm B) về việc không chia thửa đất 107 để làm nơi thờ cúng, giao cho cụ Điểu quản lý. Do đó, kết quả là A thắng một phần (PARTIAL_A_WIN).",
+    "pass_name": "primary_qwen"
+  },
+  "case_8758": {
+    "case_id": "case_8758",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại 42m² đất làm lối đi thuộc thửa 83.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_8758_seg_d9c40217a6eea9ee",
+          "case_8758_seg_83f9d7bd2af93671",
+          "case_8758_seg_14078f0514f3c2ec"
+        ],
+        "law_aids": [
+          56025,
+          56049
+        ],
+        "short_reason": "Bị đơn chứng minh được việc sử dụng ổn định từ 1995, có xác nhận của cơ quan nhà nước. Nguyên đơn không có giấy chứng nhận và không chứng minh được quyền sở hữu đối với phần đất này."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Phần đất tranh chấp là đất đã được cấp cho hộ bà T làm lối đi và sử dụng ổn định.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_8758_seg_83f9d7bd2af93671",
+          "case_8758_seg_14078f0514f3c2ec",
+          "case_8758_seg_74fde85916ac7d38"
+        ],
+        "law_aids": [
+          56025,
+          56049
+        ],
+        "short_reason": "Bị đơn có đơn xin cấp đất năm 1995 được xác nhận, sử dụng ổn định lâu dài và đã được cấp GCNQSD đất năm 2000. Nguyên đơn không có căn cứ pháp lý để đòi lại."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa án bác bỏ yêu cầu của nguyên đơn A vì bị đơn B đã chứng minh được việc sử dụng đất ổn định từ năm 1995, có xác nhận của UBND xã và đã được cấp Giấy chứng nhận quyền sử dụng đất năm 2000. Nguyên đơn A không có giấy tờ chứng minh quyền sở hữu đối với phần đất tranh chấp và không chứng minh được việc bị đơn xâm phạm quyền của mình. Do đó, yêu cầu trả lại đất của A bị bác hoàn toàn.",
+    "pass_name": "primary_qwen"
+  },
+  "case_3241": {
+    "case_id": "case_3241",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc trả nợ gốc, lãi đến 19/10/2017 và cho phép xử lý tài sản bảo đảm.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3241_seg_81b72b72576ab585",
+          "case_3241_seg_7886f05b497a16ab",
+          "case_3241_seg_af5cfb142b0813df"
+        ],
+        "law_aids": [
+          53233,
+          53171
+        ],
+        "short_reason": "Hợp đồng vay có hiệu lực (Điều 401, 463 BLDS). Nguyên đơn có quyền đòi lại tài sản và lãi đến thời điểm nhận lại (Điều 469 BLDS). Tuy nhiên, mức cụ thể có thể bị điều chỉnh nếu có tranh chấp về số tiền hoặc thủ tục."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn Ngân hàng B chứng minh được sự tồn tại của hợp đồng tín dụng và thế chấp hợp pháp. Theo Điều 469 BLDS, bên cho vay có quyền đòi lại tài sản và lãi đến thời điểm nhận lại. Tòa án sẽ chấp nhận yêu cầu buộc trả nợ và xử lý tài sản bảo đảm (PARTIAL_A_WIN), nhưng có thể điều chỉnh số tiền lãi hoặc thủ tục nếu bị đơn có bằng chứng cụ thể về vi phạm quy trình hoặc tính toán sai lệch trong hồ sơ.",
+    "pass_name": "primary_qwen"
+  },
+  "case_5226": {
+    "case_id": "case_5226",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả nợ gốc, lãi và xử lý tài sản thế chấp.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5226_seg_da38ece9b8e841b7",
+          "case_5226_seg_076cb87b2e8f14ca",
+          "case_5226_seg_c81f014516ff13e9"
+        ],
+        "law_aids": [
+          53115
+        ],
+        "short_reason": "Tòa chấp nhận nghĩa vụ trả nợ do bị đơn thừa nhận, nhưng có thể giảm lãi suất hoặc xử lý thế chấp do tranh chấp về quyền sở hữu tài sản thế chấp (chưa được chứng thực, tranh chấp gia đình)."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Hợp đồng thế chấp vô hiệu do thiếu đồng ý thành viên gia đình và không chứng thực.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5226_seg_8314df5344c9fabe",
+          "case_5226_seg_294d7565eb70bff2"
+        ],
+        "law_aids": [
+          53115
+        ],
+        "short_reason": "Bị đơn lập luận hợp đồng thế chấp trái pháp luật do thiếu đồng ý các thành viên trên 15 tuổi và không chứng thực, ảnh hưởng đến hiệu lực xử lý tài sản."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn thắng phần cốt lõi là buộc bị đơn trả nợ gốc và lãi do bị đơn thừa nhận khoản vay. Tuy nhiên, yêu cầu xử lý tài sản thế chấp có thể bị hạn chế hoặc điều chỉnh do tranh chấp về tính hợp pháp của hợp đồng thế chấp (thiếu đồng ý thành viên gia đình, vấn đề chứng thực) và quyền sở hữu tài sản của các bên liên quan khác.",
+    "pass_name": "primary_qwen"
+  },
+  "case_9125": {
+    "case_id": "case_9125",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu công nhận quyền sử dụng 437m2 đất và buộc bị đơn trả lại đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_9125_seg_751e4b26ee944fa8",
+          "case_9125_seg_eaca43b481885ac6",
+          "case_9125_seg_b73c49e0e7c2b32f"
+        ],
+        "law_aids": [
+          56025
+        ],
+        "short_reason": "Tòa xác lập quyền sử dụng đất cho nguyên đơn nhưng bị đơn được giữ lại với điều kiện hoàn trả giá trị quyền sử dụng đất tương ứng."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn khẳng định chỉ chuyển nhượng giàn, cây nho chứ không chuyển nhượng quyền sử dụng đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_9125_seg_2067cbaa19217fa8",
+          "case_9125_seg_eef258cd8db8760b"
+        ],
+        "law_aids": [
+          56138
+        ],
+        "short_reason": "Việc chuyển nhượng không có giấy tờ và kê khai nguồn gốc đất nhận khoán không đúng pháp luật, nhưng thực tế sử dụng đất ổn định được công nhận."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Yêu cầu hủy Giấy chứng nhận quyền sử dụng đất và Quyết định 1213/QĐ-UBND.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_9125_seg_751e4b26ee944fa8",
+          "case_9125_seg_eaca43b481885ac6"
+        ],
+        "law_aids": [],
+        "short_reason": "Nguyên đơn đã tự nguyện rút yêu cầu hủy các văn bản này tại phiên tòa."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng một phần: Tòa án công nhận quyền sử dụng đất 437m2 cho nguyên đơn (chấp nhận yêu cầu cốt lõi về quyền sử dụng), buộc bị đơn trả lại đất. Tuy nhiên, bị đơn được miễn trừ việc hủy bỏ hoàn toàn Giấy chứng nhận cũ mà chỉ phải hoàn trả giá trị quyền sử dụng đất tương ứng (37 triệu đồng) như thỏa thuận. Các yêu cầu hủy văn bản hành chính bị bác do nguyên đơn tự rút.",
+    "pass_name": "primary_qwen"
+  },
+  "case_2238": {
+    "case_id": "case_2238",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bị đơn giao nhà đất và tài sản gắn liền theo hợp đồng chuyển nhượng.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_2238_seg_24cbb7cee32cb8bf",
+          "case_2238_seg_524234eebcd7b3d9",
+          "case_2238_seg_07bc778e13baa0e4"
+        ],
+        "law_aids": [
+          56138,
+          858
+        ],
+        "short_reason": "Hợp đồng chuyển nhượng đã được lập và thực hiện thủ tục cấp GCNQSDĐ cho nguyên đơn, chứng minh quyền sở hữu hợp pháp."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn và người có quyền lợi liên quan cho rằng việc định đoạt tài sản trái pháp luật do không có sự đồng ý của các thành viên hộ gia đình.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_2238_seg_72d57a5cb8b3a50d",
+          "case_2238_seg_1c65a51cf5dc5d99"
+        ],
+        "law_aids": [
+          56118
+        ],
+        "short_reason": "Việc chuyển nhượng ban đầu có thể vi phạm quy định về tài sản chung, nhưng thủ tục hành chính đã được hoàn tất và GCNQSDĐ đã được cấp cho nguyên đơn."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường 80.000.000 đồng nếu không giao được nhà đất.",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_2238_seg_884dbff8d605a9af"
+        ],
+        "law_aids": [],
+        "short_reason": "Tòa án đã chấp nhận yêu cầu giao nhà đất nên điều kiện áp dụng khoản bồi thường thay thế không còn phát sinh."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng về phần yêu cầu giao nhà đất do đã có Giấy chứng nhận quyền sử dụng đất hợp pháp, xác lập quyền sở hữu. Tuy nhiên, tranh chấp về tính hợp pháp của việc định đoạt ban đầu và các vấn đề liên quan đến hộ gia đình khiến yêu cầu không được chấp nhận toàn bộ mà chỉ được chấp nhận một phần cốt lõi (giao đất). Yêu cầu bồi thường thay thế bị bác vì mục đích chính đã đạt được.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4616": {
+    "case_id": "case_4616",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc Công ty H thanh toán nợ gốc, lãi trong hạn và lãi quá hạn.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4616_seg_d46b90dd22f72e28",
+          "case_4616_seg_1ed6b899b22aa3bd"
+        ],
+        "law_aids": [
+          52887
+        ],
+        "short_reason": "Hợp đồng tín dụng có hiệu lực, bị đơn vi phạm nghĩa vụ trả nợ gốc và lãi theo thỏa thuận."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc Công ty K và ông Lam Wing C thực hiện nghĩa vụ bảo lãnh.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4616_seg_c8a17de014e9648c",
+          "case_4616_seg_68e3d40aeb39b206"
+        ],
+        "law_aids": [
+          52887
+        ],
+        "short_reason": "Hợp đồng bảo lãnh có hiệu lực, bị đơn không thực hiện nghĩa vụ thanh toán nên người bảo lãnh phải chịu trách nhiệm."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu phát mại tài sản bảo đảm (đất, chung cư) để thu hồi nợ.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4616_seg_5bf8793d0c235cd5"
+        ],
+        "law_aids": [
+          364
+        ],
+        "short_reason": "Tài sản thế chấp hợp lệ nhưng bị đơn cố tình không hợp tác, gây khó khăn cho việc xử lý thực tế."
+      },
+      {
+        "claim_id": "c4",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu thanh toán chi phí luật sư và phát sinh.",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4616_seg_34209a150ef0b8cf"
+        ],
+        "law_aids": [],
+        "short_reason": "Nguyên đơn đã tự nguyện rút yêu cầu này tại phiên tòa theo đề nghị của Viện kiểm sát."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng phần lớn yêu cầu chính: buộc bị đơn H thanh toán nợ gốc, lãi và buộc người bảo lãnh K, C thực hiện nghĩa vụ. Tuy nhiên, yêu cầu phát mại tài sản bị hạn chế do bị đơn không hợp tác, và yêu cầu chi phí luật sư bị bác vì nguyên đơn đã rút. Kết quả là A thắng phần cốt lõi nhưng không toàn bộ.",
+    "pass_name": "primary_qwen"
+  },
+  "case_5057": {
+    "case_id": "case_5057",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.05
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu tháo dỡ nhà và giao trả đất theo cam kết ở nhờ 5 năm.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5057_seg_420afd3dbb26e332",
+          "case_5057_seg_a9732fafe1d7a359",
+          "case_5057_seg_7da5615ad37dec42"
+        ],
+        "law_aids": [
+          863
+        ],
+        "short_reason": "Cam kết có hiệu lực, hết hạn 5 năm. Tuy nhiên, bị đơn đã ở ổn định lâu dài (11 năm) và nhà đã xây dựng, nên chỉ buộc tháo dỡ nhà, không thể giao trả đất nguyên trạng."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hỗ trợ chi phí di dời nhà 10.000.000đ.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_5057_seg_7da5615ad37dec42"
+        ],
+        "law_aids": [
+          863
+        ],
+        "short_reason": "Nguyên đơn tự nguyện hỗ trợ chi phí di dời, đây là thỏa thuận hợp pháp và được chấp nhận để giảm thiểu thiệt hại."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn không đồng ý trả lại đất, cho rằng đã sử dụng ổn định lâu dài.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_5057_seg_4c9b5704432ac185",
+          "case_5057_seg_f37b35ce9fa70f44"
+        ],
+        "law_aids": [
+          863
+        ],
+        "short_reason": "Việc sử dụng ổn định không làm mất đi nghĩa vụ trả lại đất khi hết hạn hợp đồng, nhưng ảnh hưởng đến việc xử lý nhà ở."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa án chấp nhận yêu cầu chính của nguyên đơn A về việc buộc bị đơn tháo dỡ nhà và trả lại đất do hết hạn hợp đồng ở nhờ (Điều 45 Luật Đất đai). Tuy nhiên, do bị đơn đã sử dụng đất ổn định lâu dài và nhà đã được xây dựng, Tòa chỉ buộc tháo dỡ nhà chứ không giao trả đất nguyên trạng như yêu cầu ban đầu. Yêu cầu hỗ trợ chi phí di dời của A được chấp nhận. Kết quả là A thắng một phần cốt lõi.",
+    "pass_name": "primary_qwen"
+  },
+  "case_551": {
+    "case_id": "case_551",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu buộc thu hoạch cây cối, trả lại thửa đất 18 và 53, hủy quyết định hành chính.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_551_seg_ae8b1dad1a181b6e",
+          "case_551_seg_138d4b27f752b7e5"
+        ],
+        "law_aids": [
+          56051
+        ],
+        "short_reason": "Nguyên đơn không có giấy tờ pháp lý chứng minh quyền sử dụng đất, không kê khai, không nộp thuế và không thực hiện thủ tục phân chia di sản."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn khẳng định đất thuộc diện quản lý của UBND xã, không phải di sản của ông C, và đã canh tác ổn định.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_551_seg_138d4b27f752b7e5",
+          "case_551_seg_aec839a962b25ec2"
+        ],
+        "law_aids": [
+          56051
+        ],
+        "short_reason": "Bị đơn chứng minh được việc sử dụng đất từ năm 1985-1986, trong khi nguyên đơn không có giấy tờ và không thực hiện nghĩa vụ tài chính."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa bác toàn bộ yêu cầu của nguyên đơn vì ông C không chứng minh được quyền sử dụng đất hợp pháp (thiếu giấy tờ, không kê khai, không nộp thuế). Ngược lại, bị đơn chứng minh được việc sử dụng đất ổn định và đất thuộc diện quản lý của xã. Viện kiểm sát cũng đề nghị chấp nhận đơn khởi kiện nhưng nội dung yêu cầu cụ thể của nguyên đơn (trả lại đất) bị bác do thiếu căn cứ pháp lý.",
+    "pass_name": "primary_qwen"
+  },
+  "case_3263": {
+    "case_id": "case_3263",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu vợ chồng bị đơn liên đới thanh toán toàn bộ tiền hụi và tiền vay (1.075 tỷ).",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3263_seg_ceb284cc4f5eaaed",
+          "case_3263_seg_1ec4a3a615aebf05",
+          "case_3263_seg_e2bcf4a50812eefc"
+        ],
+        "law_aids": [
+          53236,
+          53896
+        ],
+        "short_reason": "Tòa chấp nhận trách nhiệm của bà H nhưng bác yêu cầu liên đới của ông H do ông H vắng mặt và không chứng minh được việc đồng ý."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Ông H không đồng ý trả nợ vì không biết bà H giao dịch hụi và vay tiền.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3263_seg_ceb284cc4f5eaaed",
+          "case_3263_seg_1ec4a3a615aebf05"
+        ],
+        "law_aids": [
+          53896
+        ],
+        "short_reason": "Tòa không buộc ông H phải trả vì ông H vắng mặt, không có chứng cứ ông H đồng ý hoặc biết rõ giao dịch."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Viện kiểm sát kết luận chấp nhận toàn bộ yêu cầu của nguyên đơn.",
+        "importance": "SECONDARY",
+        "result": "UNCERTAIN",
+        "case_evidence_ids": [
+          "case_3263_seg_e2bcf4a50812eefc"
+        ],
+        "law_aids": [],
+        "short_reason": "Kết luận của VKS chỉ là quan điểm, không thay thế phán quyết cuối cùng của Tòa án khi bị đơn vắng mặt."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng một phần. Tòa án xác lập trách nhiệm thanh toán của bà H đối với các khoản nợ hụi và vay (khoảng 554 triệu đồng theo thỏa thuận của bà H). Tuy nhiên, do ông H vắng mặt và không có chứng cứ chứng minh ông H đồng ý hoặc biết rõ giao dịch, Tòa bác yêu cầu liên đới thanh toán của ông H. Kết quả là nguyên đơn được chấp nhận một phần yêu cầu chính.",
+    "pass_name": "primary_qwen"
+  },
+  "case_8732": {
+    "case_id": "case_8732",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn trả gốc 2.340.000.000đ và lãi theo pháp luật.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_8732_seg_733b6decd4ba8478",
+          "case_8732_seg_db78f578610dd962"
+        ],
+        "law_aids": [
+          53233,
+          53236,
+          53239
+        ],
+        "short_reason": "Hợp đồng vay tiền được công nhận (Điều 463, 466 BLDS). Tuy nhiên, lãi suất 'theo pháp luật' thường bị giảm xuống mức tối đa cho phép (16%/năm) nếu không thỏa thuận rõ ràng, nên A chỉ thắng phần gốc và lãi điều chỉnh."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng phần cốt lõi là buộc bị đơn B hoàn trả số tiền gốc 2.340.000.000đ dựa trên hợp đồng vay tài sản hợp pháp. Tuy nhiên, yêu cầu về lãi suất 'theo pháp luật' thường bị tòa án điều chỉnh xuống mức tối đa quy định (16%/năm) nếu không có thỏa thuận cụ thể, dẫn đến kết quả A thắng một phần (chấp nhận gốc và lãi điều chỉnh).",
+    "pass_name": "primary_qwen"
+  },
+  "case_9052": {
+    "case_id": "case_9052",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy GCN cấp cho hộ ông Thạch Ngọc B và công nhận quyền sử dụng đất cho nguyên đơn.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_9052_seg_616e2364a22a087a",
+          "case_9052_seg_5b3014c55472e348"
+        ],
+        "law_aids": [
+          56025,
+          56049
+        ],
+        "short_reason": "Nguyên đơn không chứng minh được quyền sử dụng đất hợp pháp hoặc sai sót trong GCN của bị đơn theo Điều 106 Luật Đất đai 2013."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn khẳng định quyền sử dụng đất hợp pháp qua GCN đã cấp và không có căn cứ để hủy.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_9052_seg_5b3014c55472e348",
+          "case_9052_seg_f47d6cf7d4cf6039"
+        ],
+        "law_aids": [
+          56025,
+          56138
+        ],
+        "short_reason": "GCN là căn cứ pháp lý xác lập quyền sử dụng đất; bị đơn đáp ứng điều kiện sở hữu đất theo Điều 75 và 188 Luật Đất đai 2013."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A yêu cầu hủy GCN và công nhận quyền sử dụng đất nhưng không cung cấp bằng chứng chứng minh quyền lợi hợp pháp hoặc sai sót trong GCN của bị đơn B. Ngược lại, bị đơn B có GCN hợp pháp và đáp ứng điều kiện sở hữu đất theo Luật Đất đai 2013. Do đó, yêu cầu của A bị bác hoàn toàn, B thắng kiện.",
+    "pass_name": "primary_qwen"
+  },
+  "case_6284": {
+    "case_id": "case_6284",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu tiếp tục thực hiện hợp đồng chuyển nhượng quyền sử dụng đất số 728A, giao đất và tài sản trên đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_6284_seg_744727f620057635",
+          "case_6284_seg_7a8f7e9c0090e976",
+          "case_6284_seg_087c387c7e84c2fd"
+        ],
+        "law_aids": [
+          858,
+          859
+        ],
+        "short_reason": "Hợp đồng có hiệu lực, tiền đã giao, đất đã bàn giao. Tuy nhiên, do đất bị kê biên và lấn ranh, Tòa chỉ buộc thực hiện hợp đồng với điều kiện hạn chế (trả tiền lấn ranh, cho lưu trú 6 tháng) thay vì giao đất ngay lập tức."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_COUNTERCLAIM",
+        "claim": "Yêu cầu bác toàn bộ yêu cầu của nguyên đơn và tuyên hợp đồng vô hiệu do mục đích thế chấp giả.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_6284_seg_340aba05f7681502",
+          "case_6284_seg_9dd0ef1c9f6f9b68"
+        ],
+        "law_aids": [
+          858
+        ],
+        "short_reason": "Tòa xác nhận hợp đồng công chứng số 728A có hiệu lực pháp luật, việc thế chấp trước không làm vô hiệu hợp đồng chuyển nhượng sau này khi đã thanh toán và bàn giao."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Đề nghị giảm giá đất hoặc bồi thường do diện tích bị lấn ranh và không giao đất ngay.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [
+          859
+        ],
+        "short_reason": "Tòa chấp nhận nguyên đơn đồng ý trả tiền cho phần lấn ranh và cho bị đơn lưu trú 6 tháng, nhưng không giao đất ngay do vướng mắc pháp lý về kê biên và ranh giới."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng về mặt xác lập hợp đồng và quyền được nhận đất (bị đơn B thua phản tố). Tuy nhiên, do các vấn đề thực tế như đất bị kê biên và lấn ranh, Tòa án chỉ buộc thực hiện hợp đồng với các điều kiện hạn chế (trả tiền lấn ranh, cho lưu trú) thay vì giao đất ngay lập tức như yêu cầu ban đầu. Do đó, A thắng một phần cốt lõi nhưng không đạt toàn bộ yêu cầu.",
+    "pass_name": "primary_qwen"
+  },
+  "case_6425": {
+    "case_id": "case_6425",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bà B, ông D trả lại giá trị quyền sử dụng đất diện tích 62m2 bị lấn chiếm.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_6425_seg_893ea4954f634eb2",
+          "case_6425_seg_9d67243fefe0f802",
+          "case_6425_seg_af8f199616c12fab"
+        ],
+        "law_aids": [
+          56138
+        ],
+        "short_reason": "Tòa chấp nhận yêu cầu bồi thường giá trị đất 62m2 nhưng không hủy giấy chứng nhận do thủ tục cấp đất có vấn đề cần giải quyết lại."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc ông C, bà E trả lại giá trị quyền sử dụng đất diện tích 21,1m2 bị lấn chiếm.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_6425_seg_893ea4954f634eb2",
+          "case_6425_seg_ce92a06b63031d4d",
+          "case_6425_seg_af8f199616c12fab"
+        ],
+        "law_aids": [
+          56138
+        ],
+        "short_reason": "Tòa chấp nhận yêu cầu bồi thường giá trị đất 21,1m2 nhưng không hủy giấy chứng nhận do thủ tục cấp đất chồng lấn cần giải quyết lại."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Hủy các giấy chứng nhận quyền sử dụng đất do UBND tỉnh Sóc Trăng cấp.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_6425_seg_7e0be413f7485f0f",
+          "case_6425_seg_be869e2c0b718e19"
+        ],
+        "law_aids": [
+          56144
+        ],
+        "short_reason": "Yêu cầu hủy giấy chứng nhận bị bác vì Tòa án dân sự không giải quyết tranh chấp về hành vi cấp đất sai quy định, phải chuyển hồ sơ cho cơ quan hành chính."
+      },
+      {
+        "claim_id": "c4",
+        "claim_type": "PROCEDURAL",
+        "claim": "Chấp nhận kháng cáo của bị đơn và kháng nghị của Viện kiểm sát để giải quyết lại vụ án.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_6425_seg_be869e2c0b718e19"
+        ],
+        "law_aids": [
+          56118
+        ],
+        "short_reason": "Tòa phúc thẩm hủy bản án sơ thẩm và chuyển hồ sơ về giải quyết lại do sai sót trong việc giải quyết tranh chấp hành chính lẫn dân sự."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng một phần (PARTIAL_A_WIN). Tòa án chấp nhận yêu cầu bồi thường giá trị đất cho diện tích bị lấn chiếm (62m2 và 21,1m2) nhưng bác hoàn toàn yêu cầu hủy giấy chứng nhận quyền sử dụng đất do thuộc thẩm quyền giải quyết của cơ quan hành chính. Bản án sơ thẩm bị hủy để giải quyết lại toàn bộ vụ án.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4644": {
+    "case_id": "case_4644",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường chi phí điều trị và mất thu nhập do thương tích 10% (sức khỏe).",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4644_seg_5cd4d6395b66f310",
+          "case_4644_seg_a251945eec598a48"
+        ],
+        "law_aids": [
+          53360,
+          53354
+        ],
+        "short_reason": "Bị đơn hành hung gây thương tích 10% xác định được. Theo BLDS 2015, thiệt hại sức khỏe phải bồi thường chi phí điều trị và thu nhập mất."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường chi phí cho vợ chăm sóc và tiền mất thu nhập của vợ.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4644_seg_a251945eec598a48"
+        ],
+        "law_aids": [
+          53360
+        ],
+        "short_reason": "Luật cho phép bồi thường chi phí chăm sóc, nhưng yêu cầu về 'tiền mất thu nhập của vợ' thường bị giảm nếu không chứng minh rõ ràng việc mất thu nhập thực tế hoặc chỉ được tính phần chi phí hợp lý."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường thiệt hại tài sản (01 điện thoại OPPO bị hỏng).",
+        "importance": "SECONDARY",
+        "result": "UNCERTAIN",
+        "case_evidence_ids": [
+          "case_4644_seg_a251945eec598a48"
+        ],
+        "law_aids": [
+          53354
+        ],
+        "short_reason": "Nguyên đơn yêu cầu bồi thường tài sản do xô xát gây ra. Tuy nhiên, bằng chứng cụ thể về giá trị thiệt hại và mối liên hệ nhân quả trực tiếp từ hành vi bị đơn trong đoạn trích không được nêu rõ."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng phần cốt lõi là yêu cầu bồi thường thiệt hại sức khỏe (thương tích 10%) và chi phí điều trị dựa trên kết luận giám định và quy định BLDS 2015. Tuy nhiên, các yêu cầu phụ về thu nhập của người chăm sóc và thiệt hại tài sản có thể bị giảm hoặc chưa được chứng minh đầy đủ, dẫn đến kết quả thắng một phần.",
+    "pass_name": "primary_qwen"
+  },
+  "case_149": {
+    "case_id": "case_149",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại tiền 120 triệu và bồi thường 120 triệu do vi phạm hợp đồng chuyển nhượng đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_149_seg_6908e60adb423e80",
+          "case_149_seg_08a300e5ec067d11",
+          "case_149_seg_9b2cc70ecae8f810"
+        ],
+        "law_aids": [
+          857,
+          858
+        ],
+        "short_reason": "Tòa có thể chấp nhận yêu cầu trả lại tiền gốc do bên bán không giao đất đúng thỏa thuận (Điều 39, 40 Luật Đất đai), nhưng phần bồi thường phạt có thể bị giảm hoặc bác nếu chứng minh vi phạm không đủ căn cứ hoặc hợp đồng có vấn đề về hình thức."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn yêu cầu tuyên bố hợp đồng vô hiệu do không có sự đồng ý của vợ (bà L) và không chứng thực đúng quy định.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_149_seg_0b5f1a6c4276b6d1",
+          "case_149_seg_b9328b8d2604ab92",
+          "case_149_seg_d3f33993d3be1a04",
+          "case_149_seg_84fe0584e5be76c1"
+        ],
+        "law_aids": [
+          53896,
+          53898
+        ],
+        "short_reason": "Bị đơn chứng minh bà L không ký, không đồng ý và hợp đồng thiếu chứng thực (Điều 24, 26 Luật Hôn nhân gia đình). Nếu hợp đồng vô hiệu, nghĩa vụ trả lại tiền sẽ được giải quyết, nhưng mục đích vay tiền của bên thứ 3 có thể làm phức tạp trách nhiệm."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A có cơ sở để yêu cầu trả lại tiền gốc do bên bán không thực hiện nghĩa vụ bàn giao đất (vi phạm hợp đồng). Tuy nhiên, bị đơn B có lý do hợp pháp để yêu cầu tuyên bố hợp đồng vô hiệu do thiếu sự đồng ý của vợ và thủ tục chứng thực sai quy định. Kết quả dự kiến là A thắng phần trả lại tiền gốc (hoặc một phần), nhưng phần bồi thường phạt có thể bị giảm hoặc bác, đồng thời hợp đồng có thể bị tuyên vô hiệu. Do đó, A thắng một phần.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4861": {
+    "case_id": "case_4861",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thừa kế (bao gồm quyền sử dụng đất 2.505m2) và hủy giấy chứng nhận quyền sử dụng đất cấp cho bị đơn.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4861_seg_365b14dfafb1328b",
+          "case_4861_seg_5bc492a5049c88a8"
+        ],
+        "law_aids": [
+          53393,
+          53429
+        ],
+        "short_reason": "Tòa xác lập quyền thừa kế của Nguyên đơn theo Điều 623 BLDS 2015 và chia di sản theo Điều 659. Tuy nhiên, yêu cầu hủy GCNQSDN hiện có có thể bị bác hoặc chỉ được giải quyết sau khi chia, dẫn đến thắng lợi một phần."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn phản đối việc chia di sản hoặc yêu cầu giữ nguyên GCNQSDN đang có.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4861_seg_365b14dfafb1328b"
+        ],
+        "law_aids": [
+          53429
+        ],
+        "short_reason": "Việc chia di sản được thực hiện theo thỏa thuận hoặc quy định pháp luật (Điều 659). Nếu GCNQSDN chưa phản ánh đúng tỷ lệ chia, Tòa sẽ ra quyết định chia lại, bác bỏ việc giữ nguyên hoàn toàn như bị đơn mong muốn."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng lợi một phần (PARTIAL_A_WIN). Tòa án xác lập quyền thừa kế và tiến hành chia di sản (bao gồm đất) theo quy định Bộ luật Dân sự 2015 (Điều 623, 659). Tuy nhiên, yêu cầu hủy GCNQSDN hiện có có thể không được chấp nhận toàn bộ nếu thủ tục chia di sản chưa hoàn tất hoặc cần điều chỉnh GCNQSDN sau khi chia, khiến kết quả không phải là thắng lợi tuyệt đối.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4101": {
+    "case_id": "case_4101",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường chi phí sửa xe máy và viện phí ngoại trú (tổng 6.875.000đ).",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4101_seg_2e9c2fe24c42d511",
+          "case_4101_seg_951c7b6dd935bcba",
+          "case_4101_seg_671491491e981841",
+          "case_4101_seg_cb0903036bdd700f",
+          "case_4101_seg_df2ea1c406dd290a"
+        ],
+        "law_aids": [
+          53373
+        ],
+        "short_reason": "Tòa chấp nhận trách nhiệm bồi thường do chó thả rông gây thiệt hại (Điều 603 BLDS) nhưng chỉ phán quyết số tiền 3.437.500đ thay vì 6.875.00đ do yêu cầu của nguyên đơn."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bác bỏ trách nhiệm bồi thường vì cho rằng chó không phải do họ gây ra hoặc không phải lỗi của họ.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4101_seg_352ce98b2aebc701",
+          "case_4101_seg_cb0903036bdd700f"
+        ],
+        "law_aids": [
+          53373
+        ],
+        "short_reason": "Việc chó thả rông đuổi cắn làm người khác ngã xe gây thiệt hại thuộc trường hợp chủ sở hữu súc vật phải bồi thường theo quy định pháp luật."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chấp nhận yêu cầu bồi thường thiệt hại ngoài hợp đồng do chó của bị đơn B thả rông gây ra. Tuy nhiên, số tiền bồi thường được Tòa án xác định là 3.437.500đ, thấp hơn mức yêu cầu 6.875.000đ của A. Do đó, A thắng một phần (PARTIAL_A_WIN) vì được công nhận quyền được bồi thường nhưng không nhận đủ số tiền yêu cầu.",
+    "pass_name": "primary_qwen"
+  },
+  "case_2705": {
+    "case_id": "case_2705",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy giao dịch và buộc bị đơn hoàn trả 100.000.000 đồng.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_2705_seg_eb652e253dc2769a",
+          "case_2705_seg_2c3747d25b4abfbf",
+          "case_2705_seg_e3d4296e913ae532"
+        ],
+        "law_aids": [
+          52897
+        ],
+        "short_reason": "Tòa xác lập quan hệ hợp đồng dịch vụ giới thiệu việc làm. Nguyên đơn chứng minh được việc giao dịch và nghĩa vụ trả tiền, dù có tranh chấp về thời điểm và cách thức thực hiện."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn cho rằng giao dịch vô hiệu do lừa dối hoặc nhầm lẫn.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_2705_seg_119b514d1ad54c8c",
+          "case_2705_seg_d0abdb68b6a6bb7e"
+        ],
+        "law_aids": [
+          52897,
+          52896
+        ],
+        "short_reason": "Bị đơn không chứng minh được hành vi lừa dối hoặc nhầm lẫn đủ để hủy giao dịch theo Điều 126, 127 BLDS. Các lập luận về việc con trai nghỉ việc không làm vô hiệu hợp đồng dịch vụ."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Vấn đề thời hiệu khởi kiện tuyên bố giao dịch vô hiệu.",
+        "importance": "SECONDARY",
+        "result": "UNCERTAIN",
+        "case_evidence_ids": [
+          "case_2705_seg_2c3747d25b4abfbf"
+        ],
+        "law_aids": [
+          52902
+        ],
+        "short_reason": "Thời hiệu 02 năm theo Điều 132 BLDS. Tuy nhiên, nguyên đơn yêu cầu hủy giao dịch và hoàn trả tiền, Tòa có thể xem xét dựa trên quan hệ hợp đồng thực tế hơn là tuyên bố vô hiệu thuần túy."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng một phần. Tòa án xác lập quan hệ hợp đồng dịch vụ giới thiệu việc làm giữa A và B là có thật dựa trên giấy biên nhận và thỏa thuận. Mặc dù bị đơn B đưa ra lý do hủy giao dịch do lừa dối hoặc nhầm lẫn, nhưng không chứng minh được các yếu tố pháp lý đủ để tuyên bố vô hiệu theo Điều 126, 127 BLDS. Do đó, yêu cầu hoàn trả tiền của A được chấp nhận một phần dựa trên nghĩa vụ hợp đồng, nhưng có thể bị giảm nếu có bằng chứng về việc đã thực hiện một phần hoặc các thỏa thuận khác.",
+    "pass_name": "primary_qwen"
+  },
+  "case_5658": {
+    "case_id": "case_5658",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn trả toàn bộ nợ gốc, lãi và lãi tiếp tục phát sinh.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5658_seg_51be79bcac92263a",
+          "case_5658_seg_bf2dedd51d525b47",
+          "case_5658_seg_58171ab5afdf688a"
+        ],
+        "law_aids": [
+          53171,
+          53236
+        ],
+        "short_reason": "Hợp đồng tín dụng hợp pháp, bị đơn vay tiền và thế chấp nhưng không trả nợ. Tòa án sẽ buộc trả nợ gốc và lãi theo thỏa thuận, nhưng có thể điều chỉnh lãi quá hạn nếu cần thiết."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Quyền phát mãi tài sản thế chấp khi không đủ tiền trả nợ.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_5658_seg_8e7ae816a5bcba68",
+          "case_5658_seg_a607daaa63994e54"
+        ],
+        "law_aids": [
+          53171
+        ],
+        "short_reason": "Hợp đồng thế chấp đã được công chứng và đăng ký. Khi bị đơn không trả nợ, nguyên đơn có quyền yêu cầu phát mãi tài sản bảo đảm theo quy định dân sự."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Tài sản tranh chấp thuộc về gia đình người liên quan, không phải của bị đơn.",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_5658_seg_07eb026df8a78f37",
+          "case_5658_seg_25a28cc5415e979b",
+          "case_5658_seg_f8cba6ac06eb1fc6"
+        ],
+        "law_aids": [
+          53171
+        ],
+        "short_reason": "Bị đơn đã ký hợp đồng vay và thế chấp tài sản cụ thể. Việc tranh chấp nguồn gốc tài sản của người liên quan không làm vô hiệu nghĩa vụ trả nợ của bị đơn đối với hợp đồng tín dụng."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng phần lớn yêu cầu về việc buộc trả nợ gốc và lãi cũng như quyền phát mãi tài sản thế chấp do hợp đồng tín dụng và thế chấp hợp pháp, bị đơn vi phạm nghĩa vụ trả nợ. Tuy nhiên, do bị đơn vắng mặt và có thể có tranh chấp về mức lãi suất hoặc tình hình tài chính thực tế, kết quả thường là chấp nhận toàn bộ nợ gốc và lãi hợp lý nhưng có thể điều chỉnh một phần lãi quá hạn hoặc thủ tục thi hành, dẫn đến PARTIAL_A_WIN.",
+    "pass_name": "primary_qwen"
+  },
+  "case_9089": {
+    "case_id": "case_9089",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn giao trả phần đất tranh chấp diện tích 1.437,9m2 thuộc thửa 475.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_9089_seg_2164396a3121116b",
+          "case_9089_seg_8a0365ba3b193ba7",
+          "case_9089_seg_e25632e422d06f32"
+        ],
+        "law_aids": [
+          56138
+        ],
+        "short_reason": "Nguyên đơn có GCNQSD đất nhưng diện tích thực tế thiếu so với giấy tờ do sai sót đo đạc thời điểm 1990. Tòa xác định phần đất bị đơn đang sử dụng thuộc quyền của nguyên đơn nhưng chỉ chấp nhận yêu cầu giao trả phần đất cụ thể đã đo đạc xác minh, không phải toàn bộ diện …"
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn có quyền sử dụng hợp pháp thửa đất 476 do cấp giấy đúng trình tự thủ tục năm 1990.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_9089_seg_11ff1361d9512318",
+          "case_9089_seg_8a0365ba3b193ba7"
+        ],
+        "law_aids": [
+          56138
+        ],
+        "short_reason": "Việc cấp giấy cho bị đơn năm 1990 bị bác bỏ do thiếu xác nhận của Chủ tịch Hội đồng đăng ký đất đai, mặc dù là sơ sót phổ biến của cơ quan nhà nước thời đó. Nguyên đơn có nguồn gốc đất rõ ràng và GCNQSD hợp lệ."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa án xác lập quyền sử dụng đất của nguyên đơn đối với phần đất bị đơn đang quản lý do sai sót trong đo đạc, cấp giấy thời điểm 1990. Tuy nhiên, do diện tích thực tế khác biệt lớn so với giấy tờ, Tòa chỉ chấp nhận yêu cầu buộc giao trả phần đất cụ thể đã được đo đạc xác minh (1.437,9m2) chứ không chấp nhận toàn bộ yêu cầu dựa trên diện tích ghi trên giấy chứng nhận. Bị đơn không được giữ lại phần đất tranh chấp.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4588": {
+    "case_id": "case_4588",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia đều giá trị di sản (1/10 cho mỗi người) cho 10 anh chị em, không tính phần công sức đóng góp trước đây.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4588_seg_fb3e44edde2a95a8",
+          "case_4588_seg_8221768949e1db68",
+          "case_4588_seg_f05c1c3eed6e496a"
+        ],
+        "law_aids": [
+          53400,
+          53413
+        ],
+        "short_reason": "Tòa chấp nhận chia di sản theo giá trị cho 10 người con nhưng bị hạn chế do di chúc hợp pháp của mẹ chỉ định ông H hưởng toàn bộ phần di sản của mẹ (1/2 nhà). Yêu cầu chia đều toàn bộ di sản bị bác một phần."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Di chúc ngày 22/5/2006 của bà BTH hợp pháp và có hiệu lực, ông H được hưởng toàn bộ phần di sản của mẹ.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4588_seg_f4da23da068d6c3b",
+          "case_4588_seg_8b1e7b630157dd2e"
+        ],
+        "law_aids": [
+          53400,
+          53413
+        ],
+        "short_reason": "Di chúc đáp ứng điều kiện hợp pháp (Điều 630 BLDS 2015) và có hiệu lực (Điều 643 BLDS 2015). Các bên liên quan thống nhất công nhận di chúc này."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Nguyên đơn rút yêu cầu tuyên bản di chúc bị vô hiệu.",
+        "importance": "SECONDARY",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4588_seg_fb3e44edde2a95a8"
+        ],
+        "law_aids": [],
+        "short_reason": "Viện kiểm sát và nguyên đơn đồng ý đình chỉ yêu cầu này để tập trung giải quyết tranh chấp chia tài sản."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa án xác nhận di chúc của bà BTH hợp pháp, ông H được hưởng toàn bộ phần di sản của mẹ (1/2 nhà). Tuy nhiên, nguyên đơn A thắng phần cốt lõi khi được chia đều giá trị phần di sản còn lại (1/2 nhà) cho 10 người con theo yêu cầu, không tính công sức đóng góp. Kết quả là A nhận được một phần cứu trợ chính (chia đều 1/2 nhà) nhưng không đạt được yêu cầu chia đều toàn bộ di sản do di chúc có hiệu lực.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4834": {
+    "case_id": "case_4834",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn trả lại số tiền gốc và lãi còn thiếu (khoảng 433 triệu đồng) do bị đơn nhận tiền thế chấp nhưng không thu hồi nợ hộ dân để trả lại.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4834_seg_0c6eb6aae42fc3d3",
+          "case_4834_seg_72d7c60b4b061ba4",
+          "case_4834_seg_1ba1c50a8d12eca5"
+        ],
+        "law_aids": [
+          52887,
+          53171
+        ],
+        "short_reason": "Tòa xác lập quan hệ vay mượn giữa A và B. Tuy nhiên, số tiền gốc và lãi bị yêu cầu có thể bị giảm do chứng cứ về việc B đã trả một phần (292 triệu) hoặc tính toán lãi suất quá hạn không được chứng minh đầy đủ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn đã trả lại toàn bộ số tiền gốc và lãi cho nguyên đơn và lấy lại giấy chứng nhận quyền sử dụng đất.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4834_seg_89479fd799363e6b",
+          "case_4834_seg_4afb37183ad512e9"
+        ],
+        "law_aids": [
+          52887
+        ],
+        "short_reason": "Chứng cứ cho thấy B đã trả nợ cho các hộ dân khác (Trương Văn T, Lương Thị D) và lấy lại giấy tờ, nhưng không chứng minh được việc đã thanh toán hết toàn bộ nghĩa vụ đối với khoản vay cụ thể đang bị kiện (1 tỷ đồng)."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng kiện một phần. Tòa án công nhận quan hệ vay mượn và buộc B phải trả tiền, nhưng số tiền cụ thể bị giảm do tranh chấp về chứng cứ thanh toán một phần và cách tính lãi suất. B không thắng hoàn toàn do không chứng minh được việc đã hoàn tất nghĩa vụ.",
+    "pass_name": "primary_qwen"
+  },
+  "case_8219": {
+    "case_id": "case_8219",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.25,
+      "PARTIAL_A_WIN": 0.25,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.25
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "pass_name": "primary_qwen"
+  },
+  "case_4920": {
+    "case_id": "case_4920",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.92,
+      "PARTIAL_A_WIN": 0.06,
+      "PARTIAL_B_WIN": 0.01,
+      "B_WIN": 0.01
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn tiếp tục thực hiện 03 hợp đồng chuyển nhượng quyền sử dụng đất và thanh toán tiền lãi.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4920_seg_cad661993c2435a7",
+          "case_4920_seg_3e97dfb82ac5ce55",
+          "case_4920_seg_0e8efe11a771032b"
+        ],
+        "law_aids": [
+          877,
+          56144
+        ],
+        "short_reason": "Tòa án ghi nhận việc cấp GCN cho nguyên đơn chứng minh hợp đồng đã được thực hiện. Bị đơn đã bàn giao GCN và hỗ trợ tiền, nguyên đơn từ chối thỏa thuận. Yêu cầu được chấp nhận."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường tiền phạt vi phạm hợp đồng (25%).",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4920_seg_10b1d3de4f3dff89",
+          "case_4920_seg_202d8a1a9647f55e"
+        ],
+        "law_aids": [],
+        "short_reason": "Nguyên đơn đã rút yêu cầu này tại phiên tòa do các bên đã ký lại hợp đồng mới năm 2017 không còn điều khoản phạt."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu thanh toán tiền lãi 17%/năm trong 5 năm.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4920_seg_3e97dfb82ac5ce55",
+          "case_4920_seg_aa6238b9c4c73321"
+        ],
+        "law_aids": [],
+        "short_reason": "Nguyên đơn duy trì yêu cầu này và bị đơn không có phản tố. Tòa án ghi nhận tính hợp lý của khoản lãi suất dựa trên thỏa thuận ban đầu."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng kiện vì Tòa án chấp nhận yêu cầu buộc bị đơn B tiếp tục thực hiện hợp đồng và thanh toán tiền lãi. Mặc dù A rút yêu cầu phạt vi phạm do đã ký hợp đồng mới, nhưng việc B đã bàn giao GCN và hỗ trợ tiền mà A từ chối thỏa thuận là căn cứ chính để A được hưởng quyền lợi cốt lõi. Các bằng chứng xác nhận việc cấp GCN và quá trình hòa giải ủng hộ quyết định này.",
+    "pass_name": "primary_qwen"
+  },
+  "case_8812": {
+    "case_id": "case_8812",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường chi phí thuốc, viện phí, thu nhập mất và tổn thất tinh thần do bị đánh.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_8812_seg_b3e904657de570c3",
+          "case_8812_seg_027ca408795fb1b3",
+          "case_8812_seg_0fc20e8ee2a67bb6"
+        ],
+        "law_aids": [
+          53360,
+          53355
+        ],
+        "short_reason": "Tòa chấp nhận các khoản có căn cứ (thuốc, viện phí, tinh thần) nhưng giảm thu nhập thực tế do tính không ổn định và chỉ công nhận 10 ngày nghỉ dưỡng sức."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn Đào Nhựt Q, Trần Quang V thừa nhận hành vi đánh và đồng ý bồi thường một phần.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_8812_seg_027ca408795fb1b3",
+          "case_8812_seg_0fc20e8ee2a67bb6"
+        ],
+        "law_aids": [
+          53354
+        ],
+        "short_reason": "Bị đơn Q, V thừa nhận hành vi xâm phạm sức khỏe và đồng ý bồi thường các khoản cụ thể, tạo cơ sở cho việc chấp nhận yêu cầu của nguyên đơn."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn Trần Hoàng Đ không thừa nhận hành vi gây thương tích và không xác định được vai trò.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_8812_seg_b3e904657de570c3",
+          "case_8812_seg_0fc20e8ee2a67bb6"
+        ],
+        "law_aids": [
+          53354
+        ],
+        "short_reason": "Nguyên đơn không chứng minh được việc bị đơn Đ trực tiếp gây thương tích nên rút yêu cầu đối với Đ, không ảnh hưởng đến kết quả chung của vụ án."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng kiện một phần. Tòa án chấp nhận yêu cầu bồi thường chi phí thuốc, viện phí và tổn thất tinh thần do bị đơn Q, V thừa nhận hành vi gây thương tích. Tuy nhiên, mức bồi thường thu nhập bị mất bị giảm do tính không ổn định của nghề nghiệp và chỉ công nhận 10 ngày nghỉ dưỡng sức thay vì thời gian nguyên đơn yêu cầu. Yêu cầu đối với bị đơn Đ bị bác do thiếu chứng cứ.",
+    "pass_name": "primary_qwen"
+  },
+  "case_8303": {
+    "case_id": "case_8303",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu thanh toán toàn bộ nợ gốc, lãi trong hạn và lãi quá hạn (tổng 7.037.902.060đ).",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_8303_seg_affdb58fb0e0b023",
+          "case_8303_seg_3970e8a8ebbd789e",
+          "case_8303_seg_fa228f29b247db35"
+        ],
+        "law_aids": [
+          53238,
+          53236
+        ],
+        "short_reason": "Hợp đồng tín dụng và khế ước nhận nợ hợp lệ. Tuy nhiên, lãi suất thỏa thuận 22.5%/năm vượt quá giới hạn 20%/năm theo BLDS 2015, nên phần lãi quá mức sẽ bị giảm."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu cho phép xử lý tài sản bảo đảm (quyền sử dụng đất 113,9m2) để thu hồi nợ.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_8303_seg_1126c0980ca45d3e",
+          "case_8303_seg_ade2326b6ef46e3b",
+          "case_8303_seg_4b1cf0052b585e22"
+        ],
+        "law_aids": [
+          53171,
+          53236
+        ],
+        "short_reason": "Bị đơn đã thế chấp tài sản và vi phạm nghĩa vụ trả nợ. Nguyên đơn có quyền yêu cầu xử lý tài sản bảo đảm theo quy định pháp luật."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn phản đối mức lãi suất và yêu cầu giảm lãi suất quá hạn.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_8303_seg_fa228f29b247db35",
+          "case_8303_seg_b5c03d510a3cead1"
+        ],
+        "law_aids": [
+          53238
+        ],
+        "short_reason": "Việc bị đơn thừa nhận số nợ gốc và lãi trong hạn nhưng phản đối lãi suất cao là hợp lý. Tòa án sẽ áp dụng mức lãi suất tối đa 20%/năm theo BLDS 2015."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng về việc xác lập quan hệ hợp đồng và quyền xử lý tài sản thế chấp. Tuy nhiên, yêu cầu về lãi suất bị giảm một phần do vi phạm giới hạn 20%/năm theo Bộ luật Dân sự 2015. Kết quả là nguyên đơn được chấp nhận phần cốt lõi (nợ gốc và quyền xử lý tài sản) nhưng bị giảm số tiền lãi phải trả.",
+    "pass_name": "primary_qwen"
+  },
+  "case_1959": {
+    "case_id": "case_1959",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn bồi thường chi phí xây lại hàng rào bị sập (11.560.000đ) do hành vi đào đường nước gây sạt lở.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_1959_seg_7bcb0b4d127ed240",
+          "case_1959_seg_af742c03da13bd21",
+          "case_1959_seg_93c99e245989a895"
+        ],
+        "law_aids": [
+          53354,
+          53359,
+          52940
+        ],
+        "short_reason": "Hội đồng thừa nhận lỗi của bị đơn (đào sát ranh giới gây sạt lở) nhưng cũng ghi nhận nguyên đơn thi công không đảm bảo (không đổ đế). Do đó, yêu cầu bồi thường được chấp nhận một phần, không phải toàn bộ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn không phải bồi thường vì hàng rào nguyên đơn xây không kiên cố, không đổ đà/đế và không xem xét điều kiện đất.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_1959_seg_6e17c3b639279327",
+          "case_1959_seg_e3155287f6943718",
+          "case_1959_seg_93c99e245989a895"
+        ],
+        "law_aids": [
+          53354,
+          53355
+        ],
+        "short_reason": "Bị đơn chứng minh được việc thi công của nguyên đơn thiếu an toàn (không đổ đế, cột chỉ cắm xuống đất). Tòa án ghi nhận đây là nguyên nhân góp phần gây sập, làm giảm trách nhiệm bồi thường của bị đơn."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng một phần. Tòa án xác lập trách nhiệm bồi thường của bị đơn do hành vi đào đường nước gây sạt lở (lỗi xâm phạm), nhưng đồng thời ghi nhận nguyên đơn có lỗi trong việc thi công hàng rào không đảm bảo kết cấu (không đổ đế). Kết quả là yêu cầu bồi thường 11.560.000đ được chấp nhận một phần, không phải toàn bộ như yêu cầu ban đầu.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4704": {
+    "case_id": "case_4704",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Chia di sản nhà đất MC cho 4 người thừa kế, trừ 200 triệu chi phí sửa chữa.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4704_seg_9c753012e98a3a1a",
+          "case_4704_seg_a087b386e68b81bf",
+          "case_4704_seg_233742e6ca471fbd"
+        ],
+        "law_aids": [
+          53420,
+          53429
+        ],
+        "short_reason": "Tòa chấp nhận chia di sản cho 4 người nhưng việc trừ 200 triệu chi phí sửa chữa bị bác do bị đơn không cung cấp chứng từ hóa đơn chứng minh (case_4704_seg_233742e6ca471fbd, case_4704_seg_f69e0afd76013e80)."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Nguyên đơn được giữ nhà để thờ cúng và trả giá trị phần thừa kế cho các bên.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4704_seg_22ad78b8688b9a13"
+        ],
+        "law_aids": [
+          53429
+        ],
+        "short_reason": "Tòa chấp nhận phương án chia hiện vật, nguyên đơn được nhận nhà để thờ cúng và phải trả giá trị phần thừa kế tương ứng cho các đồng thừa kế còn lại."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_COUNTERCLAIM",
+        "claim": "Yêu cầu hủy Giấy chứng nhận quyền sử dụng đất cấp cho bà Lê Thị Đ.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4704_seg_78d5c5fdfd58910c",
+          "case_4704_seg_5dcfaf414d69f4f5"
+        ],
+        "law_aids": [],
+        "short_reason": "Yêu cầu bị bác vì nhà đất HSK thuộc di sản của bà Đ, không phải di sản tranh chấp của ông S và bà N; UBND Quận 8 xác nhận giấy chứng nhận hợp lệ."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa án chấp nhận yêu cầu chia di sản nhà đất MC cho 4 người thừa kế theo pháp luật (Điều 650, 659 BLDS 2015). Tuy nhiên, yêu cầu trừ 200 triệu chi phí sửa chữa của nguyên đơn bị bác một phần do bị đơn không chứng minh được chi phí thực tế. Nguyên đơn được phép giữ nhà để thờ cúng nhưng phải thanh toán giá trị phần thừa kế cho các bên còn lại. Yêu cầu phản tố hủy giấy chứng nhận đất của bà Đ bị bác hoàn toàn.",
+    "pass_name": "primary_qwen"
+  },
+  "case_3079": {
+    "case_id": "case_3079",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường chi phí điều trị, mất thu nhập, tổn thất tinh thần và thiệt hại tài sản (cây chết).",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3079_seg_5255b460db339ffa",
+          "case_3079_seg_61d97831220b77ef",
+          "case_3079_seg_9c41a5a9ec56c5b5",
+          "case_3079_seg_87cdc1b200972d00",
+          "case_3079_seg_066f7b89de872627",
+          "case_3079_seg_0596cca751f2a0b3",
+          "case_3079_seg_2bddcf66f95a0d76"
+        ],
+        "law_aids": [
+          53354,
+          53355,
+          53366
+        ],
+        "short_reason": "Tòa xác lập trách nhiệm bồi thường do hành vi xâm phạm sức khỏe (Điều 584 BLDS). Tuy nhiên, mức bồi thường bị giảm do nguyên đơn có lỗi (uống rượu) và bị đơn có quyền tự vệ (Điều 585 BLDS)."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Hành vi của bị đơn là tự vệ hợp pháp hoặc vượt quá giới hạn tự vệ.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3079_seg_61d97831220b77ef",
+          "case_3079_seg_9c41a5a9ec56c5b5"
+        ],
+        "law_aids": [
+          53354
+        ],
+        "short_reason": "Tòa xác định hành vi của bị đơn có dấu hiệu vượt quá giới hạn phòng vệ chính đáng (Điều 106 BLHS), do đó vẫn phải bồi thường thiệt hại dân sự."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Bồi thường thiệt hại do mất thu nhập người chăm sóc (Bà H).",
+        "importance": "SECONDARY",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_3079_seg_f18eb5de599d1780",
+          "case_3079_seg_37191ecd8972c56d",
+          "case_3079_seg_066f7b89de872627"
+        ],
+        "law_aids": [
+          53355
+        ],
+        "short_reason": "Người có quyền lợi liên quan H thống nhất yêu cầu bồi thường và chứng minh được thiệt hại thực tế phát sinh do chăm sóc."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn V thắng kiện một phần. Tòa án xác lập trách nhiệm bồi thường của bị đơn T do hành vi xâm phạm sức khỏe vượt quá giới hạn tự vệ. Tuy nhiên, mức bồi thường bị giảm do nguyên đơn có lỗi (uống rượu) và bị đơn có quyền tự vệ. Các khoản chi phí điều trị, mất thu nhập người chăm sóc được chấp nhận, nhưng tổn thất tinh thần và một phần thiệt hại khác có thể bị giảm hoặc không được chấp nhận toàn bộ.",
+    "pass_name": "primary_qwen"
+  },
+  "case_614": {
+    "case_id": "case_614",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thừa kế (đất 432,1m2) thành 11 phần bằng nhau.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_614_seg_004793e8a68b9feb",
+          "case_614_seg_25ff99d6721ec1fd"
+        ],
+        "law_aids": [
+          53420
+        ],
+        "short_reason": "Di sản đã được phân chia hợp pháp vào năm 2009 qua thỏa thuận có xác nhận của UBND xã. Ông H đã được cấp GCNQSDN, việc chia lại không có cơ sở."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia tài sản gắn liền trên đất (nhà, công trình) và ông T nhận hiện vật, thanh toán cho 10 người còn lại.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_614_seg_3f3504d2a6618574",
+          "case_614_seg_ec423d916c05098b"
+        ],
+        "law_aids": [
+          53429
+        ],
+        "short_reason": "Các bên thừa nhận nhà đất là di sản chưa chia. Tòa án chấp nhận chia tài sản này theo yêu cầu của nguyên đơn."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn bị bác yêu cầu chia lại quyền sử dụng đất do di sản đã được phân chia hợp pháp và ông H đã được cấp giấy chứng nhận. Tuy nhiên, yêu cầu chia tài sản gắn liền trên đất (nhà, công trình) được chấp nhận vì đây là phần di sản chưa được phân chia tại thỏa thuận năm 2009. Kết quả là nguyên đơn thắng một phần.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4337": {
+    "case_id": "case_4337",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.92,
+      "PARTIAL_A_WIN": 0.06,
+      "PARTIAL_B_WIN": 0.01,
+      "B_WIN": 0.01
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy GCNQSDĐ của B và buộc B trả lại nhà đất 207,7m2.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4337_seg_ab3f200c69318abb",
+          "case_4337_seg_da1aa8779dce926f",
+          "case_4337_seg_3de52ae91cf57d99"
+        ],
+        "law_aids": [
+          858,
+          857
+        ],
+        "short_reason": "Tòa xác định B không có quyền sở hữu hợp pháp do hồ sơ cấp GCNQSDĐ sai (kê khai 4 thửa nhưng cấp 5 thửa) và việc chuyển nhượng của B không hợp lệ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_COUNTERCLAIM",
+        "claim": "Bàn luận về việc bán nhà cho ông D và quyền sở hữu đất.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4337_seg_b618df293ec97c28",
+          "case_4337_seg_9490042eb5420ad7",
+          "case_4337_seg_76508d110a31300d"
+        ],
+        "law_aids": [
+          858,
+          857
+        ],
+        "short_reason": "Tòa sơ thẩm và phúc thẩm đều bác bỏ việc chuyển nhượng của B cho ông D do thiếu căn cứ pháp lý và mâu thuẫn trong lời khai, không công nhận hợp đồng."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Kháng nghị của Viện kiểm sát đề nghị hủy bản án sơ thẩm.",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4337_seg_7920fcbbf630b125",
+          "case_4337_seg_c5f54df2f9114d9b"
+        ],
+        "law_aids": [],
+        "short_reason": "Viện kiểm sát rút kháng nghị vì Hội đồng xét xử phúc thẩm đã làm rõ nội dung, cho thấy bản án sơ thẩm về cơ bản đúng."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng kiện. Tòa án xác định bị đơn B không có quyền sở hữu hợp pháp đối với diện tích tranh chấp do hồ sơ cấp GCNQSDĐ sai sót (kê khai 4 thửa nhưng cấp 5 thửa). Các yêu cầu của B về việc chuyển nhượng nhà cho ông D bị bác bỏ do không có căn cứ pháp lý và mâu thuẫn chứng cứ. Kháng nghị của Viện kiểm sát cũng bị bác bỏ, giữ nguyên bản án sơ thẩm có lợi cho A.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4579": {
+    "case_id": "case_4579",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Buộc bị đơn trả lại diện tích 102m2 đất theo sơ đồ bản vẽ ngày 22/8/2007.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4579_seg_3cb72192d303ee14",
+          "case_4579_seg_0807eafca891989a",
+          "case_4579_seg_f347f3c385efd79b"
+        ],
+        "law_aids": [
+          52934,
+          52936
+        ],
+        "short_reason": "Tòa chấp nhận quyền sử dụng đất của nguyên đơn nhưng chỉ theo hiện trạng pháp lý (bản đồ 1994) và thỏa thuận đổi đường, không chấp nhận toàn bộ diện tích tranh chấp theo bản vẽ 2007 do không nằm trong diện tích cấp GCN."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Diện tích 102m2 không thuộc quyền sở hữu của nguyên đơn và chỉ là lối đi nhờ.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4579_seg_48d51460387baa57",
+          "case_4579_seg_7df0b6eb12727238",
+          "case_4579_seg_50912a4c71805428"
+        ],
+        "law_aids": [
+          52934,
+          52936
+        ],
+        "short_reason": "Bị đơn chứng minh được diện tích này không có trên bản đồ 1994 và không nằm trong GCN 1997; con đường chỉ là lối đi nhờ, không phải quyền sử dụng đất độc lập."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng một phần vì Tòa án xác lập quyền sử dụng đất cho bà N dựa trên GCN và hiện trạng thực tế, đồng thời công nhận thỏa thuận đổi đường. Tuy nhiên, yêu cầu cụ thể buộc trả lại 102m2 theo bản vẽ 2007 bị bác một phần vì diện tích này không nằm trong diện tích pháp lý đã được cấp GCN cho hộ ông T năm 1997 và không phải là lối đi công cộng. Kết quả phản ánh sự cân bằng giữa quyền sử dụng thực tế và giới hạn pháp lý của giấy chứng nhận.",
+    "pass_name": "primary_qwen"
+  },
+  "case_1087": {
+    "case_id": "case_1087",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.05
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường 50.000.000đ tiền nhà và 10.000.000đ tiền giếng do tài sản bị xâm phạm.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_1087_seg_7417c9282963a8cb",
+          "case_1087_seg_af0a50964e84013a",
+          "case_1087_seg_48e43fe62a70daf5",
+          "case_1087_seg_792531456cb4b02b"
+        ],
+        "law_aids": [
+          53359,
+          52778,
+          52940,
+          53354
+        ],
+        "short_reason": "A có quyền yêu cầu bồi thường theo Điều 584, 589 BLDS khi tài sản bị xâm phạm. Tuy nhiên, việc xác lập quyền sở hữu từ 'giấy tay' và chứng minh thiệt hại cụ thể cần chứng cứ bổ sung, dẫn đến việc chỉ được chấp nhận một phần hoặc mức bồi thường bị điều chỉnh."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A có cơ sở pháp lý để yêu cầu bồi thường thiệt hại ngoài hợp đồng khi tài sản (nhà, giếng) bị xâm phạm (Điều 584, 589 BLDS). Tuy nhiên, do tranh chấp phát sinh từ việc chuyển nhượng bằng 'giấy tay' (chưa đăng ký công chứng) và thiếu chứng cứ rõ ràng về giá trị thiệt hại thực tế hoặc quyền sở hữu hợp pháp so với bị đơn, Tòa án thường sẽ không chấp nhận toàn bộ yêu cầu. Kết quả dự kiến là A thắng một phần (PARTIAL_A_WIN) khi được công nhận quyền được bồi thường nhưng mức tiền hoặc phạm vi có thể bị giảm hoặc yêu cầu giải quyết thủ tục đăng ký trước.",
+    "pass_name": "primary_qwen"
+  },
+  "case_3735": {
+    "case_id": "case_3735",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chị T1 hoàn trả 30.000.000đ tiền hùn thuê quán.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3735_seg_4bca3f1165a8dd5d",
+          "case_3735_seg_dbf76f08c7c35f1b",
+          "case_3735_seg_34cd8cea250e539a"
+        ],
+        "law_aids": [
+          52887,
+          52899
+        ],
+        "short_reason": "Tòa không chấp nhận toàn bộ do thiếu văn bản hợp đồng rõ ràng và tranh chấp nguồn gốc tiền, nhưng chấp nhận phần 50% giá trị thời hạn thuê còn lại do T1 thống nhất tại phiên tòa."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_COUNTERCLAIM",
+        "claim": "Yêu cầu anh T trả lại 50% giá trị thời hạn thuê quán còn lại và chia tài sản.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3735_seg_1061d29a1d64b97b",
+          "case_3735_seg_34cd8cea250e539a"
+        ],
+        "law_aids": [
+          52887,
+          52899
+        ],
+        "short_reason": "Tòa chấp nhận yêu cầu chia 50% giá trị thời hạn thuê còn lại do T1 thống nhất, nhưng không chấp nhận toàn bộ yêu cầu về tài sản và lỗ vốn do thiếu chứng cứ và thỏa thuận cụ thể."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng một phần: Tòa không chấp nhận toàn bộ yêu cầu hoàn trả 30 triệu do thiếu căn cứ rõ ràng về nguồn gốc tiền và hình thức hợp đồng, nhưng chấp nhận yêu cầu chia 50% giá trị thời hạn thuê còn lại do bị đơn B thống nhất tại phiên tòa. Bị đơn B cũng thắng một phần khi được chia tài sản/thời hạn thuê nhưng không được bồi thường toàn bộ lỗ vốn.",
+    "pass_name": "primary_qwen"
+  },
+  "case_669": {
+    "case_id": "case_669",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_B_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.2,
+      "PARTIAL_B_WIN": 0.6,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy hợp đồng chuyển nhượng QSD đất bằng miệng năm 1995 và đòi lại đất.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_669_seg_4c7df112a52786bc",
+          "case_669_seg_7248a2e0ab8252a9"
+        ],
+        "law_aids": [
+          53272
+        ],
+        "short_reason": "Hợp đồng chuyển nhượng QSD đất phải lập thành văn bản (Điều 502 BLDS 2015). Hợp đồng miệng năm 1995 không đáp ứng hình thức bắt buộc, dẫn đến việc không công nhận hợp đồng để hủy."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_COUNTERCLAIM",
+        "claim": "Yêu cầu công nhận hợp đồng chuyển nhượng QSD đất giữa ông Danh H với ông Danh Ch, bà Thị M.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_669_seg_9726c8b631e2cc28",
+          "case_669_seg_71e09a11cd1a6c5a"
+        ],
+        "law_aids": [
+          53272
+        ],
+        "short_reason": "Tòa án chấp nhận yêu cầu phản tố của bị đơn để công nhận hợp đồng. Dù hình thức miệng, nhưng các bên đã thực hiện nghĩa vụ (giao đất, nhận vàng/lúa) và có giấy tay chứng minh, tạo thành quan hệ dân sự hợp pháp."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Vi phạm thời hạn chuẩn bị xét xử theo Điều 203 BLTTDS.",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_669_seg_9726c8b631e2cc28",
+          "case_669_seg_b35bc2bc4dd8eb21"
+        ],
+        "law_aids": [],
+        "short_reason": "Viện kiểm sát ghi nhận vi phạm thời hạn nhưng HĐXX đã khắc phục. Đây là lỗi tố tụng không ảnh hưởng đến kết quả xét xử thực chất vụ án."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thua vì hợp đồng chuyển nhượng đất bằng miệng năm 1995 vi phạm hình thức bắt buộc theo Điều 502 BLDS 2015, nên không thể hủy hợp đồng. Tuy nhiên, bị đơn B thắng phản tố khi Tòa công nhận hợp đồng dựa trên thực tế đã giao nhận và giấy tay chứng minh. Kết quả là B thắng phần lớn (công nhận hợp đồng), A chỉ thắng rất ít (nếu có) hoặc không thắng yêu cầu chính.",
+    "pass_name": "primary_qwen"
+  },
+  "case_5160": {
+    "case_id": "case_5160",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.05
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thừa kế theo pháp luật, mỗi người nhận 166m² đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5160_seg_e271d1610a10786b",
+          "case_5160_seg_71a78c8ad78fabfd"
+        ],
+        "law_aids": [
+          53414
+        ],
+        "short_reason": "Tòa xác lập quyền thừa kế cho các bên theo Điều 644 BLDS 2015. Tuy nhiên, yêu cầu cụ thể về diện tích 166m² có thể bị điều chỉnh do thực tế di sản bị cắt giảm 180m² để trả nợ và phần còn lại cần chia đều cho số người thừa kế xác định."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Di sản đã bị cắt giảm 180m² để trả nợ, ảnh hưởng đến khối lượng chia.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_5160_seg_e271d1610a10786b"
+        ],
+        "law_aids": [],
+        "short_reason": "Sự kiện chuyển nhượng 180m² đất để trả nợ được ghi nhận, làm giảm tổng diện tích di sản thực tế cần chia, từ đó ảnh hưởng đến tính toán phần nhận của mỗi người."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A thắng một phần vì Tòa án xác lập quyền thừa kế và nguyên tắc chia đều theo pháp luật (Điều 644 BLDS 2015) cho các bên liên quan. Tuy nhiên, yêu cầu cụ thể về diện tích 166m² có thể không được chấp nhận nguyên văn do di sản bị cắt giảm 180m² để trả nợ, dẫn đến việc chia sẻ dựa trên diện tích còn lại thực tế. B không thắng phản tố nhưng đã làm giảm phạm vi cứu trợ của A.",
+    "pass_name": "primary_qwen"
+  },
+  "case_4557": {
+    "case_id": "case_4557",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_B_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.2,
+      "PARTIAL_B_WIN": 0.6,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường thiệt hại 103.680.000đ (12% giá trị hợp đồng) do đơn phương chấm dứt hợp đồng.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_4557_seg_52ddca4f8806fd5c",
+          "case_4557_seg_9c17b91c08cc9565"
+        ],
+        "law_aids": [
+          53189
+        ],
+        "short_reason": "Nguyên đơn không cung cấp được chứng cứ chứng minh thiệt hại thực tế theo quy định tại Điều 419 BLDS 2015."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bác bỏ yêu cầu bồi thường do nguyên đơn không chứng minh được khối lượng và thời gian thực hiện công việc.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_4557_seg_79f8b266907d3a7e",
+          "case_4557_seg_9c17b91c08cc9565"
+        ],
+        "law_aids": [
+          53198
+        ],
+        "short_reason": "Chứng cứ hình ảnh và nhật ký thi công của nguyên đơn không xác thực, sai sự thật về thời điểm thực hiện."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Công nợ đã được thống nhất và thanh toán, không còn tranh chấp về số tiền còn lại.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_4557_seg_0da01c269955185e",
+          "case_4557_seg_98115fe407ae8982"
+        ],
+        "law_aids": [
+          53198
+        ],
+        "short_reason": "Hai bên đã thống nhất quyết toán, số tiền còn lại theo quyết toán là 30.185.000đ, không phải 484 triệu hay 103 triệu."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa bác toàn bộ yêu cầu bồi thường 103 triệu của nguyên đơn do thiếu chứng cứ chứng minh thiệt hại thực tế và khối lượng công việc. Tuy nhiên, nguyên đơn có thể được xét xử về phần công nợ còn lại nếu có căn cứ hợp lệ, nhưng yêu cầu chính về bồi thường thiệt hại bị từ chối. Kết quả nghiêng về bị đơn.",
+    "pass_name": "primary_qwen"
+  },
+  "case_6384": {
+    "case_id": "case_6384",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu được quản lý, sử dụng phần đất tranh chấp 10.083m2 thuộc lô 269.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_6384_seg_ffa7485e4a5d331c",
+          "case_6384_seg_4f9459db9543ef38"
+        ],
+        "law_aids": [
+          56025
+        ],
+        "short_reason": "UBND huyện xác nhận đất thuộc địa giới quản lý, không có tranh chấp khi giao; A có GCNQSDN hợp pháp."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy Giấy chứng nhận quyền sử dụng đất đã cấp cho nguyên đơn.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_6384_seg_ffa7485e4a5d331c",
+          "case_6384_seg_a109c1b8dda91d0a"
+        ],
+        "law_aids": [
+          56025
+        ],
+        "short_reason": "UBND huyện xác nhận việc cấp GCNQSDN cho A năm 1999 đúng trình tự, thủ tục, có đăng ký kê khai."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu buộc bị đơn di dời toàn bộ cây hồi, cây sở do bị đơn trồng trộm.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_6384_seg_7ed15a5e1325a941",
+          "case_6384_seg_7725cddcf45505b6"
+        ],
+        "law_aids": [],
+        "short_reason": "Bị đơn phải bồi thường 1/2 giá trị cây hồi, cây sở do cả hai bên có lỗi tự ý trồng và quản lý đất."
+      },
+      {
+        "claim_id": "c4",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu di dời 02 cây thông còn sống trên đất tranh chấp.",
+        "importance": "SECONDARY",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_6384_seg_7ed15a5e1325a941",
+          "case_6384_seg_b4600be1445ecf9d"
+        ],
+        "law_aids": [],
+        "short_reason": "Nguyên đơn không yêu cầu sử dụng cây thông, chỉ yêu cầu di dời ra khỏi đất tranh chấp."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A thắng về yêu cầu cốt lõi là được quản lý, sử dụng đất tranh chấp do có GCNQSDN hợp pháp và UBND xác nhận không tranh chấp khi giao. Tuy nhiên, A thua yêu cầu hủy GCNQSDN. Về cây trồng, A chỉ thắng một phần khi buộc B bồi thường 1/2 giá trị cây hồi, cây sở do cả hai có lỗi, thay vì buộc B di dời toàn bộ như yêu cầu. Kết quả là A thắng phần lớn nhưng không toàn diện.",
+    "pass_name": "primary_qwen"
+  },
+  "case_3995": {
+    "case_id": "case_3995",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bị đơn trả lại phần đất bị lấn chiếm.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3995_seg_94f3c65a801d5caa",
+          "case_3995_seg_9f28996eddf54b1d",
+          "case_3995_seg_667e4a3653d15b13",
+          "case_3995_seg_161c36a1d2351893"
+        ],
+        "law_aids": [],
+        "short_reason": "Tòa xác lập quyền sử dụng đất của nguyên đơn qua hồ sơ cấp GCNQSDĐ và đo đạc GPS, nhưng bị đơn vắng mặt nên không thể bác bỏ hoàn toàn hoặc xác định phạm vi lấn chiếm chính xác để buộc trả lại toàn bộ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn khẳng định không lấn chiếm, đất đã được cấp hợp pháp và có tài sản trên đó.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_3995_seg_94f3c65a801d5caa",
+          "case_3995_seg_68bb67cb55115684",
+          "case_3995_seg_e02a4eed246ed266"
+        ],
+        "law_aids": [],
+        "short_reason": "Bị đơn có giấy tờ và tài sản thực tế, nhưng do không có mặt tại phiên tòa nên Tòa không thể trực tiếp bác bỏ yêu cầu của nguyên đơn dựa trên lời khai của họ."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Bị đơn vắng mặt nhiều lần trong quá trình hòa giải và phiên tòa.",
+        "importance": "SECONDARY",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_3995_seg_667e4a3653d15b13",
+          "case_3995_seg_e5304d7baac1539a",
+          "case_3995_seg_a760cc0cedd1618b"
+        ],
+        "law_aids": [],
+        "short_reason": "Tòa án đã thông báo và tiến hành hòa giải nhiều lần nhưng bị đơn không có mặt, dẫn đến việc xét xử dựa trên chứng cứ có sẵn và lời khai của nguyên đơn."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn được công nhận quyền sử dụng đất dựa trên hồ sơ cấp GCNQSDĐ và kết quả đo đạc GPS. Tuy nhiên, do bị đơn vắng mặt liên tục, Tòa án không thể xác định chính xác phạm vi lấn chiếm để buộc trả lại toàn bộ diện tích như yêu cầu ban đầu. Kết quả là nguyên đơn thắng một phần (xác lập quyền) nhưng không đạt được yêu cầu hoàn toàn (trả lại đất).",
+    "pass_name": "primary_qwen"
+  },
+  "case_2978": {
+    "case_id": "case_2978",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại hệ thống nhà xưởng, 01 xe máy xúc, 03 bộ máy băm củi và 1.000 tấn củi.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_2978_seg_ce8404953cde4d7d",
+          "case_2978_seg_65f733d0123f6180",
+          "case_2978_seg_b6bd7e6a06db8206",
+          "case_2978_seg_a42df66197fe0328"
+        ],
+        "law_aids": [
+          52991,
+          52931
+        ],
+        "short_reason": "Nguyên đơn không cung cấp chứng cứ chứng minh quyền sở hữu tài sản. Bị đơn xác nhận tài sản thuộc công ty. Yêu cầu đòi 1.000 tấn củi là không có thật."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Tài sản thuộc quyền sở hữu của Công ty Vinh Ch và Công ty Tập G, không phải của nguyên đơn.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_2978_seg_3ee152a715c5177b",
+          "case_2978_seg_b6bd7e6a06db8206",
+          "case_2978_seg_a42df66197fe0328"
+        ],
+        "law_aids": [
+          52991,
+          52985
+        ],
+        "short_reason": "Bị đơn chứng minh được nguồn gốc tài sản từ hoạt động kinh doanh hợp pháp của công ty. Nguyên đơn không chứng minh được việc chuyển giao quyền sở hữu."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A không chứng minh được quyền sở hữu đối với các tài sản bị đòi (nhà xưởng, máy móc, củi). Bị đơn B xác nhận tài sản thuộc công ty và chỉ ra các yêu cầu của A không có cơ sở thực tế (ví dụ: số lượng củi). Do thiếu chứng cứ chứng minh quyền sở hữu, yêu cầu của A bị bác bỏ hoàn toàn.",
+    "pass_name": "primary_qwen"
+  },
+  "case_2035": {
+    "case_id": "case_2035",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.25,
+      "PARTIAL_A_WIN": 0.25,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.25
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "pass_name": "primary_qwen"
+  },
+  "case_5860": {
+    "case_id": "case_5860",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bị đơn Lê Quốc V trả nợ 22.187.000 đồng phát sinh từ 2 hóa đơn (nhớt và điện).",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5860_seg_c0595aa834f4309c",
+          "case_5860_seg_93b01a4a169ebf31",
+          "case_5860_seg_b48d2a8b469eed91"
+        ],
+        "law_aids": [
+          53233,
+          53050
+        ],
+        "short_reason": "HĐVN xác nhận công nợ có giá trị pháp lý. Tuy nhiên, phần nợ gốc 15.487.000đ từ hóa đơn cây xăng bị bác do thiếu chứng cứ thanh toán thực tế và không có sự đồng ý của bên thứ ba. Phần còn lại 6.700.000đ được công nhận."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn không đồng ý trả số tiền 15.487.000 đồng vì không có sự xác nhận của chủ cây xăng và không thu hồi được tiền.",
+        "importance": "MAJOR",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5860_seg_89f1d173b78688ad",
+          "case_5860_seg_9e0e32ef1e20a442",
+          "case_5860_seg_7666af24fcff4c1e"
+        ],
+        "law_aids": [
+          53233,
+          53050
+        ],
+        "short_reason": "Bị đơn chứng minh được việc đã trả một phần (3.000.000đ) và lý do không đòi được tiền gốc. Tòa chấp nhận lập luận này để giảm bớt số tiền phải trả cho nguyên đơn."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng một phần. Tòa án công nhận giá trị của 'Đơn xác nhận công nợ' nhưng chỉ chấp nhận số tiền còn lại sau khi trừ các khoản đã trả (6.700.000đ) đối với phần nợ gốc có căn cứ. Phần yêu cầu 15.487.000đ liên quan đến hóa đơn cây xăng bị bác vì bị đơn không có nghĩa vụ thanh toán khi không có sự xác nhận của chủ cây xăng và không thu hồi được tiền. Kết quả: Nguyên đơn được chấp nhận một phần yêu cầu chính.",
+    "pass_name": "primary_qwen"
+  },
+  "case_5236": {
+    "case_id": "case_5236",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.05
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hoàn trả 86.400.000đ tiền phường còn nợ từ hai dây phường (2015 và 2016).",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5236_seg_9c5da154fd24d366",
+          "case_5236_seg_1a93d72db346929b",
+          "case_5236_seg_074476f379906d83"
+        ],
+        "law_aids": [
+          53241
+        ],
+        "short_reason": "Tòa xác lập quan hệ hụi hợp pháp. Chấp nhận phần nợ đã có bản án trước đó (38.7tr) và phần nợ mới có chứng cứ rõ ràng, nhưng có thể giảm trừ do thiếu giấy tờ chứng minh cụ thể cho toàn bộ số tiền hoặc tính lãi."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bà L không phải chịu trách nhiệm thanh toán thay cho ông B.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_5236_seg_1a93d72db346929b",
+          "case_5236_seg_2595e185abc05bd5"
+        ],
+        "law_aids": [
+          53241
+        ],
+        "short_reason": "Trong quan hệ hụi, vợ chồng cùng tham gia hoặc được xác định chung trách nhiệm thanh toán nợ hụi của chồng theo thỏa thuận và tập quán."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "B đã đóng đầy đủ tiền phường nên không còn nợ.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_5236_seg_90861b75f275ec61",
+          "case_5236_seg_2ee9a0a08d89bf22"
+        ],
+        "law_aids": [
+          53236
+        ],
+        "short_reason": "B không cung cấp được giấy tờ chứng minh việc đã đóng tiền thay thế cho các tháng nợ, lời khai một mình không đủ để bác bỏ yêu cầu của nguyên đơn."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa án xác lập quan hệ hụi hợp pháp giữa các bên theo Điều 471 BLDS 2015. Nguyên đơn A được chấp nhận phần lớn yêu cầu: số tiền nợ đã được bản án trước đó xác lập (38.700.000đ) và phần nợ mới có căn cứ chứng minh (9.600.000đ). Tuy nhiên, do thiếu chứng từ chi tiết cho toàn bộ số tiền 86.400.000đ hoặc có tranh chấp về lãi suất/thời hạn, kết quả là A thắng một phần (PARTIAL_A_WIN). Yêu cầu về trách nhiệm của vợ B bị bác bỏ do không có căn cứ chứng minh B đã thanh toán hết nợ.",
+    "pass_name": "primary_qwen"
+  },
+  "case_5045": {
+    "case_id": "case_5045",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại đất lối đi chung 3m x 6,49m (19,47m2).",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_5045_seg_6ab8b9127c959287",
+          "case_5045_seg_7cd47a976043a595",
+          "case_5045_seg_848a943f76281887",
+          "case_5045_seg_9af7fa578f647d32"
+        ],
+        "law_aids": [
+          53270
+        ],
+        "short_reason": "Có thỏa thuận chừa lối đi chung, nguyên đơn không có lối đi khác. Bị đơn thừa nhận có lối đi nhưng không đồng ý trả lại toàn bộ diện tích 3m."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy Giấy chứng nhận quyền sử dụng đất cấp cho bị đơn.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_5045_seg_6ab8b9127c959287",
+          "case_5045_seg_0612c0a4bb16f7ee"
+        ],
+        "law_aids": [
+          857,
+          858
+        ],
+        "short_reason": "Bị đơn không cung cấp thông tin đầy đủ về ranh giới khi chuyển nhượng (Điều 39 BLDS). Tuy nhiên, việc hủy GCN có thể bị hạn chế nếu đã có thời gian sử dụng hoặc cần giải quyết bằng biện pháp khác."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn yêu cầu nguyên đơn tháo dỡ hàng rào, trụ điện và trả lại phần đất đã rào.",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_5045_seg_5c3ab453a26bdcdd",
+          "case_5045_seg_585fb38c01bc0cce"
+        ],
+        "law_aids": [
+          53270
+        ],
+        "short_reason": "Việc rào đất và xây dựng trụ điện của nguyên đơn xâm phạm quyền sử dụng đất hợp pháp của bị đơn đã được cấp GCN, không được chấp nhận."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng phần lớn yêu cầu về việc công nhận quyền lối đi chung do có thỏa thuận và nhu cầu thực tế, buộc bị đơn phải mở lối đi. Tuy nhiên, yêu cầu hủy hoàn toàn GCN có thể bị hạn chế hoặc giải quyết bằng cách điều chỉnh ranh giới thay vì hủy bỏ, đồng thời bị đơn thắng yêu cầu bảo vệ tài sản (hàng rào, trụ điện) của mình. Kết quả là A thắng một phần cốt lõi.",
+    "pass_name": "primary_qwen"
+  },
+  "case_950": {
+    "case_id": "case_950",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu buộc bị đơn trả lại thửa đất 1.421,38m2 và bồi thường 56 cây chuối bị chặt.",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [
+          "case_950_seg_47aaa9bb4abefe51",
+          "case_950_seg_6c15df9a1c7e17f9",
+          "case_950_seg_559c74a4043db9d2",
+          "case_950_seg_6578c09889363c1f"
+        ],
+        "law_aids": [
+          858,
+          56138
+        ],
+        "short_reason": "Bị đơn chứng minh được nguồn gốc đất từ chuyển nhượng hợp pháp năm 2009; nguyên đơn không chứng minh được quyền sở hữu hoặc sự tồn tại của cây chuối bị chặt."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A yêu cầu trả lại đất và bồi thường cây chuối. Tuy nhiên, bằng chứng cho thấy bị đơn B có giấy tờ chuyển nhượng hợp pháp từ năm 2009 và được xác nhận quyền sử dụng. Nguyên đơn không chứng minh được quyền sở hữu đất hoặc sự tồn tại của cây chuối bị chặt. Do đó, yêu cầu của A bị bác hoàn toàn.",
+    "pass_name": "primary_qwen"
+  },
+  "case_127": {
+    "case_id": "case_127",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.25,
+      "PARTIAL_A_WIN": 0.25,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.25
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "pass_name": "primary_qwen"
+  },
+  "case_8147": {
+    "case_id": "case_8147",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Chia thừa kế 2.184m² đất thành 4 phần bằng nhau cho 4 con.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [
+          "case_8147_seg_87de247a78095b62",
+          "case_8147_seg_f6ad6d2ec39eb3c0",
+          "case_8147_seg_41cf8bef304e5578"
+        ],
+        "law_aids": [
+          53096
+        ],
+        "short_reason": "Tòa thừa nhận quan hệ thừa kế và yêu cầu chia theo pháp luật, nhưng chỉ chia phần di sản thực tế (sau khi trừ tài sản ông H tạo lập) chứ không chia toàn bộ diện tích 2.184m² như yêu cầu ban đầu."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Diện tích 788,7m² và tài sản trên đất là của ông H tạo lập, không phải di sản.",
+        "importance": "MAJOR",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_8147_seg_6070ae40e327536a",
+          "case_8147_seg_75649799c3b5a57e",
+          "case_8147_seg_6a9a82b44b0f53f4"
+        ],
+        "law_aids": [
+          53096
+        ],
+        "short_reason": "Bị đơn chứng minh được nguồn gốc tài sản do ông H tạo lập và mua bán, không phải do cha mẹ để lại, nên không thuộc phạm vi chia thừa kế."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "PROCEDURAL",
+        "claim": "Yêu cầu thanh toán giá trị phần đất được hưởng cho ông H.",
+        "importance": "SECONDARY",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_8147_seg_41cf8bef304e5578",
+          "case_8147_seg_b841fd8295c755ff"
+        ],
+        "law_aids": [
+          53096
+        ],
+        "short_reason": "Nguyên đơn đồng ý giao đất cho ông H và yêu cầu thanh toán giá trị theo thẩm định, Tòa án chấp nhận phương án này."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn thắng về việc xác lập quyền thừa kế và được chia phần di sản thực tế theo pháp luật. Tuy nhiên, yêu cầu chia toàn bộ diện tích 2.184m² bị bác một phần do Tòa án loại trừ diện tích tài sản do bị đơn tạo lập (788,7m²) ra khỏi di sản. Kết quả là chia thừa kế cho 4 người con trên phần đất còn lại và thanh toán giá trị.",
+    "pass_name": "primary_qwen"
+  },
+  "case_7467": {
+    "case_id": "case_7467",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.1,
+      "PARTIAL_A_WIN": 0.85,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Chia thừa kế phần đất thửa 443, 444 theo di chúc hợp pháp của cụ S cho ông Đ.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_7467_seg_021a7ef42d0e5fee",
+          "case_7467_seg_896102fb8d929865"
+        ],
+        "law_aids": [
+          53429
+        ],
+        "short_reason": "Di chúc ngày 31/01/2007 được công chứng hợp pháp, xác định ông Đ hưởng toàn bộ thửa 443, 444 theo Điều 659 BLDS."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Chia thừa kế phần đất thửa 445 (trừ nhà H4) theo pháp luật cho 3 người thừa kế.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_7467_seg_67e1dea299c964c6",
+          "case_7467_seg_896102fb8d929865",
+          "case_7467_seg_4d5e603c676a62a4"
+        ],
+        "law_aids": [
+          53421
+        ],
+        "short_reason": "Thửa 445 không có di chúc định đoạt, thuộc di sản chung của cụ M và S, chia đều cho 3 người thừa kế hàng thứ nhất theo Điều 651 BLDS."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bác bỏ yêu cầu chia thừa kế thửa 443, 444 do có di chúc hợp pháp.",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [
+          "case_7467_seg_021a7ef42d0e5fee",
+          "case_7467_seg_896102fb8d929865"
+        ],
+        "law_aids": [
+          53429
+        ],
+        "short_reason": "Di chúc hợp pháp theo Điều 652 BLDS, nguyên đơn không được chia phần đất này theo pháp luật."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Tòa chấp nhận yêu cầu nguyên đơn chia thừa kế phần đất thửa 445 theo pháp luật cho 3 người thừa kế. Tuy nhiên, Tòa bác yêu cầu chia thửa 443, 444 vì di chúc hợp pháp của cụ S đã định đoạt toàn bộ phần này cho bị đơn ông Đ. Kết quả là nguyên đơn thắng một phần (phần đất chưa có di chúc), bị đơn thắng phần còn lại (phần đất có di chúc).",
+    "pass_name": "primary_qwen"
+  }
+}

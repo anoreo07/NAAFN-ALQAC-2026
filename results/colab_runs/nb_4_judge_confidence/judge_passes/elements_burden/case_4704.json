@@ -1,0 +1,27 @@
+{
+  "case_id": "case_4704",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.75,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4704_seg_9c753012e98a3a1a",
+        "case_4704_seg_a087b386e68b81bf",
+        "case_4704_seg_22ad78b8688b9a13",
+        "case_4704_seg_783d8b65fa478f9b"
+      ],
+      "law_aids": [
+        53420,
+        53429,
+        53430
+      ],
+      "short_reason": "Nguyên đơn chứng minh được di sản, không có di chúc và quyền thừa kế. Tuy nhiên, bị đơn không cung cấp chứng từ hóa đơn cho chi phí sửa chữa 200 triệu, nên yêu cầu trừ chi phí này không được chấp nhận đầy đủ. Tòa sẽ chia di sản cho 4 người, nguyên đơn được giữ nhà nhưng phải trả giá trị phần thừa kế."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Chứng minh chi phí sửa chữa di sản và việc phân chia di sản khi không có di chúc.",
+  "confidence": "HIGH"
+}

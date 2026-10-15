@@ -1,0 +1,27 @@
+{
+  "case_id": "case_6284",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_6284_seg_744727f620057635",
+        "case_6284_seg_be94113ed8ff2c26",
+        "case_6284_seg_087c387c7e84c2fd",
+        "case_6284_seg_5bfc08204085c6b1"
+      ],
+      "law_aids": [
+        56117,
+        53272,
+        858
+      ],
+      "short_reason": "Hợp đồng công chứng số 728A có hiệu lực, nguyên đơn đã thanh toán tiền và thực hiện nghĩa vụ. Bị đơn không chứng minh được hợp đồng là giả hay vô hiệu. Yêu cầu tiếp tục thực hiện hợp đồng được chấp nhận."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Hiệu lực của hợp đồng chuyển nhượng quyền sử dụng đất và nghĩa vụ giao đất của bên bán.",
+  "confidence": "HIGH"
+}

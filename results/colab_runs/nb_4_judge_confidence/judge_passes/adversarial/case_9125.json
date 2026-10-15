@@ -1,0 +1,32 @@
+{
+  "case_id": "case_9125",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_9125_seg_751e4b26ee944fa8",
+        "case_9125_seg_4d47e6d60934d4fa",
+        "case_9125_seg_eaca43b481885ac6",
+        "case_9125_seg_b8cd610e60ae7974",
+        "case_9125_seg_91987eed143b60fa",
+        "case_9125_seg_eef258cd8db8760b",
+        "case_9125_seg_9df0fa688e1697df",
+        "case_9125_seg_e159ede648d02fcb"
+      ],
+      "law_aids": [
+        56049,
+        56056,
+        55953,
+        56047
+      ],
+      "short_reason": "Nguyên đơn chứng minh được quyền sử dụng đất từ năm 1987, bị đơn chỉ mua cây trồng. Tuy nhiên, bị đơn đã đồng ý trả tiền và rút yêu cầu hủy quyết định hành chính, nên nguyên đơn chỉ thắng phần công nhận quyền sử dụng đất."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định nguồn gốc đất (giao khoán HTX hay mua cây trồng) và hiệu lực của thỏa thuận trả tiền giữa các bên.",
+  "confidence": "HIGH"
+}

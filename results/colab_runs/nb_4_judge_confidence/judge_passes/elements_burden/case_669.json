@@ -1,0 +1,34 @@
+{
+  "case_id": "case_669",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_669_seg_4c7df112a52786bc",
+        "case_669_seg_7248a2e0ab8252a9",
+        "case_669_seg_17cc36f4037ceb69",
+        "case_669_seg_2720f6b41edcbd19",
+        "case_669_seg_3270aac97547777b",
+        "case_669_seg_9726c8b631e2cc28",
+        "case_669_seg_71e09a11cd1a6c5a",
+        "case_669_seg_aba32e183680ffbe",
+        "case_669_seg_b35bc2bc4dd8eb21",
+        "case_669_seg_b5e53c7586684d6a"
+      ],
+      "law_aids": [
+        52901,
+        53272,
+        53197,
+        52899
+      ],
+      "short_reason": "Hợp đồng bằng miệng vi phạm hình thức (Điều 502), có thể vô hiệu (Điều 129). Tuy nhiên, các bên đã thực hiện nghĩa vụ (giao đất, nhận vàng/lúa) nên Tòa có thể công nhận hiệu lực để bảo vệ giao dịch đã hoàn tất, chỉ hủy phần chưa thực hiện hoặc điều chỉnh nghĩa vụ hoàn trả."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính hợp lệ của hợp đồng chuyển nhượng QSD đất bằng miệng và hậu quả pháp lý khi các bên đã thực hiện nghĩa vụ.",
+  "confidence": "MEDIUM"
+}

@@ -1,0 +1,24 @@
+{
+  "case_id": "case_950",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_950_seg_47aaa9bb4abefe51",
+        "case_950_seg_6c15df9a1c7e17f9"
+      ],
+      "law_aids": [
+        56156,
+        53374
+      ],
+      "short_reason": "Bị đơn chứng minh được nguồn gốc đất từ chuyển nhượng hợp pháp (2009) và có GCNQSDN. Nguyên đơn chỉ có giấy chia tay không công chứng, không chứng minh được việc bị lấn chiếm hay cây chuối là của mình. Yêu cầu bị bác."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Nguyên đơn không chứng minh được quyền sử dụng đất và quyền sở hữu cây chuối; bị đơn có giấy chứng nhận quyền sử dụng đất hợp pháp.",
+  "confidence": "HIGH"
+}

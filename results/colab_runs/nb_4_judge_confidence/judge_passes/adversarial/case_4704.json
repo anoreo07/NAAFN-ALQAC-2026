@@ -1,0 +1,28 @@
+{
+  "case_id": "case_4704",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4704_seg_2824d53ec86ad596",
+        "case_4704_seg_9c753012e98a3a1a",
+        "case_4704_seg_a087b386e68b81bf",
+        "case_4704_seg_5dcfaf414d69f4f5",
+        "case_4704_seg_2c83d474751f76bb"
+      ],
+      "law_aids": [
+        53420,
+        53429,
+        53430
+      ],
+      "short_reason": "Nguyên đơn chứng minh được di sản và quyền thừa kế (BLDS 650, 659). Tuy nhiên, yêu cầu trừ 200 triệu sửa chữa bị bác do thiếu chứng từ hóa đơn (E12, E14), chỉ được chia tài sản hiện vật theo thỏa thuận hoặc định giá."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính hợp lệ của yêu cầu trừ chi phí sửa chữa 200 triệu đồng do thiếu chứng từ hóa đơn và việc phân chia di sản bằng hiện vật.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "case_9125",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_9125_seg_751e4b26ee944fa8",
+        "case_9125_seg_4d47e6d60934d4fa",
+        "case_9125_seg_eaca43b481885ac6",
+        "case_9125_seg_b8cd610e60ae7974",
+        "case_9125_seg_d4ed507e4b632e1f",
+        "case_9125_seg_e7c94c2b8f98c1b6",
+        "case_9125_seg_b73c49e0e7c2b32f",
+        "case_9125_seg_91987eed143b60fa",
+        "case_9125_seg_cb97b4a1c9a52c19",
+        "case_9125_seg_eef258cd8db8760b",
+        "case_9125_seg_9df0fa688e1697df",
+        "case_9125_seg_e159ede648d02fcb"
+      ],
+      "law_aids": [
+        56049,
+        56056,
+        55953,
+        56047
+      ],
+      "short_reason": "Nguyên đơn chứng minh được việc sử dụng đất ổn định từ 1987 và nguồn gốc đất HTX giao khoán. Tuy nhiên, bị đơn đã đồng ý trả đất nếu được bồi thường 37 triệu đồng, thể hiện sự thỏa thuận giải quyết tranh chấp. Tòa án có thể công nhận quyền sử dụng đất cho nguyên đơn nhưng buộc bị đơn trả lại đất kèm bồi thường, không hủy toàn bộ giấy chứng nhận …"
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tranh chấp nguồn gốc đất (giao khoán vs nhận khoán) và thỏa thuận bồi thường giữa các bên để giải quyết tranh chấp.",
+  "confidence": "HIGH"
+}

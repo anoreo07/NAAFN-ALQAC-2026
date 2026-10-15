@@ -1,0 +1,38 @@
+{
+  "case_id": "case_5860",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.3,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5860_seg_ccc3032f693d2d45",
+        "case_5860_seg_89f1d173b78688ad",
+        "case_5860_seg_c0595aa834f4309c",
+        "case_5860_seg_f9a805af42fc2b3e",
+        "case_5860_seg_dff1da52a376401e",
+        "case_5860_seg_93b01a4a169ebf31",
+        "case_5860_seg_4ad646f4c548c522",
+        "case_5860_seg_b48d2a8b469eed91",
+        "case_5860_seg_7b74d7d786425b78",
+        "case_5860_seg_8ed3a3c3beb956f4",
+        "case_5860_seg_9e0e32ef1e20a442",
+        "case_5860_seg_7666af24fcff4c1e",
+        "case_5860_seg_c62b88a33772d209",
+        "case_5860_seg_5328023f1cdc4eb4"
+      ],
+      "law_aids": [
+        53050,
+        53171,
+        52773,
+        53210
+      ],
+      "short_reason": "Đơn xác nhận công nợ có giá trị chứng cứ cho số tiền 25.187.000đ, nhưng bị đơn chứng minh đã trả 3.000.000đ. Tuy nhiên, phần nợ gốc 15.487.000đ từ cây xăng không có hóa đơn đối chiếu và bị đơn không phải là chủ thể giao dịch trực tiếp, nên không phải trả. Nguyên đơn chỉ được hỗ trợ phần 9.700.000đ còn lại."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính pháp lý của 'Đơn xác nhận công nợ' đối với khoản nợ phát sinh từ giao dịch thứ ba (cây xăng) mà bị đơn không phải là bên giao dịch trực tiếp.",
+  "confidence": "MEDIUM"
+}

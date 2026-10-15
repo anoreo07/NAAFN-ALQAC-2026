@@ -1,0 +1,48 @@
+{
+  "case_id": "case_127",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_127_seg_0737f72ea1360386",
+        "case_127_seg_5d50615995063e15",
+        "case_127_seg_67f6cf0ed899df37",
+        "case_127_seg_e8f395f27e56b989",
+        "case_127_seg_3cb2e400a30b639d",
+        "case_127_seg_fb95ed92127e12de",
+        "case_127_seg_10afbeeef0923ee6",
+        "case_127_seg_49d94ad5dc773165",
+        "case_127_seg_59418d9cba1526a2",
+        "case_127_seg_ec88e40382ccf151",
+        "case_127_seg_cada336ec9e88add",
+        "case_127_seg_f504609dbd5b8ee1",
+        "case_127_seg_e059d5699f2a9393",
+        "case_127_seg_3d38c822311f1a05",
+        "case_127_seg_c65a4dcab3b5f7f1",
+        "case_127_seg_54e1bdce0ae08d5a",
+        "case_127_seg_69fd6b477f3e1113",
+        "case_127_seg_ec7121d714f12b3d",
+        "case_127_seg_7a21851b51e0d9c2",
+        "case_127_seg_522ecb49fe66dba8",
+        "case_127_seg_5bd1eecba798e77f",
+        "case_127_seg_95b68111f91abaf4",
+        "case_127_seg_467a07eb1c277b54",
+        "case_127_seg_19a1f25adb89df84",
+        "case_127_seg_aec95528ae76c714",
+        "case_127_seg_998410f436a478d3"
+      ],
+      "law_aids": [
+        52901,
+        56138
+      ],
+      "short_reason": "Tòa tuyên giao dịch vô hiệu do vi phạm điều cấm luật (bán đất thế chấp không được biết), buộc trả lại nhà đất. Tuy nhiên, bị đơn có quyền yêu cầu hoàn trả giá trị tài sản đã nhận."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính hợp pháp của giao dịch chuyển nhượng đất khi tài sản đang thế chấp và ý chí bán của chủ sở hữu thực tế (ông T) không rõ ràng.",
+  "confidence": "HIGH"
+}

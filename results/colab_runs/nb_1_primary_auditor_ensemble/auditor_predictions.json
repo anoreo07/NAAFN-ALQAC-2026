@@ -1,0 +1,802 @@
+{
+  "case_6663": {
+    "case_id": "case_6663",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_6616": {
+    "case_id": "case_6616",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_8758": {
+    "case_id": "case_8758",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_3241": {
+    "case_id": "case_3241",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5226": {
+    "case_id": "case_5226",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_9125": {
+    "case_id": "case_9125",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_2238": {
+    "case_id": "case_2238",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4616": {
+    "case_id": "case_4616",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5057": {
+    "case_id": "case_5057",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_551": {
+    "case_id": "case_551",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_3263": {
+    "case_id": "case_3263",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_8732": {
+    "case_id": "case_8732",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_9052": {
+    "case_id": "case_9052",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_6284": {
+    "case_id": "case_6284",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_6425": {
+    "case_id": "case_6425",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4644": {
+    "case_id": "case_4644",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_149": {
+    "case_id": "case_149",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4861": {
+    "case_id": "case_4861",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4101": {
+    "case_id": "case_4101",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_2705": {
+    "case_id": "case_2705",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5658": {
+    "case_id": "case_5658",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_9089": {
+    "case_id": "case_9089",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4588": {
+    "case_id": "case_4588",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4834": {
+    "case_id": "case_4834",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_8219": {
+    "case_id": "case_8219",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4920": {
+    "case_id": "case_4920",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_8812": {
+    "case_id": "case_8812",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_8303": {
+    "case_id": "case_8303",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_1959": {
+    "case_id": "case_1959",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4704": {
+    "case_id": "case_4704",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_3079": {
+    "case_id": "case_3079",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_614": {
+    "case_id": "case_614",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4337": {
+    "case_id": "case_4337",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4579": {
+    "case_id": "case_4579",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_1087": {
+    "case_id": "case_1087",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_3735": {
+    "case_id": "case_3735",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_669": {
+    "case_id": "case_669",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5160": {
+    "case_id": "case_5160",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_4557": {
+    "case_id": "case_4557",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_6384": {
+    "case_id": "case_6384",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_3995": {
+    "case_id": "case_3995",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_2978": {
+    "case_id": "case_2978",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_2035": {
+    "case_id": "case_2035",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5860": {
+    "case_id": "case_5860",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5236": {
+    "case_id": "case_5236",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_5045": {
+    "case_id": "case_5045",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_950": {
+    "case_id": "case_950",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_127": {
+    "case_id": "case_127",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_8147": {
+    "case_id": "case_8147",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  },
+  "case_7467": {
+    "case_id": "case_7467",
+    "model_id": "Qwen/Qwen3-8B",
+    "pass_name": "independent_auditor",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.35,
+      "PARTIAL_B_WIN": 0.25,
+      "B_WIN": 0.2
+    },
+    "claims": [],
+    "confidence": "LOW",
+    "decision_summary": "",
+    "error": "AttributeError: "
+  }
+}

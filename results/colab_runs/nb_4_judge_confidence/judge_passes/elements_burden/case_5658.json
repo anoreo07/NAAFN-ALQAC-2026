@@ -1,0 +1,46 @@
+{
+  "case_id": "case_5658",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5658_seg_1244517b58aec3b8",
+        "case_5658_seg_8e7ae816a5bcba68",
+        "case_5658_seg_bf2dedd51d525b47",
+        "case_5658_seg_db1645e15443b1ec",
+        "case_5658_seg_41697cf0a6505fcc",
+        "case_5658_seg_58171ab5afdf688a",
+        "case_5658_seg_07eb026df8a78f37",
+        "case_5658_seg_a224b67b5df4f20c",
+        "case_5658_seg_29e875905247f9f4",
+        "case_5658_seg_25a28cc5415e979b",
+        "case_5658_seg_716cd8a274da3739",
+        "case_5658_seg_a607daaa63994e54",
+        "case_5658_seg_51be79bcac92263a",
+        "case_5658_seg_35c3bd63e9998c09",
+        "case_5658_seg_ff0224e0c9271bf6",
+        "case_5658_seg_5e5cd182621d67bd",
+        "case_5658_seg_df73e3e7ffa482eb",
+        "case_5658_seg_f8cba6ac06eb1fc6",
+        "case_5658_seg_49e0c5ecbdce5567",
+        "case_5658_seg_1a84d3aaa00f77e3",
+        "case_5658_seg_bc04868f8f5ebe83",
+        "case_5658_seg_ee8ae38fe59f34c5"
+      ],
+      "law_aids": [
+        364,
+        53236,
+        53050,
+        53233
+      ],
+      "short_reason": "Nguyên đơn chứng minh được hợp đồng tín dụng, giải ngân, thế chấp và vi phạm trả nợ. Bị đơn vắng mặt không phủ nhận được bằng chứng. Yêu cầu trả nợ và xử lý tài sản bảo đảm được hỗ trợ bởi BLDS và Luật Tổ chức tín dụng."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác lập quan hệ hợp đồng tín dụng, sự vi phạm nghĩa vụ trả nợ của bị đơn và quyền của nguyên đơn trong việc xử lý tài sản bảo đảm khi bị đơn không có mặt để tranh biện.",
+  "confidence": "HIGH"
+}

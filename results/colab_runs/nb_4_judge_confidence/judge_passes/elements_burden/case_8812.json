@@ -1,0 +1,34 @@
+{
+  "case_id": "case_8812",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.7,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_8812_seg_b3e904657de570c3",
+        "case_8812_seg_f0d6ae38e995d90a",
+        "case_8812_seg_275df713901bb8e8",
+        "case_8812_seg_027ca408795fb1b3",
+        "case_8812_seg_0fc20e8ee2a67bb6",
+        "case_8812_seg_1bec46d70933caef",
+        "case_8812_seg_02c07e4df197e1c8",
+        "case_8812_seg_6fdef5019f3e977e",
+        "case_8812_seg_7d5e0c5e6c18c751",
+        "case_8812_seg_dd8bab4d219f15b4",
+        "case_8812_seg_44a4636fa1d3f3f6"
+      ],
+      "law_aids": [
+        53360,
+        53357,
+        53354
+      ],
+      "short_reason": "Bị đơn Q, V thừa nhận hành vi đánh và đồng ý bồi thường một phần. Tuy nhiên, nguyên đơn không chứng minh được sự tham gia của bị đơn Đ, nên yêu cầu liên đới với Đ bị bác. Tòa chỉ chấp nhận các khoản bồi thường có căn cứ và được thừa nhận."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Nguyên đơn chứng minh được hành vi xâm phạm sức khỏe của Q, V nhưng không chứng minh được sự tham gia của Đ; bị đơn Đ vắng mặt và không thừa nhận.",
+  "confidence": "HIGH"
+}

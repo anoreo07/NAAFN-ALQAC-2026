@@ -1,0 +1,38 @@
+{
+  "case_id": "case_3079",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_3079_seg_5255b460db339ffa",
+        "case_3079_seg_61d97831220b77ef",
+        "case_3079_seg_9c41a5a9ec56c5b5",
+        "case_3079_seg_f18eb5de599d1780",
+        "case_3079_seg_2bddcf66f95a0d76",
+        "case_3079_seg_87cdc1b200972d00",
+        "case_3079_seg_066f7b89de872627",
+        "case_3079_seg_0596cca751f2a0b3",
+        "case_3079_seg_5bbee27a5bf46312",
+        "case_3079_seg_4c650a49c512e1b5",
+        "case_3079_seg_37191ecd8972c56d",
+        "case_3079_seg_1b93b1212268445c",
+        "case_3079_seg_9f332b92fc868e0a",
+        "case_3079_seg_afe5afa1c5f0be07"
+      ],
+      "law_aids": [
+        53360,
+        53354,
+        53131,
+        53361
+      ],
+      "short_reason": "T thừa nhận gây thương tích 17% và bồi thường 5 triệu, nhưng từ chối các khoản lớn. Tòa sẽ chấp nhận chi phí y tế, mất thu nhập người chăm sóc (H đồng ý), tổn thất tinh thần (trong giới hạn luật) và cây chết. Các khoản mất thu nhập bản thân V và cây chết cần chứng minh rõ hơn về mức độ thiệt hại thực tế."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Mức độ thiệt hại thực tế (chi phí điều trị, mất thu nhập, cây chết) so với yêu cầu của nguyên đơn và mức bồi thường tự nguyện của bị đơn.",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "case_8219",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_8219_seg_6462648b8bf124e4",
+        "case_8219_seg_1b2f798c272bccc3",
+        "case_8219_seg_e64359a1bcf035fa",
+        "case_8219_seg_0d5dfcce72ee4cb3",
+        "case_8219_seg_313af58854e6ff3c",
+        "case_8219_seg_156d416c3a7b8d5c"
+      ],
+      "law_aids": [
+        53236
+      ],
+      "short_reason": "Bị đơn thừa nhận vay 81 triệu và 5 phân vàng, đồng ý chi phí sửa nhà 60 triệu qua giấy vay tiền. Yêu cầu phản tố về tiền thuê nhà không có căn cứ. Nguyên đơn thắng toàn bộ."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc xác nhận khoản vay và chi phí sửa chữa nhà đã được bị đơn thừa nhận trong biên bản và giấy vay tiền, trong khi yêu cầu phản tố về tiền thuê nhà bị bác do thiếu chứng cứ thỏa thuận.",
+  "confidence": "HIGH"
+}

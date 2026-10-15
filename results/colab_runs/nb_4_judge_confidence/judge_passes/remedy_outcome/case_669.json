@@ -1,0 +1,35 @@
+{
+  "case_id": "case_669",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.4,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_669_seg_4c7df112a52786bc",
+        "case_669_seg_7248a2e0ab8252a9",
+        "case_669_seg_17cc36f4037ceb69",
+        "case_669_seg_2720f6b41edcbd19",
+        "case_669_seg_3270aac97547777b",
+        "case_669_seg_9726c8b631e2cc28",
+        "case_669_seg_71e09a11cd1a6c5a",
+        "case_669_seg_aba32e183680ffbe",
+        "case_669_seg_b35bc2bc4dd8eb21",
+        "case_669_seg_b5e53c7586684d6a",
+        "case_669_seg_4b83eb21aa5a0dfe"
+      ],
+      "law_aids": [
+        52901,
+        53272,
+        53197,
+        52899
+      ],
+      "short_reason": "Hợp đồng bằng miệng vi phạm hình thức (Điều 502), có thể vô hiệu. Tuy nhiên, các bên đã thực hiện phần lớn nghĩa vụ (giao đất, nhận vàng/lúa) nên có thể công nhận hiệu lực để ổn định quan hệ dân sự. Nguyên đơn chỉ được hoàn trả một phần hoặc duy trì hợp đồng."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Hiệu lực của hợp đồng chuyển nhượng QSD đất bằng miệng năm 1995 và việc hoàn trả tài sản khi hợp đồng bị hủy hoặc được công nhận.",
+  "confidence": "MEDIUM"
+}

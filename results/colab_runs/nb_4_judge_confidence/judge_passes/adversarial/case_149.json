@@ -1,0 +1,27 @@
+{
+  "case_id": "case_149",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_149_seg_8d929dddccf5d96d",
+        "case_149_seg_0b5f1a6c4276b6d1",
+        "case_149_seg_f5c379bf1ecad231",
+        "case_149_seg_24f6adf7944caa41",
+        "case_149_seg_5f9dfd05ff414e7a"
+      ],
+      "law_aids": [
+        53197,
+        53188
+      ],
+      "short_reason": "Hợp đồng bị tuyên vô hiệu do giả tạo, thiếu thông tin thửa đất và vi phạm quy định chứng thực. Nguyên đơn được hoàn trả tiền gốc nhưng không được bồi thường phạt vi phạm do hợp đồng không có hiệu lực thực tế."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính pháp lý của hợp đồng chuyển nhượng quyền sử dụng đất bị coi là giả tạo nhằm mục đích vay tiền, dẫn đến việc hủy bỏ hợp đồng và chỉ hoàn trả tiền gốc.",
+  "confidence": "HIGH"
+}

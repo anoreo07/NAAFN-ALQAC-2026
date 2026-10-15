@@ -1,0 +1,33 @@
+{
+  "case_id": "case_4834",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4834_seg_408e74f5d59681d0",
+        "case_4834_seg_89479fd799363e6b",
+        "case_4834_seg_1ba1c50a8d12eca5",
+        "case_4834_seg_72d7c60b4b061ba4",
+        "case_4834_seg_0c6eb6aae42fc3d3",
+        "case_4834_seg_06d023cc77ddc336",
+        "case_4834_seg_4afb37183ad512e9",
+        "case_4834_seg_22dde7a590e40676",
+        "case_4834_seg_28d2f29d642c5cc3",
+        "case_4834_seg_a44f45d2acb041f3"
+      ],
+      "law_aids": [
+        53236,
+        53050,
+        53233
+      ],
+      "short_reason": "Nguyên đơn chứng minh được quan hệ vay mượn và số tiền còn thiếu qua lời khai, nhưng bị đơn thừa nhận đã trả một phần. Tòa sẽ chấp nhận yêu cầu trả số còn thiếu nhưng có thể điều chỉnh lãi suất hoặc thời điểm tính lãi nếu không có thỏa thuận rõ ràng."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định số tiền gốc và lãi thực tế còn nợ sau khi bị đơn đã thanh toán một phần, dựa trên các chứng từ và lời khai mâu thuẫn về thời điểm và số tiền giao nhận.",
+  "confidence": "MEDIUM"
+}

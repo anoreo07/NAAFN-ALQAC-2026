@@ -1,0 +1,26 @@
+{
+  "case_id": "case_5057",
+  "pass_name": "ADVERSARIAL",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "GRANTED",
+      "relief_fraction": 1.0,
+      "defense_effect": "NO_EFFECT",
+      "case_evidence_ids": [
+        "case_5057_seg_420afd3dbb26e332",
+        "case_5057_seg_a9732fafe1d7a359",
+        "case_5057_seg_4c9b5704432ac185",
+        "case_5057_seg_9d99605978514986"
+      ],
+      "law_aids": [
+        53269,
+        860
+      ],
+      "short_reason": "Bị đơn thừa nhận cam kết mượn đất 5 năm và thỏa thuận dỡ nhà khi hết hạn. Hết hạn 2012 nhưng chưa trả. Nguyên đơn có quyền đòi lại đất và yêu cầu dỡ nhà theo BLDS 2015 và Luật Đất đai."
+    }
+  ],
+  "direct_label": "A_WIN",
+  "key_issue": "Việc bị đơn sử dụng đất quá thời hạn cam kết (5 năm) và không thực hiện thỏa thuận dỡ nhà khi hết hạn.",
+  "confidence": "HIGH"
+}

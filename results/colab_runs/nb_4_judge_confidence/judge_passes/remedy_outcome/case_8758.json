@@ -1,0 +1,23 @@
+{
+  "case_id": "case_8758",
+  "pass_name": "REMEDY_OUTCOME",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "REJECTED",
+      "relief_fraction": 0.0,
+      "defense_effect": "DEFEAT_CLAIM",
+      "case_evidence_ids": [
+        "case_8758_seg_18216aa1edda4cdd",
+        "case_8758_seg_38899644445af34d"
+      ],
+      "law_aids": [
+        53024
+      ],
+      "short_reason": "Bị đơn chứng minh được việc xin cấp lối đi năm 1995 có xác nhận của chính quyền, sử dụng ổn định lâu dài. Nguyên đơn không chứng minh được quyền sở hữu đối với phần đất này, chỉ là đất hoang hóa tập thể đã được giao cho bị đơn."
+    }
+  ],
+  "direct_label": "B_WIN",
+  "key_issue": "Việc xác định quyền sử dụng đối với phần đất lối đi 42m² thuộc thửa 83, dựa trên hồ sơ xin cấp đất năm 1995 có xác nhận của UBND xã và việc sử dụng ổn định của bị đơn, trong khi nguyên đơn không chứng minh được quyền sở hữu.",
+  "confidence": "HIGH"
+}

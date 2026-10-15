@@ -1,0 +1,51 @@
+{
+  "case_id": "case_5045",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_5045_seg_6ab8b9127c959287",
+        "case_5045_seg_7cd47a976043a595",
+        "case_5045_seg_74761311565f1054",
+        "case_5045_seg_d1eb25bda549e12c",
+        "case_5045_seg_5c3ab453a26bdcdd",
+        "case_5045_seg_077b46d2b1bc97bf",
+        "case_5045_seg_22b1efdbc6e1911c",
+        "case_5045_seg_848a943f76281887",
+        "case_5045_seg_9af7fa578f647d32",
+        "case_5045_seg_aa5e0391dd7b9c30",
+        "case_5045_seg_8276a2936a3f9e25",
+        "case_5045_seg_349635f904d46a1e",
+        "case_5045_seg_2d90cbdde93e21a3",
+        "case_5045_seg_0612c0a4bb16f7ee",
+        "case_5045_seg_276618ef6a5e52ad",
+        "case_5045_seg_91cc59af976df8fc",
+        "case_5045_seg_585fb38c01bc0cce",
+        "case_5045_seg_2b111f2ad11ee13b",
+        "case_5045_seg_605a48b81649081f",
+        "case_5045_seg_469e2179af28744d",
+        "case_5045_seg_7a8270b7ffd61573",
+        "case_5045_seg_bf95f7b639aed711",
+        "case_5045_seg_4de3a722aab6d0cf",
+        "case_5045_seg_3b412b3012814104",
+        "case_5045_seg_93eb7f1438232a16",
+        "case_5045_seg_1fb76ce08d68c973",
+        "case_5045_seg_f4339341fe65b73a",
+        "case_5045_seg_fc7004ffb59b70ab",
+        "case_5045_seg_8afaa081fc6ccb89"
+      ],
+      "law_aids": [
+        53024,
+        56056
+      ],
+      "short_reason": "Nguyên đơn chứng minh được lối đi là cần thiết và đã có thỏa thuận chừa lối đi. Tuy nhiên, việc hủy GCNQSDĐ bị đơn có căn cứ pháp lý vững chắc do GCN đã được cấp hợp lệ theo thủ tục, không thuộc trường hợp thu hồi theo Luật Đất đai. Tòa án sẽ buộc bị đơn mở lối đi hợp lý thay vì hủy GCN."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Việc xác định quyền lối đi hợp lý theo Bộ luật Dân sự mâu thuẫn với tính hợp pháp của Giấy chứng nhận quyền sử dụng đất đã được cấp theo Luật Đất đai.",
+  "confidence": "HIGH"
+}

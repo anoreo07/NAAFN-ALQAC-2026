@@ -1,0 +1,1452 @@
+{
+  "case_4101": {
+    "case_id": "case_4101",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường chi phí sửa xe máy và viện phí ngoại trú",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy chó nhà bị thả rông của B đã gây ra tai nạn, và luật quy định B phải bồi thường."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chấp nhận yêu cầu bồi thường chi phí sửa xe máy và viện phí ngoại trú do B đã vi phạm nghĩa vụ bảo vệ tài sản của mình.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4337": {
+    "case_id": "case_4337",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy giấy chứng nhận quyền sử dụng đất và buộc trả nhà đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên bằng chứng, A có quyền sử dụng đất nhưng phạm vi yêu cầu bị giảm."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ thắng một phần khi yêu cầu chính được chấp nhận nhưng phạm vi yêu cầu bị giảm do bằng chứng cho thấy A có quyền sử dụng đất nhưng phạm vi cụ thể của yêu cầu không được hỗ trợ đầy đủ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4588": {
+    "case_id": "case_4588",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia đều giá trị di sản cho 10 anh chị em",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Di chúc rõ ràng, nhưng số lượng thừa kế không đồng đều."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần của di sản, nhưng không chia đều như yêu cầu. Bị đơn B sẽ phải chịu trách nhiệm chia di sản, nhưng không hoàn toàn theo yêu cầu của A.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4616": {
+    "case_id": "case_4616",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu Công ty TNHH Thương mại và Xuất nhập khẩu H thanh toán nợ gốc, lãi",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Công ty H đã chứng minh được khả năng thanh toán và không vi phạm điều khoản hợp đồng."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu phát mại tài sản bảo đảm",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Công ty H đã chứng minh được khả năng thanh toán và không vi phạm điều khoản hợp đồng."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn đã thanh toán đúng hạn và không vi phạm điều khoản hợp đồng",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Công ty H đã cung cấp bằng chứng về việc thanh toán đúng hạn và tuân thủ hợp đồng."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A không thể chứng minh được yêu cầu thanh toán nợ gốc, lãi và phát mại tài sản bảo đảm, trong khi bị đơn B đã chứng minh được khả năng thanh toán và tuân thủ hợp đồng.",
+    "pass_name": "independent_auditor"
+  },
+  "case_6616": {
+    "case_id": "case_6616",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chia di sản theo quy định pháp luật, giảm mức yêu cầu vì có đồng thừa kế."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được chia di sản nhưng mức yêu cầu bị giảm do có đồng thừa kế. B thắng một số vấn đề nhưng A vẫn nhận cứu trợ chính.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5226": {
+    "case_id": "case_5226",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 1.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả nợ gốc và lãi",
+        "importance": "CORE",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Anh T. chứng minh được khả năng thanh toán và không vi phạm điều khoản hợp đồng."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Bị đơn anh Nguyễn Văn T. chứng minh được khả năng thanh toán và không vi phạm điều khoản hợp đồng, nên yêu cầu của nguyên đơn bị bác.",
+    "pass_name": "independent_auditor"
+  },
+  "case_6284": {
+    "case_id": "case_6284",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu tiếp tục thực hiện hợp đồng, giao đất và tài sản trên đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng hợp lệ, nhưng có vấn đề về việc giao đất."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được một phần trong yêu cầu chính, nhưng bị giảm phạm vi yêu cầu do vấn đề về việc giao đất. Bị đơn B có trách nhiệm nhưng không hoàn toàn đáp ứng yêu cầu của A.",
+    "pass_name": "independent_auditor"
+  },
+  "case_3995": {
+    "case_id": "case_3995",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại phần đất bị lấn chiếm",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên bằng chứng, A có quyền sử dụng đất nhưng B cũng có bằng chứng về quyền sử dụng chung."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A có quyền sử dụng đất nhưng bị đơn B cũng có bằng chứng về quyền sử dụng chung, dẫn đến A chỉ nhận được một phần yêu cầu của mình.",
+    "pass_name": "independent_auditor"
+  },
+  "case_6384": {
+    "case_id": "case_6384",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu quản lý, sử dụng đất tranh chấp",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Giấy chứng nhận của A hợp lệ, nhưng diện tích yêu cầu quản lý, sử dụng không đầy đủ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_COUNTERCLAIM",
+        "claim": "Yêu cầu di dời cây trồng",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Cây trồng của B có thể cần di dời, nhưng không toàn bộ."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được một phần trong yêu cầu quản lý, sử dụng đất, nhưng diện tích yêu cầu không đầy đủ. B cũng thắng một phần khi yêu cầu di dời cây trồng được chấp nhận một phần.",
+    "pass_name": "independent_auditor"
+  },
+  "case_8219": {
+    "case_id": "case_8219",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bị đơn hoàn trả 142.800.000 đồng",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy có giao dịch vay, nhưng số tiền yêu cầu vượt quá chứng cứ."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ thắng một phần khi yêu cầu được giảm bớt do thiếu chứng cứ đầy đủ, nhưng trách nhiệm của B vẫn được xác định.",
+    "pass_name": "independent_auditor"
+  },
+  "case_2705": {
+    "case_id": "case_2705",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy bỏ giao dịch và hoàn trả 100.000.000 đồng",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Giao dịch không tuân thủ quy định pháp luật, nhưng mức hoàn trả được điều chỉnh."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được một phần trong yêu cầu chính, nhưng mức hoàn trả được điều chỉnh giảm so với yêu cầu ban đầu. Bị đơn B có phần thắng trong vấn đề về mức hoàn trả.",
+    "pass_name": "independent_auditor"
+  },
+  "case_3263": {
+    "case_id": "case_3263",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu thanh toán 1.075.000.000 đồng",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy A đã đóng góp vào hụi, nhưng số tiền yêu cầu vượt quá thực tế."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần của yêu cầu, nhưng số tiền sẽ được điều chỉnh giảm so với yêu cầu ban đầu. Bị đơn B sẽ phải chịu trách nhiệm về một phần của khoản nợ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_9125": {
+    "case_id": "case_9125",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.8,
+      "PARTIAL_A_WIN": 0.1,
+      "PARTIAL_B_WIN": 0.05,
+      "B_WIN": 0.05
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu công nhận quyền sử dụng đất",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy ông N có quyền sử dụng đất hợp pháp."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn Q đưa ra lý do tranh chấp",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Lý do tranh chấp không đủ cơ sở pháp lý."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu buộc trả lại đất",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Quyền sử dụng đất của ông N đã được xác định."
+      },
+      {
+        "claim_id": "c4",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy các văn bản liên quan",
+        "importance": "SECONDARY",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Một số văn bản cần được hủy bỏ."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A (ông Võ N) thắng kiện về việc công nhận quyền sử dụng đất và buộc trả lại đất. A cũng nhận được một phần cứu trợ liên quan đến việc hủy các văn bản liên quan, nhưng không hoàn toàn như yêu cầu.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5658": {
+    "case_id": "case_5658",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả nợ gốc, nợ lãi và lãi tiếp tục phát sinh",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng tín dụng ràng buộc và chứng cứ tài liệu đầy đủ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Bị đơn đưa ra các lý do miễn trừ",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Lý do miễn trừ không phù hợp với quy định pháp luật."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chấp nhận về yêu cầu chính và bị đơn B không thành công trong việc chống lại yêu cầu này.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5045": {
+    "case_id": "case_5045",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.8,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại đất lối đi và hủy giấy chứng nhận quyền sử dụng đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên bằng chứng, lối đi chung cần được tôn trọng."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần của yêu cầu, bao gồm việc trả lại đất lối đi chung, nhưng không thể hủy bỏ giấy chứng nhận quyền sử dụng đất của bị đơn B.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4920": {
+    "case_id": "case_4920",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 1.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu tiếp tục thực hiện hợp đồng và thanh toán tiền lãi",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng hợp lệ, A yêu cầu chính hợp lý."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A có quyền yêu cầu tiếp tục thực hiện hợp đồng và thanh toán tiền lãi theo đúng quy định pháp luật.",
+    "pass_name": "independent_auditor"
+  },
+  "case_8758": {
+    "case_id": "case_8758",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại 42m² đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên giấy tờ cũ và thực tế sử dụng, A có quyền sử dụng một phần đất."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần đất 42m² nhưng không hoàn toàn như yêu cầu ban đầu, do đó là kết quả thắng một phần.",
+    "pass_name": "independent_auditor"
+  },
+  "case_9089": {
+    "case_id": "case_9089",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu giao trả phần đất tranh chấp",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên giấy tờ và chứng cứ, A có quyền sử dụng một phần đất nhưng diện tích yêu cầu không đúng."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần đất tranh chấp theo yêu cầu nhưng diện tích không đúng như mong muốn, do đó A chỉ thắng một phần. B cũng sẽ bị xác định trách nhiệm nhưng không hoàn toàn như yêu cầu của A.",
+    "pass_name": "independent_auditor"
+  },
+  "case_127": {
+    "case_id": "case_127",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu tuyên giao dịch vô hiệu, trả lại nhà đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên chứng cứ, hợp đồng có dấu hiệu gian lận, nhưng chưa đủ để tuyên vô hiệu hoàn toàn."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Tranh cãi về tính hợp pháp của GCNQSDĐ",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Bị đơn có quyền tranh chấp GCNQSDĐ, nhưng không thể đòi lại toàn bộ nhà đất."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần yêu cầu, nhưng không thể đòi lại toàn bộ nhà đất. Bị đơn B sẽ giữ lại một phần nhà đất, nhưng không thể khẳng định tính hợp pháp của GCNQSDĐ hoàn toàn.",
+    "pass_name": "independent_auditor"
+  },
+  "case_2978": {
+    "case_id": "case_2978",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại hệ thống nhà xưởng, 01 xe máy xúc, 03 bộ máy băm củi và khoảng 1.000 tấn củi băm nhỏ.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên chứng cứ, A có quyền đến một phần yêu cầu."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần yêu cầu của mình, nhưng không hoàn toàn như mong muốn. Bị đơn B sẽ phải chịu trách nhiệm về một số tài sản, nhưng không phải tất cả.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4579": {
+    "case_id": "case_4579",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại diện tích 102m2",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Sơ đồ đo vẽ năm 2007 ủng hộ nguyên đơn, nhưng bị đơn cũng có quyền sử dụng đất hợp pháp."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần diện tích 102m2 theo yêu cầu, nhưng bị đơn B cũng có quyền sử dụng đất hợp pháp nên không hoàn toàn chấp nhận yêu cầu của A.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5236": {
+    "case_id": "case_5236",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 1.0,
+      "PARTIAL_A_WIN": 0.0,
+      "PARTIAL_B_WIN": 0.0,
+      "B_WIN": 0.0
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hoàn trả tiền phường còn nợ 86.400.000đ",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Thỏa thuận giữa các bên rõ ràng, không có bằng chứng trái chiều."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chấp nhận yêu cầu hoàn trả tiền phường còn nợ 86.400.000đ vì có thỏa thuận rõ ràng và không có bằng chứng trái chiều.",
+    "pass_name": "independent_auditor"
+  },
+  "case_6663": {
+    "case_id": "case_6663",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu thanh toán nợ gốc, lãi",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng tín dụng ràng buộc, tài sản thế chấp đủ điều kiện."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Tranh chấp về việc sử dụng tài sản thế chấp",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Không chứng minh được việc sử dụng bất hợp pháp."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn TPBank được chấp nhận yêu cầu thanh toán nợ gốc, lãi do có hợp đồng tín dụng ràng buộc và tài sản thế chấp đủ điều kiện. Bị đơn H không thành công trong việc tranh chấp về việc sử dụng tài sản thế chấp.",
+    "pass_name": "independent_auditor"
+  },
+  "case_8732": {
+    "case_id": "case_8732",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả số tiền gốc và lãi",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Giấy biên nhận vay và thỏa thuận thế chấp hợp lệ."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A có đủ bằng chứng và luật để đòi lại số tiền gốc và lãi từ bị đơn B, do đó A sẽ thắng kiện.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4861": {
+    "case_id": "case_4861",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy giấy chứng nhận quyền sử dụng đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên chứng cứ, có dấu hiệu nghi ngờ về tính hợp pháp của giấy chứng nhận."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ thắng một phần khi yêu cầu hủy giấy chứng nhận quyền sử dụng đất được chấp nhận, nhưng phạm vi yêu cầu chia di sản thừa kế có thể bị giảm.",
+    "pass_name": "independent_auditor"
+  },
+  "case_3241": {
+    "case_id": "case_3241",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả nợ gốc, lãi",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Bị đơn có khả năng trả một phần nợ, nhưng không đủ để thanh toán toàn bộ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Trả nợ đã được thanh toán",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Không có bằng chứng thuyết phục về việc trả nợ đã hoàn thành."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ thắng một phần yêu cầu trả nợ, nhưng mức độ trả nợ sẽ thấp hơn so với yêu cầu ban đầu. Bị đơn B sẽ không thành công trong việc phủ nhận khoản nợ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_1087": {
+    "case_id": "case_1087",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường 50.000.000đ tiền nhà và 10.000.000đ tiền giếng.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Căn cứ vào chứng cứ, tòa án có thể chấp nhận một phần yêu cầu của nguyên đơn."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn có thể nhận được một phần yêu cầu bồi thường, nhưng mức bồi thường có thể bị giảm do các yếu tố pháp lý và chứng cứ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_9052": {
+    "case_id": "case_9052",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy giấy chứng nhận và công nhận quyền sử dụng đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên bằng chứng, A có quyền sử dụng đất nhưng phạm vi yêu cầu bị giảm."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ thắng một phần khi yêu cầu chính được chấp nhận nhưng phạm vi yêu cầu bị giảm. Bị đơn B sẽ chịu trách nhiệm trả lại một phần đất nhưng không hoàn toàn như yêu cầu của A.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5160": {
+    "case_id": "case_5160",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thừa kế",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Di sản được chia theo pháp luật, nhưng không theo yêu cầu chính xác của A."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "B_DEFENSE",
+        "claim": "Phản đối việc chia di sản không công bằng",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "B thắng về vấn đề chia di sản công bằng, nhưng A vẫn nhận được một phần di sản."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A nhận được một phần di sản theo yêu cầu, nhưng không hoàn toàn như mong muốn. B thắng về vấn đề chia di sản công bằng, nhưng A vẫn nhận được một phần di sản.",
+    "pass_name": "independent_auditor"
+  },
+  "case_8147": {
+    "case_id": "case_8147",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia thừa kế theo pháp luật",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Theo quy định pháp luật, di sản thừa kế phải được chia theo pháp luật."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chia thừa kế theo pháp luật, vì không có di chúc và các bên không có tranh chấp về vấn đề này.",
+    "pass_name": "independent_auditor"
+  },
+  "case_2238": {
+    "case_id": "case_2238",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu giao nhà đất hoặc hoàn trả tiền",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng có hiệu lực, nhưng bị đơn chỉ chịu trách nhiệm về phần tiền hoàn trả."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn thắng một phần khi bị đơn chỉ phải hoàn trả tiền theo hợp đồng, không giao nhà đất.",
+    "pass_name": "independent_auditor"
+  },
+  "case_614": {
+    "case_id": "case_614",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thành 11 phần, ông T nhận hiện vật và thanh toán giá trị cho 10 người còn lại.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên chứng cứ, tòa án có thể chấp nhận yêu cầu chia di sản nhưng điều chỉnh số lượng người nhận hiện vật."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Tòa án có thể chấp nhận yêu cầu chia di sản của nguyên đơn nhưng điều chỉnh số lượng người nhận hiện vật, dẫn đến việc nguyên đơn nhận được cứu trợ nhưng không hoàn toàn như mong muốn.",
+    "pass_name": "independent_auditor"
+  },
+  "case_1959": {
+    "case_id": "case_1959",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường chi phí xây lại hàng rào",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên chứng cứ cho thấy vi phạm và trách nhiệm của B, nhưng A cần giảm yêu cầu."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được chấp nhận một phần yêu cầu bồi thường, nhưng mức chi phí cần được điều chỉnh phù hợp với trách nhiệm của B.",
+    "pass_name": "independent_auditor"
+  },
+  "case_6425": {
+    "case_id": "case_6425",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hoàn trả giá trị quyền sử dụng đất theo diện tích lấn chiếm và chồng lấn.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Phần đất chồng lấn cần được điều chỉnh, A nhận cứu trợ hạn chế."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận cứu trợ hạn chế, nhưng trách nhiệm của các bên liên quan trong việc lấn chiếm và chồng lấn được xác định.",
+    "pass_name": "independent_auditor"
+  },
+  "case_3735": {
+    "case_id": "case_3735",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Nguyên đơn yêu cầu hoàn trả 30.000.000đ",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chị T1 phải hoàn trả một phần số tiền hùn."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần yêu cầu hoàn trả tiền hùn, nhưng không phải toàn bộ số tiền yêu cầu ban đầu. Bị đơn B sẽ phải chịu trách nhiệm về một phần của khoản tiền hùn.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5860": {
+    "case_id": "case_5860",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu anh V trả 22.187.000 đồng",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Đơn xác nhận công nợ và hóa đơn hợp lệ, nhưng số tiền yêu cầu bị giảm."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được một phần trong yêu cầu chính, nhưng số tiền đòi hỏi bị giảm do thiếu bằng chứng về toàn bộ số tiền nợ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_7467": {
+    "case_id": "case_7467",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu chia di sản thừa kế theo pháp luật",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Pháp luật quy định rõ về việc chia di sản thừa kế, nhưng có phần đất đã tặng cho."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ được chia di sản thừa kế theo pháp luật, nhưng cần trừ phần đất đã tặng cho. Bị đơn B sẽ phải chịu trách nhiệm về phần di sản còn lại, nhưng không hoàn toàn như yêu cầu của A.",
+    "pass_name": "independent_auditor"
+  },
+  "case_149": {
+    "case_id": "case_149",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu trả lại tiền nhận và bồi thường thiệt hại",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng có lỗi, nhưng A phải chịu một phần trách nhiệm."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần yêu cầu, nhưng mức bồi thường và phạm vi trả lại tiền sẽ bị giảm do có lỗi của A trong việc thực hiện hợp đồng.",
+    "pass_name": "independent_auditor"
+  },
+  "case_3079": {
+    "case_id": "case_3079",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường chi phí điều trị, mất thu nhập, mất thu nhập người chăm sóc, tổn thất tinh thần và thiệt hại tài sản",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy thiệt hại xảy ra nhưng mức bồi thường cần được điều chỉnh."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ nhận được một phần yêu cầu bồi thường, mặc dù mức bồi thường sẽ được điều chỉnh giảm so với yêu cầu ban đầu.",
+    "pass_name": "independent_auditor"
+  },
+  "case_8812": {
+    "case_id": "case_8812",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường thiệt hại",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Có bằng chứng về việc đánh và thương tích, luật quy định bồi thường."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A có bằng chứng mạnh mẽ về việc bị đánh và thương tích, và luật pháp hỗ trợ yêu cầu bồi thường toàn diện.",
+    "pass_name": "independent_auditor"
+  },
+  "case_5057": {
+    "case_id": "case_5057",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_B_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.1,
+      "PARTIAL_B_WIN": 0.8,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu tháo dỡ nhà, giao trả đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Tờ cam kết chỉ mượn đất 5 năm, hết hạn không trả."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Yêu cầu chính của A được chấp nhận một phần, nhưng mức độ yêu cầu và phạm vi giao trả đất có thể bị giảm do thời hạn cam kết đã hết.",
+    "pass_name": "independent_auditor"
+  },
+  "case_551": {
+    "case_id": "case_551",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.2,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.1,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy quyết định hành chính cá biệt và thu hoạch cây cối, trả lại đất.",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Dựa trên bằng chứng, quyết định hành chính có thể bị hủy nhưng phạm vi yêu cầu về đất và cây cối có thể bị điều chỉnh."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn sẽ nhận được một phần của yêu cầu, bao gồm việc hủy quyết định hành chính cá biệt, nhưng phạm vi yêu cầu về đất và cây cối có thể bị điều chỉnh.",
+    "pass_name": "independent_auditor"
+  },
+  "case_669": {
+    "case_id": "case_669",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu hủy hợp đồng và đòi lại đất",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng viết tay không tuân thủ quy định pháp luật, nhưng vẫn có hiệu lực đối với một phần diện tích."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ thắng một phần yêu cầu, hợp đồng được hủy bỏ đối với một phần diện tích đất, nhưng không toàn bộ yêu cầu đòi lại đất.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4557": {
+    "case_id": "case_4557",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường thiệt hại 103.680.000đ",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Có bằng chứng cho thấy thiệt hại xảy ra, nhưng mức bồi thường chưa được xác định đầy đủ."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn Thái C sẽ nhận được một phần yêu cầu bồi thường thiệt hại, nhưng mức bồi thường cụ thể chưa được xác định đầy đủ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_950": {
+    "case_id": "case_950",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường 56 cây chuối bị chặt",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy B đã chặt cây nhưng không chứng minh hoàn toàn việc A không quản lý tốt."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A được phần lớn chấp nhận yêu cầu bồi thường, nhưng mức bồi thường có thể bị điều chỉnh do thiếu bằng chứng về việc A không quản lý cây chuối một cách hiệu quả.",
+    "pass_name": "independent_auditor"
+  },
+  "case_2035": {
+    "case_id": "case_2035",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.7,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu công nhận bức tường 8,33m x cao 5,6m thuộc mình",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy bức tường nằm trong ranh giới đất của A."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bị đơn tháo mái tôn, kèo, tháo ban công lấn sang",
+        "importance": "MAJOR",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ không đủ minh chứng hành vi lấn chiếm của B."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bít cửa sổ nhìn sang",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chủ quyền cửa sổ không thuộc ranh giới đất của A."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A thắng một phần khi bức tường được công nhận, nhưng yêu cầu tháo mái tôn, tháo ban công và bít cửa sổ không được chấp nhận.",
+    "pass_name": "independent_auditor"
+  },
+  "case_8303": {
+    "case_id": "case_8303",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Thanh toán nợ gốc và lãi",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Hợp đồng tín dụng ràng buộc và tài sản thế chấp đủ điều kiện."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chấp nhận về cơ bản toàn bộ yêu cầu thanh toán nợ gốc và lãi do có hợp đồng tín dụng ràng buộc và tài sản thế chấp đủ điều kiện.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4704": {
+    "case_id": "case_4704",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu giữ nhà và chia giá trị thừa kế",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ cho thấy A có quyền thừa kế, nhưng giá trị nhà cần được sửa chữa."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn A sẽ được chấp nhận một phần yêu cầu, giữ lại căn nhà sau khi sửa chữa và chia giá trị thừa kế, nhưng không được chấp nhận hoàn toàn yêu cầu về giá trị nhà.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4644": {
+    "case_id": "case_4644",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "A_WIN",
+    "probabilities": {
+      "A_WIN": 0.9,
+      "PARTIAL_A_WIN": 0.05,
+      "PARTIAL_B_WIN": 0.03,
+      "B_WIN": 0.02
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường chi phí điều trị",
+        "importance": "CORE",
+        "result": "GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ y tế và luật bồi thường ủng hộ."
+      },
+      {
+        "claim_id": "c2",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường tiền mất thu nhập",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Chứng cứ thu nhập và luật bồi thường hỗ trợ, nhưng mức thu nhập bị giảm."
+      },
+      {
+        "claim_id": "c3",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu bồi thường điện thoại OPPO",
+        "importance": "SECONDARY",
+        "result": "REJECTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Không chứng minh được điện thoại bị hỏng do xô xát."
+      }
+    ],
+    "confidence": "HIGH",
+    "decision_summary": "Nguyên đơn A được chấp nhận về cơ bản toàn bộ yêu cầu bồi thường chi phí điều trị và một phần yêu cầu bồi thường tiền mất thu nhập, do có đủ chứng cứ và luật bồi thường ủng hộ.",
+    "pass_name": "independent_auditor"
+  },
+  "case_4834": {
+    "case_id": "case_4834",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "prediction": "PARTIAL_A_WIN",
+    "probabilities": {
+      "A_WIN": 0.0,
+      "PARTIAL_A_WIN": 0.6,
+      "PARTIAL_B_WIN": 0.2,
+      "B_WIN": 0.2
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim_type": "A_CLAIM",
+        "claim": "Yêu cầu ông Nguyễn Tấn C trả nợ gốc và lãi",
+        "importance": "CORE",
+        "result": "PARTIALLY_GRANTED",
+        "case_evidence_ids": [],
+        "law_aids": [],
+        "short_reason": "Thỏa thuận vay vốn và thế chấp có hiệu lực, nhưng số tiền cụ thể cần trả chưa được xác định đầy đủ."
+      }
+    ],
+    "confidence": "MEDIUM",
+    "decision_summary": "Nguyên đơn sẽ nhận được một phần yêu cầu của mình, nhưng số tiền cụ thể cần trả vẫn cần được xác định rõ ràng trong quá trình tiếp theo.",
+    "pass_name": "independent_auditor"
+  }
+}

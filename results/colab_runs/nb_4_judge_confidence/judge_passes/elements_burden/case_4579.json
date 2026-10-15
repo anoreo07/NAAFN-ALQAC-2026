@@ -1,0 +1,43 @@
+{
+  "case_id": "case_4579",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_4579_seg_3cb72192d303ee14",
+        "case_4579_seg_0807eafca891989a",
+        "case_4579_seg_a1039208d6ca99a8",
+        "case_4579_seg_48d51460387baa57",
+        "case_4579_seg_d602f74621ce85a5",
+        "case_4579_seg_41b13cba91d7836a",
+        "case_4579_seg_e6011fb0a4013446",
+        "case_4579_seg_50912a4c71805428",
+        "case_4579_seg_5c3fbcef4b969f6d",
+        "case_4579_seg_7df0b6eb12727238",
+        "case_4579_seg_f257a908eafda638",
+        "case_4579_seg_3cdec329b5863f99",
+        "case_4579_seg_f347f3c385efd79b",
+        "case_4579_seg_7c9b7460f6215f76",
+        "case_4579_seg_347db78f7366b07d",
+        "case_4579_seg_2e4e9bea2fd71663",
+        "case_4579_seg_878c82f8b6db7806",
+        "case_4579_seg_ff57057852d27529",
+        "case_4579_seg_3bd5702685f36c01"
+      ],
+      "law_aids": [
+        50691,
+        52934,
+        52955,
+        52781
+      ],
+      "short_reason": "Nguyên đơn chứng minh được quyền sử dụng đất và lối đi qua trên bản đồ 1994, nhưng bị đơn chứng minh được việc cấp GCN 1997 không bao gồm diện tích tranh chấp. Tòa án sẽ buộc trả lại phần đất có căn cứ pháp lý (lối đi công cộng) nhưng không buộc trả lại toàn bộ 102m2 nếu phần còn lại thuộc quyền sử dụng hợp pháp của bị đơn theo GCN."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Xác định ranh giới thửa đất tranh chấp dựa trên bản đồ địa chính năm 1994 so với Giấy chứng nhận năm 1997 và hiện trạng sử dụng thực tế.",
+  "confidence": "HIGH"
+}

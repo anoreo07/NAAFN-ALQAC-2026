@@ -1,0 +1,55 @@
+{
+  "case_id": "case_127",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.6,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_127_seg_0737f72ea1360386",
+        "case_127_seg_5d50615995063e15",
+        "case_127_seg_67f6cf0ed899df37",
+        "case_127_seg_e8f395f27e56b989",
+        "case_127_seg_3cb2e400a30b639d",
+        "case_127_seg_fb95ed92127e12de",
+        "case_127_seg_10afbeeef0923ee6",
+        "case_127_seg_49d94ad5dc773165",
+        "case_127_seg_59418d9cba1526a2",
+        "case_127_seg_ec88e40382ccf151",
+        "case_127_seg_2f14b660ee9f1c3c",
+        "case_127_seg_d3506f38bb9593fb",
+        "case_127_seg_3d38c822311f1a05",
+        "case_127_seg_c65a4dcab3b5f7f1",
+        "case_127_seg_54e1bdce0ae08d5a",
+        "case_127_seg_75679bc25574cf77",
+        "case_127_seg_69fd6b477f3e1113",
+        "case_127_seg_ec7121d714f12b3d",
+        "case_127_seg_7a21851b51e0d9c2",
+        "case_127_seg_522ecb49fe66dba8",
+        "case_127_seg_5bd1eecba798e77f",
+        "case_127_seg_5316f1ff62395aba",
+        "case_127_seg_8d725074c718028d",
+        "case_127_seg_645b10096a021b16",
+        "case_127_seg_0f068d4183fcdbbc",
+        "case_127_seg_2fe632ddefc883a4",
+        "case_127_seg_95b68111f91abaf4",
+        "case_127_seg_467a07eb1c277b54",
+        "case_127_seg_19a1f25adb89df84",
+        "case_127_seg_aec95528ae76c714",
+        "case_127_seg_998410f436a478d3"
+      ],
+      "law_aids": [
+        52901,
+        56138,
+        56047,
+        50871
+      ],
+      "short_reason": "Giao dịch thiếu văn bản công chứng/chứng thực theo luật đất đai thời điểm, vi phạm điều cấm. Tuy nhiên, đã có thời gian sử dụng ổn định và GCNQSDĐ, nên chỉ tuyên vô hiệu một phần giao dịch chuyển nhượng sau này, buộc hoàn trả tài sản."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Tính hợp pháp của giao dịch chuyển nhượng nhà đất thiếu văn bản công chứng/chứng thực và việc xác lập quyền sở hữu sau khi đã có GCNQSDĐ.",
+  "confidence": "HIGH"
+}

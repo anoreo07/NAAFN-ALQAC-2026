@@ -1,0 +1,27 @@
+{
+  "case_id": "case_149",
+  "pass_name": "ELEMENTS_BURDEN",
+  "claim_results": [
+    {
+      "claim_id": "A_QUERY_SEED",
+      "result": "PARTIALLY_GRANTED",
+      "relief_fraction": 0.5,
+      "defense_effect": "REDUCE_RELIEF",
+      "case_evidence_ids": [
+        "case_149_seg_8d929dddccf5d96d",
+        "case_149_seg_0b5f1a6c4276b6d1",
+        "case_149_seg_f5c379bf1ecad231",
+        "case_149_seg_24f6adf7944caa41",
+        "case_149_seg_5f9dfd05ff414e7a"
+      ],
+      "law_aids": [
+        53197,
+        856
+      ],
+      "short_reason": "Hợp đồng bị vô hiệu do thiếu thông tin thửa đất và chứng thực sai quy định (E1, E21, E22). Nguyên đơn được hoàn trả tiền gốc (Điều 427 BLDS). Tuy nhiên, yêu cầu bồi thường phạt vi phạm có thể bị giảm do tính chất giả tạo của hợp đồng và lỗi của nguyên đơn trong việc không kiểm tra kỹ."
+    }
+  ],
+  "direct_label": "PARTIAL_A_WIN",
+  "key_issue": "Hợp đồng chuyển nhượng quyền sử dụng đất bị vô hiệu do thiếu thông tin thửa đất và chứng thực sai quy định, dẫn đến việc hoàn trả tiền gốc nhưng hạn chế bồi thường phạt.",
+  "confidence": "HIGH"
+}
