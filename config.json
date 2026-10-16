@@ -1,0 +1,245 @@
+{
+    "_description": "NAAFN@ALQAC 2026 — Fixed Retrieval Scheduler Configuration. Released alongside the paper to enable full reproducibility. All values are fixed constants manually tuned on a small pilot set; no grid search is performed on the retrieval utility.",
+    "_version": "1.0",
+    "_release_date": "2026-10-16",
+    "SEED": 42,
+    "ENVIRONMENT": {
+        "python": "3.10",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "scikit_learn": "1.6.1",
+        "torch": "2.11.0",
+        "rank_bm25": "0.2.x",
+        "sentence_transformers": "5.7.0"
+    },
+    "EvidenceRetrievalConfig": {
+        "_comment": "Parameters governing the adaptive evidence extraction stage (Section III).",
+        "API_AND_RETRY": {
+            "min_interval_seconds": 5.5,
+            "max_retries_per_query": 3,
+            "retry_backoff_5xx_formula": "5 * 2^(k-1) seconds",
+            "retry_backoff_429_formula": "6 * k seconds"
+        },
+        "BOOTSTRAP_AND_REFRESH": {
+            "bootstrap_unique_target": 8,
+            "evidence_refresh_every_new_chunks": 4,
+            "evidence_refresh_every_queries": 8,
+            "max_analysis_chunks": 32,
+            "recent_window": 8,
+            "saturation_max_new_chunks": 1
+        },
+        "UTILITY_THRESHOLDS": {
+            "minimum_candidate_utility": 0.14,
+            "high_priority_gap_threshold": 0.72
+        },
+        "CANDIDATE_POOL_LIMITS": {
+            "max_candidate_pool_size": 800,
+            "max_seed_queries": 28,
+            "max_chunk_queries": 16,
+            "max_gap_queries": 24,
+            "max_boundary_queries_per_chunk": 4,
+            "max_mutations_per_branch": 1
+        },
+        "SOURCE_AWARE_SCHEDULING": {
+            "source_probe_start_call": 2,
+            "mandatory_probe_attempts_per_source": 1,
+            "max_source_queries_per_type": 4,
+            "max_entity_source_candidates_per_type": 8,
+            "min_source_attribution_confidence": 0.55,
+            "_coverage_priority_scores": {
+                "not_found": 0.90,
+                "mention_only": 0.84,
+                "partial": 0.78,
+                "substantive": 0.20
+            }
+        },
+        "DUPLICATE_REJECTION": {
+            "hard_seen_coverage_reject": 0.96,
+            "hard_seen_semantic_reject": 0.985,
+            "used_query_semantic_reject": 0.94
+        },
+        "CHUNK_REWARD": {
+            "long_chunk_min_words": 30,
+            "reward_long_chunk": 1.0,
+            "reward_short_chunk": 0.45,
+            "reward_metadata_chunk": 0.25,
+            "reward_duplicate_or_failure": 0.0
+        },
+        "STAGED_BUDGET": {
+            "_comment": "Calibrated from 100-word chunk distribution of public cases: median=25.5, P75=32, P90=40, max=52.",
+            "stages_api_calls": [
+                24,
+                32,
+                40,
+                48,
+                52
+            ],
+            "base_budget": 24,
+            "soft_limit_P90": 40,
+            "hard_limit_max": 52,
+            "utility_stop_threshold": 0.14,
+            "utility_stop_min_calls": 8
+        },
+        "TINY_CASE_STOPPING": {
+            "min_calls": 12,
+            "max_unique_chunks": 6,
+            "no_new_chunk_window": 6,
+            "max_utility": 0.18
+        }
+    },
+    "UtilityFunction": {
+        "_comment": "Weights for the query utility function U(q) in Eq. 3. All weights are fixed constants; the nine positive weights sum to 1.08, the two negative penalties rebalance the scale.",
+        "weights": {
+            "w1_family_new_chunk_prior": 0.24,
+            "w2_gap_priority": 0.20,
+            "w3_expected_coverage_gain": 0.14,
+            "w4_source_priority": 0.14,
+            "w5_query_relevance": 0.12,
+            "w6_lexical_novelty": 0.09,
+            "w7_semantic_novelty": 0.07,
+            "w8_ucb_exploration_bonus": 0.05,
+            "w9_candidate_base_priority": 0.03,
+            "w10_duplicate_risk_penalty": 0.25,
+            "w11_used_query_similarity_penalty": 0.11
+        },
+        "laplace_smoothing": {
+            "numerator_offset": 1.2,
+            "denominator_offset": 2.4,
+            "formula": "(n_new + 1.2) / (n_calls + 2.4)"
+        },
+        "condition_based_bonuses": {
+            "source_probe_candidate": 0.10,
+            "source_follow_up_candidate": 0.07,
+            "discovery_track_before_bootstrap_target": 0.13,
+            "gap_track_high_priority": 0.12,
+            "discovery_track_recent_yield_ge_0_40": 0.07,
+            "rotation_different_track_bonus": 0.08
+        },
+        "utility_range_empirical": [
+            -0.36,
+            0.95
+        ]
+    },
+    "EnsembleConfig": {
+        "_comment": "Parameters governing the multi-perspective outcome prediction stage (Section IV). 7 signals in total.",
+        "N_SIGNALS": 7,
+        "LABEL_ORDER": [
+            "A_WIN",
+            "PARTIAL_A_WIN",
+            "PARTIAL_B_WIN",
+            "B_WIN"
+        ],
+        "TIE_BREAKING_RULE": "Fixed: A_WIN > PARTIAL_A_WIN > PARTIAL_B_WIN > B_WIN",
+        "TOP_K_SORT_RULE": "np.argsort kind='stable'",
+        "CONFIDENCE_MAP": {
+            "HIGH": 1.5,
+            "MEDIUM": 1.0,
+            "LOW": 0.6
+        },
+        "JUDGE_BOOST": {
+            "agreement_threshold": 2,
+            "boost_high": 1.5,
+            "boost_low": 0.8,
+            "boost_default": 1.0
+        },
+        "USE_JUDGE_BOOST": true,
+        "SIM_SCALED_CBR": true,
+        "CBR_DEFAULT": {
+            "w_bm25": 0.5,
+            "w_bge": 0.5,
+            "top_k_pub": 5,
+            "top_k_priv": 3,
+            "bm25_tokenization": "(case_query + ' ' + case_fact).lower().split()",
+            "bm25_normalization": "bm25_matrix / bm25_max (global max scaling)"
+        },
+        "WEIGHT_GRID": {
+            "weight_primary": [
+                0.5,
+                0.8,
+                1.0,
+                1.2,
+                1.5
+            ],
+            "weight_auditor": [
+                0.3,
+                0.5,
+                0.8,
+                1.0
+            ],
+            "weight_cbr": [
+                0.3,
+                0.5,
+                0.7
+            ],
+            "weight_priv_cbr": [
+                0.3,
+                0.5,
+                0.8,
+                1.0
+            ],
+            "weight_judge_ad": [
+                0.3,
+                0.5,
+                0.8
+            ],
+            "weight_judge_el": [
+                0.3,
+                0.5,
+                0.8
+            ],
+            "weight_judge_re": [
+                0.3,
+                0.5,
+                0.8
+            ],
+            "weight_case_emb": [
+                0.1,
+                0.3,
+                0.5,
+                0.8
+            ]
+        },
+        "GRID_SIZE_FULL": 25920,
+        "GRID_SAMPLED": false,
+        "TOP_K_WEIGHTS_DEFAULT": 5,
+        "PSEUDO_LABEL": {
+            "n_splits": 20,
+            "train_size": 25,
+            "test_size": 25,
+            "standard_threshold": 5,
+            "tight_threshold": 6,
+            "primary_high_threshold": 4,
+            "_gating_rule": "high_agreement >= 5/7 signals OR (primary_conf == HIGH AND agreement >= 4)"
+        },
+        "CALIBRATION": {
+            "_comment": "Optional refinement evaluated as an ablation on public set; not invoked on private test because all cases handled by Pass-1/Pass-2 gates.",
+            "invoked_in_deployed_pipeline": false,
+            "n_estimators": 200,
+            "max_depth": 3,
+            "min_samples_leaf": 2,
+            "class_weight": "balanced",
+            "random_state": 42,
+            "invocation_condition": "case falls outside Pass-1 and Pass-2 gates"
+        }
+    },
+    "ImplementationNotes": {
+        "local_language_model": "Qwen3.5-4B",
+        "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+        "dense_retrieval_model": "BAAI/bge-m3",
+        "decoder_mode": "greedy (deterministic)",
+        "schema_constrained_decoding": true,
+        "primary_model": "Qwen3.5-9B",
+        "auditor_model": "Aya-Expanse-8B / Qwen2.5-7B-Instruct",
+        "judge_passes": [
+            "adversarial",
+            "elements_burden",
+            "remedy_outcome"
+        ]
+    },
+    "ReleaseInfo": {
+        "paper": "NAAFN@ALQAC 2026: Agentic Legal Outcome Prediction through Adaptive Retrieval and Multi-Perspective Reasoning",
+        "venue": "ALQAC 2026",
+        "license": "MIT",
+        "code_repository": "https://anonymous.4open.science/r/NAAFN-ALQAC-2026-D2CE/"
+    }
+}
