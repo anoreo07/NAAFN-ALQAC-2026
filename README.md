@@ -81,9 +81,7 @@ Vietnamese civil court judgments present dual challenges of statutory ambiguity 
 ```
 NAAFN-ALQAC2026/
 ├── README.md                          # Comprehensive documentation & replication guide
-├── SUMMARY_OF_EXPERIMENTAL_RESULTS.md # Detailed experimental analysis & metrics report
-├── CITATION.md                        # Scientific citations & bibliography (Markdown)
-├── CITATION.bib                       # Verifiable BibTeX entries for papers & libraries
+├── config.json                        # System configuration & hyperparameters (Retrieval & Ensemble)
 ├── requirements.txt                   # Environment dependencies
 ├── LICENSE                            # MIT License
 ├── .gitignore                         # Git tracking exceptions
@@ -96,9 +94,6 @@ NAAFN-ALQAC2026/
 │   │   └── ground_truth.json          # Gold verdict labels & law citations (50 cases)
 │   └── private/                       # Private test set data
 │       └── ALQAC_private_test.json    # Private competition evaluation cases
-│
-├── docs/                              # Research documentation & report mirrors
-│   └── SUMMARY_OF_EXPERIMENTAL_RESULTS.md
 │
 ├── ensemble/                          # Ensemble optimization & benchmark notebooks
 │   ├── ensemble_submission_public_colab_v4.ipynb  # Primary benchmark suite (with full outputs)
@@ -180,7 +175,7 @@ To visually inspect submission predictions against gold ground truth:
 
 ## Summary of Experimental Results (Public Test Set, $N = 50$)
 
-For an exhaustive breakdown including confusion matrices, per-class metrics, and bootstrap confidence intervals, refer to [`SUMMARY_OF_EXPERIMENTAL_RESULTS.md`](SUMMARY_OF_EXPERIMENTAL_RESULTS.md).
+Below is the synthesis of empirical findings on the public test set ($N=50$), covering baseline models, official competition metrics, and key ablation results:
 
 ### 1. Model & Architecture Baselines
 
@@ -228,7 +223,7 @@ Evaluated via the official contest formula: $\text{Final Score} = 0.875 \times \
 
 ## Citation & Scientific References
 
-If you build upon this work, please cite our competition paper. For complete citations of foundation models (Qwen2.5, Aya Expanse), dense retrievers (BGE-M3), and algorithms, see [`CITATION.md`](CITATION.md) and [`CITATION.bib`](CITATION.bib).
+If you build upon this work, please cite our competition paper:
 
 ```bibtex
 @inproceedings{naafn_alqac2026,
