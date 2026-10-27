@@ -1,7 +1,8 @@
 {
     "_description": "NAAFN@ALQAC 2026 — Fixed Retrieval Scheduler Configuration. Released alongside the paper to enable full reproducibility. All values are fixed constants manually tuned on a small pilot set; no grid search is performed on the retrieval utility.",
-    "_version": "1.0",
+    "_version": "1.1",
     "_release_date": "2026-10-16",
+    "_changelog": "v1.1 — Removed legacy weight_case_emb dimension (8th signal not available); grid size updated from 25,920 to 6,480 to reflect the 7-signal configuration used in the paper.",
     "SEED": 42,
     "ENVIRONMENT": {
         "python": "3.10",
@@ -153,6 +154,7 @@
             "bm25_normalization": "bm25_matrix / bm25_max (global max scaling)"
         },
         "WEIGHT_GRID": {
+            "_comment": "7 dimensions corresponding to the 7 active signals. The legacy weight_case_emb dimension from earlier drafts was removed because the 8th signal (4096-dim case embeddings) is not available in the public dataset.",
             "weight_primary": [
                 0.5,
                 0.8,
@@ -191,15 +193,9 @@
                 0.3,
                 0.5,
                 0.8
-            ],
-            "weight_case_emb": [
-                0.1,
-                0.3,
-                0.5,
-                0.8
             ]
         },
-        "GRID_SIZE_FULL": 25920,
+        "GRID_SIZE_FULL": 6480,
         "GRID_SAMPLED": false,
         "TOP_K_WEIGHTS_DEFAULT": 5,
         "PSEUDO_LABEL": {
@@ -212,7 +208,7 @@
             "_gating_rule": "high_agreement >= 5/7 signals OR (primary_conf == HIGH AND agreement >= 4)"
         },
         "CALIBRATION": {
-            "_comment": "Optional refinement evaluated as an ablation on public set; not invoked on private test because all cases handled by Pass-1/Pass-2 gates.",
+            "_comment": "Optional refinement evaluated separately on the public set; not invoked on private test because all cases were handled by the Pass-1/Pass-2 gates.",
             "invoked_in_deployed_pipeline": false,
             "n_estimators": 200,
             "max_depth": 3,
